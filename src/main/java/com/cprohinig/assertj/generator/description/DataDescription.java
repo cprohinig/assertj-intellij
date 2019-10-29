@@ -117,10 +117,12 @@ public abstract class DataDescription implements IDataDescription {
     this.owningType = owningType;
   }
 
+  @Override
   public String getName() {
     return name;
   }
 
+  @Override
   public Member getOriginalMember() {
     return originalMember;
   }
@@ -141,53 +143,62 @@ public abstract class DataDescription implements IDataDescription {
     return removeOwningTypePackageNameIn(typeName);
   }
 
+  @Override
   public String getFullyQualifiedTypeName() {
     return getTypeDeclaration(valueType);
   }
 
+  @Override
   public boolean isIterableType() {
     return valueType.isSubtypeOf(Iterable.class);
   }
 
+  @Override
   public boolean isArrayType() {
     return valueType.isArray();
   }
 
+  @Override
   public boolean isPrimitiveType() {
     return valueType.isPrimitive();
   }
 
+  @Override
   public boolean isRealNumberType() {
     TypeToken<?> unwrapped = valueType.unwrap();
     return unwrapped.isSubtypeOf(double.class) || unwrapped.isSubtypeOf(float.class);
   }
 
+  @Override
   public boolean isWholeNumberType() {
     TypeToken<?> unwrapped = valueType.unwrap();
     return unwrapped.isSubtypeOf(int.class) || unwrapped.isSubtypeOf(long.class)
            || unwrapped.isSubtypeOf(byte.class) || unwrapped.isSubtypeOf(short.class);
   }
 
+  @Override
   public boolean isCharType() {
     TypeToken<?> unwrapped = valueType.unwrap();
     return unwrapped.isSubtypeOf(char.class);
   }
 
+  @Override
   public boolean isPrimitiveWrapperType() {
     return Primitives.isWrapperType(valueType.getRawType());
   }
 
-  public abstract boolean isPredicate();
-
+  @Override
   public String getPredicate() {
     return originalMember.getName();
   }
 
+  @Override
   public String getNegativePredicate() {
     return getNegativePredicateFor(originalMember.getName());
   }
 
-  boolean hasNegativePredicate() {
+  @Override
+  public boolean hasNegativePredicate() {
     return getNegativePredicateFor(originalMember.getName()) != null;
   }
 
@@ -198,6 +209,7 @@ public abstract class DataDescription implements IDataDescription {
    * @return the simple element valueType name if element valueType belongs to given the package and the fully qualified element
    *         valueType name otherwise.
    */
+  @Override
   public String getElementTypeName() {
     String elementTypeName = null;
     if (valueType.isArray()) {
@@ -211,41 +223,49 @@ public abstract class DataDescription implements IDataDescription {
     return removeOwningTypePackageNameIn(elementTypeName);
   }
 
+  @Override
   public String getElementAssertTypeName() {
     String packageName = owningTypePackageName();
     TypeToken<?> elementType = valueType.getComponentType();
     return elementType == null ? null : getAssertType(elementType, packageName);
   }
 
+  @Override
   public String getAssertTypeName(String packageName) {
     return getAssertType(valueType, packageName);
   }
 
+  @Override
   public String getPredicateForJavadoc() {
     String predicatePrefix = getPredicatePrefix(getPredicate());
     return PREDICATE_PREFIXES_FOR_JAVADOC.get(predicatePrefix) + " " + readablePropertyName();
   }
 
+  @Override
   public String getNegativePredicateForJavadoc() {
     String predicatePrefix = getPredicatePrefix(getNegativePredicate());
     return PREDICATE_PREFIXES_FOR_JAVADOC.get(predicatePrefix) + " " + readablePropertyName();
   }
 
+  @Override
   public String getPredicateForErrorMessagePart1() {
     String predicatePrefix = getPredicatePrefix(getPredicate());
     return PREDICATE_PREFIXES_FOR_ERROR_MESSAGE_PART1.get(predicatePrefix) + " " + readablePropertyName();
   }
 
+  @Override
   public String getPredicateForErrorMessagePart2() {
     String predicatePrefix = getPredicatePrefix(getPredicate());
     return PREDICATE_PREFIXES_FOR_ERROR_MESSAGE_PART2.get(predicatePrefix);
   }
 
+  @Override
   public String getNegativePredicateForErrorMessagePart1() {
     String predicatePrefix = getPredicatePrefix(getNegativePredicate());
     return PREDICATE_PREFIXES_FOR_ERROR_MESSAGE_PART1.get(predicatePrefix) + " " + readablePropertyName();
   }
 
+  @Override
   public String getNegativePredicateForErrorMessagePart2() {
     String predicatePrefix = getPredicatePrefix(getNegativePredicate());
     return PREDICATE_PREFIXES_FOR_ERROR_MESSAGE_PART2.get(predicatePrefix);
@@ -290,6 +310,7 @@ public abstract class DataDescription implements IDataDescription {
            + ", member=" + originalMember + "]";
   }
 
+  @Override
   public boolean isPublic() {
     return visibility == Visibility.PUBLIC;
   }

@@ -598,7 +598,7 @@ public class BaseAssertionGenerator implements AssertionGenerator, AssertionsEnt
     return assertionContent;
   }
 
-  private String getTypeName(DataDescription fieldOrGetter) {
+  private String getTypeName(IDataDescription fieldOrGetter) {
     if (generatedAssertionsPackage != null) {
       // if the user has chosen to generate assertions in a given package we assume that 
       return fieldOrGetter.getFullyQualifiedTypeName();
@@ -680,7 +680,7 @@ public class BaseAssertionGenerator implements AssertionGenerator, AssertionsEnt
    * @param fieldOrProperty field or property
    * @return the base assertion content
    */
-  private String baseAssertionContentFor(DataDescription fieldOrProperty, IClassDescription classDescription) {
+  private String baseAssertionContentFor(IDataDescription fieldOrProperty, IClassDescription classDescription) {
     String assertionContent = templateRegistry.getTemplate(Template.Type.HAS).getContent();
     if (fieldOrProperty.isPredicate()) {
       Template.Type type = determinePredicateType(fieldOrProperty, classDescription);
@@ -719,14 +719,14 @@ public class BaseAssertionGenerator implements AssertionGenerator, AssertionsEnt
    * isNotValid methods, we must not generate the negative assertion for isValid as it will be done when generating
    * assertions for isNotValid
    */
-  private Template.Type determinePredicateType(final DataDescription fieldOrProperty, final IClassDescription classDescription) {
+  private Template.Type determinePredicateType(final IDataDescription fieldOrProperty, final IClassDescription classDescription) {
     if (hasAlreadyNegativePredicate(fieldOrProperty, classDescription)) {
       return fieldOrProperty.isPrimitiveWrapperType() ? Template.Type.IS_WRAPPER_WITHOUT_NEGATION : Template.Type.IS_WITHOUT_NEGATION;
     }
     return fieldOrProperty.isPrimitiveWrapperType() ? Template.Type.IS_WRAPPER : Template.Type.IS;
   }
 
-  private boolean hasAlreadyNegativePredicate(final DataDescription fieldOrProperty,
+  private boolean hasAlreadyNegativePredicate(final IDataDescription fieldOrProperty,
                                               final IClassDescription classDescription) {
     for (final GetterDescription getterDescription : classDescription.getGettersDescriptions()) {
       if (getterDescription.getOriginalMember().getName().equals(fieldOrProperty.getNegativePredicate())) return true;
