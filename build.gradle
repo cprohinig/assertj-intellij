@@ -13,7 +13,6 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.assertj:assertj-assertions-generator:2.2.0'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
