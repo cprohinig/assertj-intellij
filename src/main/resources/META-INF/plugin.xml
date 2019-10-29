@@ -22,9 +22,9 @@
 
         <!-- Add your actions here -->
         <action id="com.cprohinig.assertj.actions.AssertionGeneratorActions"
-                class="com.cprohinig.assertj.actions.AssertionGeneratorActions" text="AssertJ Generator"
-                description="Generates AssertJ Assertions">
-            <add-to-group group-id="GenerateGroup" anchor="first"/>
+                class="com.cprohinig.assertj.actions.AssertionGeneratorActions" text="AssertJ Assertions"
+                description="Generates AssertJ assertions">
+            <add-to-group group-id="JavaGenerateGroup1" anchor="before" relative-to-action="GenerateConstructor"/>
         </action>
     </actions>
 </idea-plugin>
