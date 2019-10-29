@@ -11,7 +11,7 @@ public class AssertionDetailsGeneratorImpl implements AssertionDetailsGenerator 
 
     @Override
     public String generatePackageStatement(PsiJavaFile javaFile) {
-        return javaFile.getPackageName() + ";" + generateImports(javaFile);
+        return "package " + javaFile.getPackageName() + ";" + generateImports(javaFile);
     }
 
     private String generateImports(PsiJavaFile javaFile) {
