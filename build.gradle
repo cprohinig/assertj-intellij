@@ -1,7 +1,6 @@
 plugins {
     id 'java'
     id 'org.jetbrains.intellij' version '0.4.10'
-    id 'org.assertj.generator' version '0.0.6b'
 }
 
 group 'com.cprohinig'
@@ -9,18 +8,12 @@ version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
-sourceSets {
-    main {
-        assert { }
-    }
-}
-
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testCompile group: 'org.assertj', name: 'assertj-core', version: '3.8.0'
+    implementation 'org.assertj:assertj-assertions-generator:2.2.0'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
