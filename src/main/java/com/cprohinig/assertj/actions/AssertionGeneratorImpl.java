@@ -11,7 +11,7 @@ public class AssertionGeneratorImpl implements AssertionGenerator {
 
     @Override
     public String generateFilename(PsiJavaFile javaFile) {
-        return "";
+        return javaFile.getClasses()[0].getName() + "Assert.java";
     }
 
     @Override
