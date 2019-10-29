@@ -8,9 +8,16 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class AssertionDetailsGeneratorImpl implements AssertionDetailsGenerator {
+
     @Override
     public String generatePackageStatement(PsiJavaFile javaFile) {
-        return javaFile.getPackageName() + ";import " + javaFile.getClasses()[0].getQualifiedName() + ";";
+        return javaFile.getPackageName() + ";" + generateImports(javaFile);
+    }
+
+    private String generateImports(PsiJavaFile javaFile) {
+        String assertedClassImportStatement = "import " + javaFile.getClasses()[0].getQualifiedName() + ";";
+        String abstractObjectAssertImportStatement = "import com.compuware.apm.webui.rest.common.api.assertions.AbstractObjectAssert;";
+        return assertedClassImportStatement + abstractObjectAssertImportStatement;
     }
 
     @Override
@@ -43,7 +50,7 @@ public class AssertionDetailsGeneratorImpl implements AssertionDetailsGenerator 
         return out;
     }
 
-    public boolean isGetter(PsiMethod method) {
+    private boolean isGetter(PsiMethod method) {
         return method.getName().startsWith("get") && !method.getName().equals("getClass");
     }
 
