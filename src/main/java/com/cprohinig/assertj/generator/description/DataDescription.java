@@ -31,7 +31,7 @@ import static com.cprohinig.assertj.generator.util.StringUtil.camelCaseToWords;
 /**
  * base class to describe a field or a property/getter
  */
-public abstract class DataDescription {
+public abstract class DataDescription implements IDataDescription {
 
   private static final Map<String, String> PREDICATE_PREFIXES_FOR_JAVADOC =
       new ImmutableMap.Builder<String, String>().put("is", "is")
@@ -135,6 +135,7 @@ public abstract class DataDescription {
    * To always get the fully qualified name use {@link #getFullyQualifiedTypeName()}.
    * @return the type name of the {@link #valueType}
    */
+  @Override
   public String getTypeName() {
     String typeName = getFullyQualifiedTypeName();
     return removeOwningTypePackageNameIn(typeName);

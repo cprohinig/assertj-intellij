@@ -1820,3 +1820,15 @@ Max     duration: 0ms (it was 'null')
 === Stop: StartUp Measurement === 
 2019-10-29 09:26:36,304 [  11664]   INFO - CompilerWorkspaceConfiguration - Available processors: 12 
 2019-10-29 09:26:38,263 [  13623]   INFO - ings.impl.UpdateCheckerService - channel: release 
+2019-10-29 11:29:17,059 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2019-10-29 11:29:17,102 [     43]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 29 ms 
+2019-10-29 11:29:17,128 [     69]   INFO -        #com.intellij.idea.Main - IDE: IntelliJ IDEA (build #IC-192.6817.14, 24 Sep 2019 06:39) 
+2019-10-29 11:29:17,128 [     69]   INFO -        #com.intellij.idea.Main - OS: Linux (5.3.0-19-generic, amd64) 
+2019-10-29 11:29:17,128 [     69]   INFO -        #com.intellij.idea.Main - JRE: 11.0.4+10-b304.69 (JetBrains s.r.o) 
+2019-10-29 11:29:17,128 [     69]   INFO -        #com.intellij.idea.Main - JVM: 11.0.4+10-b304.69 (OpenJDK 64-Bit Server VM) 
+2019-10-29 11:29:17,128 [     69]   INFO -        #com.intellij.idea.Main - JVM Args: -Didea.classpath.index.enabled=false -Didea.config.path=/home/umberto/workspaces/src/assertj-intellij/build/idea-sandbox/config -Didea.is.internal=true -Didea.platform.prefix=Idea -Didea.plugins.path=/home/umberto/workspaces/src/assertj-intellij/build/idea-sandbox/plugins -Didea.required.plugins.id=com.cprohinig.assertj-generator-idea -Didea.system.path=/home/umberto/workspaces/src/assertj-intellij/build/idea-sandbox/system -Dsun.awt.disablegrab=true -Xms256m -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -ea 
+2019-10-29 11:29:17,128 [     69]   INFO -        #com.intellij.idea.Main - charsets: JNU=UTF-8 file=UTF-8 
+2019-10-29 11:29:17,615 [    556]   INFO - plication.impl.ApplicationImpl - CPU cores: 8; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@67b3477a[Running, parallelism = 7, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@4008320b 
+2019-10-29 11:29:17,656 [    597]   INFO -        #com.intellij.idea.Main - WM detected: GNOME Shell 
+2019-10-29 12:51:56,962 [4959903]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
+2019-10-29 12:51:56,970 [4959911]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 

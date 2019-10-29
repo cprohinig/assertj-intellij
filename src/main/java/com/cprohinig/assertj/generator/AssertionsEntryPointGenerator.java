@@ -13,6 +13,8 @@
 package com.cprohinig.assertj.generator;
 
 import com.cprohinig.assertj.generator.description.ClassDescription;
+import com.cprohinig.assertj.generator.description.IClassDescription;
+import cucumber.api.java.ca.I;
 
 import java.io.File;
 import java.io.IOException;
@@ -37,7 +39,7 @@ public interface AssertionsEntryPointGenerator {
    * @param entryPointClassPackage the package of the generated entry point class
    * @return the assertions entry point class content
    */
-  String generateAssertionsEntryPointClassContentFor(Set<ClassDescription> classDescriptionSet,
+  String generateAssertionsEntryPointClassContentFor(Set<IClassDescription> classDescriptionSet,
                                                      AssertionsEntryPointType assertionsEntryPointType,
                                                      String entryPointClassPackage);
 
@@ -47,7 +49,7 @@ public interface AssertionsEntryPointGenerator {
    * 
    * @throws java.io.IOException if entry point file can't be created.
    */
-  File generateAssertionsEntryPointClassFor(Set<ClassDescription> classDescriptionSet,
+  File generateAssertionsEntryPointClassFor(Set<IClassDescription> classDescriptionSet,
                                             AssertionsEntryPointType assertionsEntryPointType,
                                             String entryPointClassPackage) throws IOException;
 

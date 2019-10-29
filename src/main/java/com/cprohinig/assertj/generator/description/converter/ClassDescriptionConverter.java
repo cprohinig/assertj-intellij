@@ -13,6 +13,7 @@
 package com.cprohinig.assertj.generator.description.converter;
 
 import com.cprohinig.assertj.generator.description.ClassDescription;
+import com.cprohinig.assertj.generator.description.IClassDescription;
 
 /**
  * 
@@ -29,6 +30,6 @@ public interface ClassDescriptionConverter<T> {
    * @param instance to convert to a {@link ClassDescription} instance.
    * @return the {@link ClassDescription} instance from given T instance.
    */
-  ClassDescription convertToClassDescription(T instance);
+  IClassDescription convertToClassDescription(T instance);
   
 }

@@ -25,12 +25,9 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.cprohinig.assertj.generator.description.*;
 import com.google.common.reflect.TypeToken;
 import org.apache.commons.lang3.Validate;
-import com.cprohinig.assertj.generator.description.ClassDescription;
-import com.cprohinig.assertj.generator.description.DataDescription;
-import com.cprohinig.assertj.generator.description.FieldDescription;
-import com.cprohinig.assertj.generator.description.GetterDescription;
 
 @SuppressWarnings("WeakerAccess")
 public class BaseAssertionGenerator implements AssertionGenerator, AssertionsEntryPointGenerator {
@@ -314,7 +311,7 @@ public class BaseAssertionGenerator implements AssertionGenerator, AssertionsEnt
     return template;
   }
 
-  private String determinePackageName(ClassDescription classDescription) {
+  private String determinePackageName(IClassDescription classDescription) {
     return generatedAssertionsPackage == null ? classDescription.getPackageName() : generatedAssertionsPackage;
   }
 
@@ -340,7 +337,7 @@ public class BaseAssertionGenerator implements AssertionGenerator, AssertionsEnt
   }
 
   @Override
-  public String generateAssertionsEntryPointClassContentFor(final Set<ClassDescription> classDescriptionSet,
+  public String generateAssertionsEntryPointClassContentFor(final Set<IClassDescription> classDescriptionSet,
                                                             AssertionsEntryPointType assertionsEntryPointType,
                                                             String entryPointClassPackage) {
     if (noClassDescriptionsGiven(classDescriptionSet)) return "";
@@ -389,7 +386,7 @@ public class BaseAssertionGenerator implements AssertionGenerator, AssertionsEnt
   }
 
   @Override
-  public File generateAssertionsEntryPointClassFor(final Set<ClassDescription> classDescriptionSet,
+  public File generateAssertionsEntryPointClassFor(final Set<IClassDescription> classDescriptionSet,
                                                    AssertionsEntryPointType assertionsEntryPointType,
                                                    String entryPointClassPackage) throws IOException {
     if (noClassDescriptionsGiven(classDescriptionSet)) return null;
@@ -411,7 +408,7 @@ public class BaseAssertionGenerator implements AssertionGenerator, AssertionsEnt
     return assertionsEntryPointType.getFileName();
   }
 
-  private String generateAssertionsEntryPointClassContent(final Set<ClassDescription> classDescriptionSet,
+  private String generateAssertionsEntryPointClassContent(final Set<IClassDescription> classDescriptionSet,
                                                           final Template entryPointAssertionsClassTemplate,
                                                           final Template entryPointAssertionMethodTemplate,
                                                           String entryPointClassPackage) {
@@ -443,7 +440,7 @@ public class BaseAssertionGenerator implements AssertionGenerator, AssertionsEnt
    * @return the created assertions entry point file
    * @throws IOException if file can't be created.
    */
-  private File createAssertionsFileFor(final Set<ClassDescription> classDescriptionSet, final String fileContent,
+  private File createAssertionsFileFor(final Set<IClassDescription> classDescriptionSet, final String fileContent,
                                        final String fileName, final String assertionsClassPackage) throws IOException {
     String classPackage = isEmpty(assertionsClassPackage)
         ? determineBestEntryPointsAssertionsClassPackage(classDescriptionSet) : assertionsClassPackage;
@@ -453,14 +450,14 @@ public class BaseAssertionGenerator implements AssertionGenerator, AssertionsEnt
     return createFile(fileContent, fileName, assertionsDirectory);
   }
 
-  private String generateAssertionEntryPointMethodsFor(final Set<ClassDescription> classDescriptionSet,
+  private String generateAssertionEntryPointMethodsFor(final Set<IClassDescription> classDescriptionSet,
                                                        Template assertionEntryPointMethodTemplate) {
     // sort ClassDescription according to their class name.
-    SortedSet<ClassDescription> sortedClassDescriptionSet = new TreeSet<>(classDescriptionSet);
+    SortedSet<IClassDescription> sortedClassDescriptionSet = new TreeSet<>(classDescriptionSet);
     // generate for each classDescription the entry point method, e.g. assertThat(MyClass) or then(MyClass)
     StringBuilder allAssertThatsContentBuilder = new StringBuilder();
     final String lineSeparator = System.lineSeparator();
-    for (ClassDescription classDescription : sortedClassDescriptionSet) {
+    for (IClassDescription classDescription : sortedClassDescriptionSet) {
       String assertionEntryPointMethodContent = assertionEntryPointMethodTemplate.getContent();
       // resolve class assert (ex: PlayerAssert)
       // in case of inner classes like Movie.PublicCategory, class assert will be MoviePublicCategoryAssert
@@ -476,13 +473,13 @@ public class BaseAssertionGenerator implements AssertionGenerator, AssertionsEnt
     return allAssertThatsContentBuilder.toString();
   }
 
-  private String determineBestEntryPointsAssertionsClassPackage(final Set<ClassDescription> classDescriptionSet) {
+  private String determineBestEntryPointsAssertionsClassPackage(final Set<IClassDescription> classDescriptionSet) {
     if (generatedAssertionsPackage != null) {
       return generatedAssertionsPackage;
     }
 
     SortedSet<String> packages = new TreeSet<>(ORDER_BY_INCREASING_LENGTH);
-    for (ClassDescription classDescription : classDescriptionSet) {
+    for (IClassDescription classDescription : classDescriptionSet) {
       packages.add(classDescription.getPackageName());
     }
     // takes the base package of all given classes assuming they all belong to a common package, i.e a.b.c. over a.b.c.d
@@ -528,12 +525,12 @@ public class BaseAssertionGenerator implements AssertionGenerator, AssertionsEnt
   }
 
   protected void generateAssertionsForDeclaredGettersOf(StringBuilder contentBuilder,
-                                                        ClassDescription classDescription) {
+                                                        IClassDescription classDescription) {
     generateAssertionsForGetters(contentBuilder, classDescription.getDeclaredGettersDescriptions(), classDescription);
   }
 
   protected void generateAssertionsForGetters(StringBuilder assertionsForGetters, Set<GetterDescription> getters,
-                                              ClassDescription classDescription) {
+                                              IClassDescription classDescription) {
     for (GetterDescription getter : getters) {
       String assertionContent = assertionContentForProperty(getter, classDescription);
       assertionsForGetters.append(assertionContent).append(LINE_SEPARATOR);
@@ -545,13 +542,13 @@ public class BaseAssertionGenerator implements AssertionGenerator, AssertionsEnt
   }
 
   protected void generateAssertionsForDeclaredFieldsOf(StringBuilder contentBuilder,
-                                                       ClassDescription classDescription) {
+                                                       IClassDescription classDescription) {
     generateAssertionsForFields(contentBuilder, classDescription.getDeclaredFieldsDescriptions(),
                                 classDescription);
   }
 
   protected void generateAssertionsForFields(StringBuilder assertionsForPublicFields,
-                                             Set<FieldDescription> fields, ClassDescription classDescription) {
+                                             Set<FieldDescription> fields, IClassDescription classDescription) {
     for (FieldDescription field : fields) {
       if (generateAssertionsForAllFields || field.isPublic()) {
         String assertionContent = assertionContentForField(field, classDescription);
@@ -563,7 +560,7 @@ public class BaseAssertionGenerator implements AssertionGenerator, AssertionsEnt
     }
   }
 
-  private String assertionContentForField(FieldDescription field, ClassDescription classDescription) {
+  private String assertionContentForField(FieldDescription field, IClassDescription classDescription) {
 
     if (classDescription.hasGetterForField(field)) {
       // the assertion has already been generated using the getter to read the field
@@ -643,7 +640,7 @@ public class BaseAssertionGenerator implements AssertionGenerator, AssertionsEnt
     return JAVA_KEYWORDS.contains(unsafe) || "actual".equals(unsafe) ? "expected" + capitalize(unsafe) : unsafe;
   }
 
-  private String assertionContentForProperty(GetterDescription getter, ClassDescription classDescription) {
+  private String assertionContentForProperty(GetterDescription getter, IClassDescription classDescription) {
     String assertionContent = baseAssertionContentFor(getter, classDescription);
 
     assertionContent = declareExceptions(getter, assertionContent);
@@ -683,7 +680,7 @@ public class BaseAssertionGenerator implements AssertionGenerator, AssertionsEnt
    * @param fieldOrProperty field or property
    * @return the base assertion content
    */
-  private String baseAssertionContentFor(DataDescription fieldOrProperty, ClassDescription classDescription) {
+  private String baseAssertionContentFor(DataDescription fieldOrProperty, IClassDescription classDescription) {
     String assertionContent = templateRegistry.getTemplate(Template.Type.HAS).getContent();
     if (fieldOrProperty.isPredicate()) {
       Template.Type type = determinePredicateType(fieldOrProperty, classDescription);
@@ -722,7 +719,7 @@ public class BaseAssertionGenerator implements AssertionGenerator, AssertionsEnt
    * isNotValid methods, we must not generate the negative assertion for isValid as it will be done when generating
    * assertions for isNotValid
    */
-  private Template.Type determinePredicateType(final DataDescription fieldOrProperty, final ClassDescription classDescription) {
+  private Template.Type determinePredicateType(final DataDescription fieldOrProperty, final IClassDescription classDescription) {
     if (hasAlreadyNegativePredicate(fieldOrProperty, classDescription)) {
       return fieldOrProperty.isPrimitiveWrapperType() ? Template.Type.IS_WRAPPER_WITHOUT_NEGATION : Template.Type.IS_WITHOUT_NEGATION;
     }
@@ -730,7 +727,7 @@ public class BaseAssertionGenerator implements AssertionGenerator, AssertionsEnt
   }
 
   private boolean hasAlreadyNegativePredicate(final DataDescription fieldOrProperty,
-                                              final ClassDescription classDescription) {
+                                              final IClassDescription classDescription) {
     for (final GetterDescription getterDescription : classDescription.getGettersDescriptions()) {
       if (getterDescription.getOriginalMember().getName().equals(fieldOrProperty.getNegativePredicate())) return true;
     }
@@ -780,7 +777,7 @@ public class BaseAssertionGenerator implements AssertionGenerator, AssertionsEnt
     return file;
   }
 
-  private static boolean noClassDescriptionsGiven(final Set<ClassDescription> classDescriptionSet) {
+  private static boolean noClassDescriptionsGiven(final Set<IClassDescription> classDescriptionSet) {
     return classDescriptionSet == null || classDescriptionSet.isEmpty();
   }
 

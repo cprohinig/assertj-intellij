@@ -31,7 +31,7 @@ import static com.cprohinig.assertj.generator.util.ClassUtil.*;
  * @author Joel Costigliola
  *
  */
-public class ClassDescription implements Comparable<ClassDescription> {
+public class ClassDescription implements IClassDescription, Comparable<ClassDescription> {
 
   private static final String ABSTRACT_ASSERT_CLASS_PREFIX = "Abstract";
 
@@ -53,10 +53,12 @@ public class ClassDescription implements Comparable<ClassDescription> {
     this.declaredFieldsDescriptions = new TreeSet<>();
   }
 
+  @Override
   public String getFullyQualifiedClassName() {
     return getTypeDeclaration(type);
   }
 
+  @Override
   public String getFullyQualifiedOuterClassName() {
     // get the class part only (including all nested/inner ones): Outer.Inner.ReallyInner  
     String outerClassNameWithInner = remove(getFullyQualifiedClassName(), getPackageName() + ".");
@@ -69,15 +71,18 @@ public class ClassDescription implements Comparable<ClassDescription> {
     return getFullyQualifiedClassName();
   }
 
+  @Override
   public String getClassNameWithOuterClass() {
     String typeDeclaration = getTypeDeclaration(type);
     return removeAll(typeDeclaration, packageNameRegex(getPackageName()));
   }
 
+  @Override
   public String getPackageName() {
     return type.getRawType().getPackage().getName();
   }
 
+  @Override
   public Set<GetterDescription> getGettersDescriptions() {
     return gettersDescriptions;
   }
@@ -90,14 +95,17 @@ public class ClassDescription implements Comparable<ClassDescription> {
     this.fieldsDescriptions.addAll(fieldDescriptions);
   }
 
+  @Override
   public Set<FieldDescription> getFieldsDescriptions() {
     return fieldsDescriptions;
   }
 
+  @Override
   public Set<GetterDescription> getDeclaredGettersDescriptions() {
     return declaredGettersDescriptions;
   }
 
+  @Override
   public Set<FieldDescription> getDeclaredFieldsDescriptions() {
     return declaredFieldsDescriptions;
   }
@@ -110,6 +118,7 @@ public class ClassDescription implements Comparable<ClassDescription> {
     this.declaredFieldsDescriptions.addAll(declaredFieldDescriptions);
   }
 
+  @Override
   public boolean hasGetterForField(FieldDescription field) {
     // get all getters with a return type == field type
     Set<String> gettersCompatibleWithFieldType = new HashSet<>();
@@ -152,6 +161,7 @@ public class ClassDescription implements Comparable<ClassDescription> {
     return assertClassName + ".java";
   }
 
+  @Override
   public String getFullyQualifiedAssertClassName() {
     return getPackageName() + "." + getAssertClassName();
   }
