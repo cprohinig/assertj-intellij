@@ -1,0 +1,20 @@
+<idea-plugin>
+  <version>1.0-SNAPSHOT</version>
+  <change-notes>
+      Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <idea-version since-build="192.6817" until-build="192.*"/>
+  <id>com.cprohinig.assertj-generator-idea</id>
+  <name>Plugin display name here</name>
+  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <description>
+    Enter short description for your plugin here.&lt;br&gt;
+    &lt;em&gt;most HTML tags may be used&lt;/em&gt;
+    </description>
+  <extensions defaultExtensionNs="com.intellij"/>
+  <actions>
+    <action id="com.cprohinig.assertj.actions.AssertionGeneratorActions" class="com.cprohinig.assertj.actions.AssertionGeneratorActions" text="AssertJ Generator" description="Generates AssertJ Assertions">
+      <add-to-group group-id="GenerateGroup" anchor="first"/>
+    </action>
+  </actions>
+</idea-plugin>

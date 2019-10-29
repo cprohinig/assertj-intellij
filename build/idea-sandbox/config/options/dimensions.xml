@@ -1,0 +1,10 @@
+<application>
+  <component name="DimensionService">
+    <location key="FileChooserDialogImpl.2048.0.3440.1440" x="3128" y="392" />
+    <location key="WELCOME_SCREEN.2048.0.3440.1440" x="3345" y="634" />
+    <location key="com.intellij.ide.util.TipDialog.2048.0.3440.1440" x="3395" y="547" />
+    <location key="search.everywhere.popup.2048.0.3440.1440" x="3431" y="143" />
+    <size key="FileChooserDialogImpl.2048.0.3440.1440" width="424" height="479" />
+    <size key="search.everywhere.popup.2048.0.3440.1440" width="672" height="678" />
+  </component>
+</application>

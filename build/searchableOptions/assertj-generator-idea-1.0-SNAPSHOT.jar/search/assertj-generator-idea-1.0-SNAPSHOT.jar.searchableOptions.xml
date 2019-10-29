@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<options>
+  <configurable id="preferences.keymap" configurable_name="Keymap">
+    <option name="assertj" path="ActionManager" hit="AssertJ Generator" />
+    <option name="generator" path="ActionManager" hit="AssertJ Generator" />
+    <option name="assertions" path="ActionManager" hit="Generates AssertJ Assertions" />
+    <option name="assertj" path="ActionManager" hit="Generates AssertJ Assertions" />
+    <option name="generates" path="ActionManager" hit="Generates AssertJ Assertions" />
+  </configurable>
+</options>
+

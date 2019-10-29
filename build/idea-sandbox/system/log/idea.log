@@ -1,0 +1,1187 @@
+2019-10-29 08:43:51,817 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2019-10-29 08:43:51,886 [     69]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 46 ms 
+2019-10-29 08:43:51,917 [    100]   INFO -        #com.intellij.idea.Main - IDE: IntelliJ IDEA (build #IC-192.6817.14, 24 Sep 2019 06:39) 
+2019-10-29 08:43:51,917 [    100]   INFO -        #com.intellij.idea.Main - OS: Linux (4.15.0-66-generic, amd64) 
+2019-10-29 08:43:51,917 [    100]   INFO -        #com.intellij.idea.Main - JRE: 11.0.4+10-b304.69 (JetBrains s.r.o) 
+2019-10-29 08:43:51,917 [    100]   INFO -        #com.intellij.idea.Main - JVM: 11.0.4+10-b304.69 (OpenJDK 64-Bit Server VM) 
+2019-10-29 08:43:51,918 [    101]   INFO -        #com.intellij.idea.Main - JVM Args: -Didea.classpath.index.enabled=false -Didea.config.path=/home/cp/Development/tools/assertj-intellij/build/idea-sandbox/config -Didea.is.internal=true -Didea.platform.prefix=Idea -Didea.plugins.path=/home/cp/Development/tools/assertj-intellij/build/idea-sandbox/plugins -Didea.required.plugins.id=com.cprohinig.assertj-generator-idea -Didea.system.path=/home/cp/Development/tools/assertj-intellij/build/idea-sandbox/system -Dsun.awt.disablegrab=true -Xms256m -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -ea -agentpath:/opt/dynatrace/oneagent/agent/lib64/liboneagentloader.so=loglevelcon=none,tenant=1,tenanttoken=1,server=http://localhost:8020/communication;https://172.23.249.63:9999/communication 
+2019-10-29 08:43:51,918 [    101]   INFO -        #com.intellij.idea.Main - charsets: JNU=UTF-8 file=UTF-8 
+2019-10-29 08:43:52,210 [    393]   INFO - plication.impl.ApplicationImpl - CPU cores: 12; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@40c77a2[Running, parallelism = 11, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@5cfa2de 
+2019-10-29 08:43:52,256 [    439]   INFO -        #com.intellij.idea.Main - WM detected: Mutter (Muffin) 
+2019-10-29 08:43:57,563 [   5746]   INFO - tellij.diagnostic.LoadingPhase - Reached SPLASH loading phase 
+2019-10-29 08:43:57,744 [   5927]   INFO - llij.ide.plugins.PluginManager - Cannot find optional descriptor duplicates-groovy.xml 
+2019-10-29 08:43:57,746 [   5929]   INFO - llij.ide.plugins.PluginManager - Cannot find optional descriptor duplicates-detection-groovy.xml 
+2019-10-29 08:43:57,813 [   5996]   INFO - llij.ide.plugins.PluginManager - Cannot find optional descriptor profiler-java.xml 
+2019-10-29 08:43:57,983 [   6166]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: Android Support (10.3.4), Ant (192.6817.14), Bytecode Viewer (192.6817.14), ChangeReminder (192.6817.14), Configuration Script (192.6817.14), Copyright (192.6817.14), Coverage (192.6817.14), Eclipse Interoperability (192.6817.14), EditorConfig (192.6817.14), Git (192.6817.14), GitHub (192.6817.14), Gradle (192.6817.14), Gradle-Maven (192.6817.14), Groovy (192.6817.14), IDEA CORE (192.6817.14), IntelliLang (192.6817.14), JUnit (192.6817.14), Java (192.6817.14), Java Bytecode Decompiler (192.6817.14), Java IDE Customization (192.6817.14), Java Internationalization (192.6817.14), Java Stream Debugger (192.6817.14), JavaFX (192.6817.14), Kotlin (1.3.41-release-IJ2019.2-1), Machine Learning Code Completion (192.6817.14), Markdown (192.6817.14), Maven (192.6817.14), Mercurial (192.6817.14), Plugin DevKit (192.6817.14), Properties (192.6817.14), Settings Repository (192.6817.14), Shell Script (192.6817.14), Smali Support (192.6817.14), Subversion (192.6817.14), Task Management (192.6817.14), Terminal (192.6817.14), TestNG (192.6817.14), TextMate bundles (192.6817.14), UI Designer (192.6817.14), XPathView + XSLT (192.6817.14), XSLT Debugger (192.6817.14), YAML (192.6817.14) 
+2019-10-29 08:43:57,984 [   6167]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: Plugin display name here (1.0-SNAPSHOT) 
+2019-10-29 08:43:58,559 [   6742]   INFO - tellij.diagnostic.LoadingPhase - Reached CONFIGURATION_STORE_INITIALIZED loading phase 
+2019-10-29 08:43:58,651 [   6834]   INFO - ellij.vfs.persistent.FSRecords - Marking VFS as corrupted: '/home/cp/Development/tools/assertj-intellij/build/idea-sandbox/system/caches/names.dat' does not exist 
+2019-10-29 08:43:58,652 [   6835]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=492; buffer=10; max=492 
+2019-10-29 08:43:58,721 [   6904]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: /home/cp/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2019.2.3/654e395e5806d1f0a4741d2f324e48012be56949/ideaIC-2019.2.3/bin/linux/fsnotifier64 
+2019-10-29 08:43:58,741 [   6924]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2019-10-29 08:43:59,158 [   7341]   INFO - .history.utils.LocalHistoryLog - local history version mismatch (was: 0, expected: 6), rebuilding... 
+2019-10-29 08:43:59,159 [   7342]   INFO - .history.utils.LocalHistoryLog - FS has been rebuild, rebuilding local history... 
+2019-10-29 08:43:59,311 [   7494]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2019-10-29 08:43:59,315 [   7498]   WARN - j.internal.DebugAttachDetector - Unable to start DebugAttachDetector, please add `--add-exports=java.base/jdk.internal.vm=ALL-UNNAMED` to VM options 
+2019-10-29 08:43:59,319 [   7502]   INFO - tellij.ide.SystemHealthMonitor - restored ignored PIPE handler 
+2019-10-29 08:43:59,351 [   7534]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63343 
+2019-10-29 08:43:59,551 [   7734]   INFO - il.indexing.FileBasedIndexImpl - File index extensions iterated:108 
+2019-10-29 08:43:59,859 [   8042]   INFO - ij.psi.stubs.StubUpdatingIndex - Following new file types will be indexed:DGM File Type,Groovy,kotlin_builtins,CLASS,KJSM,Markdown,HTML,KNM,XML,Kotlin,JAVA,Properties 
+2019-10-29 08:44:00,216 [   8399]   INFO - tellij.diagnostic.LoadingPhase - Reached FRAME_SHOWN loading phase 
+2019-10-29 08:44:00,246 [   8429]   INFO - pl$FileIndexDataInitialization - Initialization done:803 
+2019-10-29 08:44:00,335 [   8518]   INFO - exImpl$StubIndexInitialization - Initialization done:89 
+2019-10-29 08:44:00,649 [   8832]   INFO - penapi.wm.impl.GlobalMenuLinux - Closed dbus-service 'com.canonical.AppMenu.Registrar' 
+2019-10-29 08:44:00,746 [   8929]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=12, fontScale=1.0; restored: fontSize=12, fontScale=1.0 
+2019-10-29 08:44:01,021 [   9204]   INFO - j.ide.ui.OptionsTopHitProvider - 910 ms spent to cache options in application 
+2019-10-29 08:44:01,176 [   9359]   INFO - pi.util.registry.RegistryValue - Registry value 'java.completion.argument.hints' has changed to 'false' 
+2019-10-29 08:44:01,176 [   9359]   INFO - pi.util.registry.RegistryValue - Registry value 'java.completion.argument.hints.internal' has changed to 'false' 
+2019-10-29 08:44:21,283 [  29466]   INFO - penapi.wm.impl.GlobalMenuLinux - created instance of GlobalMenuLinux for xid=0x7600101 
+2019-10-29 08:44:22,339 [  30522]   INFO - j.ide.script.IdeStartupScripts - 0 startup script(s) found 
+2019-10-29 08:44:22,470 [  30653]   INFO - rojectCodeStyleSettingsManager - Initialized from default code style settings. 
+2019-10-29 08:44:22,814 [  30997]   INFO - pl.projectlevelman.NewMappings - VCS Root: [Git] - [<Project>] 
+2019-10-29 08:44:23,086 [  31269]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: com.intellij.util.indexing.UnindexedFilesUpdater@70ac0082 
+2019-10-29 08:44:23,132 [  31315]   INFO - j.ide.ui.OptionsTopHitProvider - 281 ms spent to cache options in project 
+2019-10-29 08:44:23,177 [  31360]   INFO - ge.ExternalProjectsDataStorage - Load external projects data in 7 millis (read time: 2) 
+2019-10-29 08:44:23,453 [  31636]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 365ms; general responsiveness: ok; EDT responsiveness: ok 
+2019-10-29 08:44:23,697 [  31880]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 241ms; general responsiveness: ok; EDT responsiveness: ok 
+2019-10-29 08:44:23,698 [  31881]   INFO - indexing.UnindexedFilesUpdater - Unindexed files update started: 1550 files to update 
+2019-10-29 08:44:23,964 [  32147]   INFO - .diagnostic.PerformanceWatcher - Post-startup activities under progress took 1130ms; general responsiveness: ok; EDT responsiveness: ok 
+2019-10-29 08:44:24,083 [  32266]   WARN - tartup.impl.StartupManagerImpl - /home/cp/Development/tools/cloud-simulator/.idea 
+java.io.FileNotFoundException: /home/cp/Development/tools/cloud-simulator/.idea
+	at com.intellij.openapi.util.io.FileUtil.isFileSystemCaseSensitive(FileUtil.java:1467)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.checkFsSanity(StartupManagerImpl.java:329)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runPostStartupActivities(StartupManagerImpl.java:237)
+	at com.intellij.openapi.project.impl.ProjectManagerImpl.lambda$null$6(ProjectManagerImpl.java:411)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:312)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.doRun(LaterInvocator.java:433)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.runNextEvent(LaterInvocator.java:416)
+	at com.intellij.openapi.application.impl.LaterInvocator$FlushQueue.run(LaterInvocator.java:399)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:776)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:727)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:746)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:824)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:773)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$8(IdeEventQueue.java:412)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:704)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:411)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2019-10-29 08:44:24,112 [  32295]   INFO -  #git4idea.commands.GitHandler - [.] git version 
+2019-10-29 08:44:24,121 [  32304]   INFO -  #git4idea.commands.GitHandler - git version 2.17.1 
+2019-10-29 08:44:24,133 [  32316]   INFO - tellij.diagnostic.LoadingPhase - Reached PROJECT_OPENED loading phase 
+2019-10-29 08:44:24,141 [  32324]   INFO - ea.config.GitExecutableManager - Git version for /usr/bin/git : 2.17.1 
+2019-10-29 08:44:24,163 [  32346]   INFO - pl.projectlevelman.NewMappings - Mapped Roots: 1 
+2019-10-29 08:44:24,218 [  32401]   INFO - tor.impl.FileEditorManagerImpl - Project opening took 2746 ms 
+2019-10-29 08:44:24,889 [  33072]   INFO - lij.diagnostic.StartUpMeasurer - === Start: StartUp Measurement ===
+{
+  "version": "7",
+  "stats": { "plugin": 43, "component": { "app": 68, "project": 135, "module": 5 }, "service": { "app": 480, "project": 507, "module": 20 }, "loadedClasses": { "Subversion": 62, "XPathView": 60, "XSLT-Debugger": 2, "com.android.tools.idea.smali": 5, "com.intellij.java": 1558, "ByteCodeViewer": 2, "Git4Idea": 264, "JUnit": 6, "com.cprohinig.assertj-generator-idea": 1, "com.intellij.configurationScript": 8, "com.intellij.copyright": 6, "com.intellij.java.ide": 1, "com.intellij.properties": 67, "AntSupport": 17, "com.intellij.java-i18n": 9, "TestNG-J": 5, "Coverage": 1, "com.intellij.stats.completion": 32, "com.intellij.tasks": 102, "com.intellij.uiDesigner": 89, "com.jetbrains.changeReminder": 17, "hg4idea": 94, "org.editorconfig.editorconfigjetbrains": 53, "org.intellij.intelliLang": 5, "org.intellij.groovy": 497, "org.intellij.plugins.markdown": 50, "org.jetbrains.debugger.streams": 129, "org.jetbrains.idea.eclipse": 6, "org.jetbrains.idea.maven": 207, "org.jetbrains.java.decompiler": 7, "org.jetbrains.plugins.github": 25, "org.jetbrains.plugins.gradle": 53, "DevKit": 44, "org.jetbrains.kotlin": 2642, "org.jetbrains.android": 1276, "org.jetbrains.plugins.gradle.maven": 7, "org.jetbrains.plugins.javaFX": 20, "org.jetbrains.plugins.terminal": 17, "com.jetbrains.sh": 38, "org.jetbrains.plugins.textmate": 119, "org.jetbrains.plugins.yaml": 28, "org.jetbrains.settingsRepository": 37 } },
+  "icons": { "svg": { "count": 140, "loading": 796, "decoding": 774 }, "img": { "count": 15, "loading": 57, "decoding": 51 } },
+  "items": [
+    { "name": "bootstrap", "duration": 261, "start": 0, "end": 261, "thread": "main" },
+    { "name": "startup begin", "duration": 1, "start": 0, "end": 1, "thread": "main" },
+    { "name": "properties loading", "duration": 33, "start": 1, "end": 35, "thread": "main" },
+    { "name": "classloader init", "duration": 68, "start": 35, "end": 104, "thread": "main" },
+    { "name": "MainRunner search", "duration": 157, "start": 104, "end": 261, "thread": "main" },
+    { "name": "app initialization preparation", "duration": 6411, "start": 262, "end": 6673, "thread": "main" },
+    { "name": "load main class", "duration": 6, "start": 267, "end": 274, "thread": "idea main" },
+    { "name": "configure logging", "duration": 17, "start": 556, "end": 574, "thread": "idea main" },
+    { "name": "check system dirs", "duration": 22, "start": 588, "end": 610, "thread": "idea main" },
+    { "name": "lock system dirs", "duration": 270, "start": 610, "end": 881, "thread": "idea main" },
+    { "name": "configure file logger", "duration": 45, "start": 881, "end": 926, "thread": "idea main" },
+    { "name": "start logging", "duration": 15, "start": 926, "end": 942, "thread": "idea main" },
+    { "name": "wait tasks", "duration": 218, "start": 950, "end": 1169, "thread": "idea main" },
+    { "name": "patch system", "duration": 60, "start": 1308, "end": 1368, "thread": "edt" },
+    { "name": "app initialization", "duration": 71, "start": 6673, "end": 6745, "thread": "idea main" },
+    { "name": "create app", "duration": 62, "start": 6677, "end": 6739, "thread": "edt" },
+    { "name": "instantiate AppDelayQueue", "duration": 5, "start": 6731, "end": 6736, "thread": "edt" },
+    { "name": "place on event queue", "duration": 1, "start": 6743, "end": 6745, "thread": "edt" },
+    { "name": "wait plugin initialization", "duration": 816, "start": 6745, "end": 7561, "thread": "edt" },
+    { "name": "app component registered callback", "duration": 97, "start": 7573, "end": 7671, "thread": "edt" },
+    { "name": "app component creation", "duration": 1514, "start": 7694, "end": 9208, "thread": "edt" },
+    { "name": "PersistentFS#FSRecords.connect", "duration": 67, "start": 7741, "end": 7808, "thread": "edt" },
+    { "name": "app initialized callback", "duration": 100, "start": 9210, "end": 9310, "thread": "edt" },
+    { "name": "frame initialization", "duration": 439, "start": 9311, "end": 9751, "thread": "edt" },
+    { "name": "set window manager", "duration": 0, "start": 9324, "end": 9324, "thread": "edt" },
+    { "name": "call appFrameCreated", "duration": 2, "start": 9324, "end": 9327, "thread": "edt" },
+    { "name": "system dock menu", "duration": 0, "start": 9804, "end": 9805, "thread": "edt" },
+    { "name": "show frame", "duration": 142, "start": 30274, "end": 30416, "thread": "edt" },
+    { "name": "init frame", "duration": 35, "start": 30448, "end": 30484, "thread": "edt" },
+    { "name": "project instantiation", "duration": 2, "start": 30580, "end": 30583, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "project before loaded callbacks", "duration": 4, "start": 30583, "end": 30588, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "project component registration", "duration": 209, "start": 30588, "end": 30798, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "project component creation", "duration": 430, "start": 30876, "end": 31306, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "module loading", "description": "module count: 0", "duration": 0, "start": 31320, "end": 31320, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "project opened callbacks", "duration": 406, "start": 31442, "end": 31848, "thread": "edt" },
+    { "name": "project pre-startup", "duration": 5, "start": 31849, "end": 31855, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "project startup", "duration": 77, "start": 31855, "end": 31932, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "project post-startup dumb-aware activities", "duration": 1130, "start": 31945, "end": 33075, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "project dumb post-startup", "duration": 28, "start": 33198, "end": 33227, "thread": "edt" }
+  ],
+  "GCs": [
+    { "name": "1", "duration": 11, "start": 33915, "end": 33926, "thread": "pool-1-thread-1" }
+  ],
+  "appComponents": [
+    { "name": "com.intellij.openapi.util.registry.RegistryState", "duration": 27, "start": 7694, "end": 7722, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vfs.newvfs.persistent.PersistentFSImpl", "duration": 86, "start": 7722, "end": 7808, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vfs.PlatformVirtualFileManager", "duration": 44, "start": 7808, "end": 7852, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.project.impl.ProjectManagerImpl", "duration": 12, "start": 7852, "end": 7865, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.fileTypes.impl.FileTypeManagerImpl", "duration": 211, "start": 7865, "end": 8076, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.editor.impl.EditorFactoryImpl", "duration": 16, "start": 8084, "end": 8262, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.actionSystem.impl.ActionManagerImpl", "duration": 141, "start": 8086, "end": 8248, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.util.net.HttpConfigurable", "duration": 19, "start": 8224, "end": 8244, "thread": "pooled 8", "plugin": "com.intellij" },
+    { "name": "com.intellij.history.integration.LocalHistoryImpl", "duration": 28, "start": 8263, "end": 8291, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.ide.ui.laf.LafManagerImpl", "duration": 63, "start": 8300, "end": 8363, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.util.net.ssl.CertificateManager", "duration": 48, "start": 8375, "end": 8423, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.diagnostic.DebugLogManager", "duration": 10, "start": 8426, "end": 8436, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.wm.impl.WindowManagerImpl", "duration": 20, "start": 8447, "end": 8473, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.util.indexing.FileBasedIndexImpl", "duration": 58, "start": 8494, "end": 8553, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.psi.stubs.SerializationManagerImpl", "duration": 14, "start": 8560, "end": 8575, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.execution.ExecutorRegistryImpl", "duration": 16, "start": 8575, "end": 8591, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.compiler.server.BuildManager", "duration": 13, "start": 8593, "end": 8606, "thread": "edt", "plugin": "com.intellij.java" },
+    { "name": "com.intellij.openapi.projectRoots.impl.DefaultJdkConfigurator", "duration": 81, "start": 8607, "end": 8689, "thread": "edt", "plugin": "com.intellij.java" },
+    { "name": "com.intellij.stats.sender.SenderComponent", "duration": 14, "start": 8698, "end": 8713, "thread": "edt", "plugin": "com.intellij.stats.completion" },
+    { "name": "org.jetbrains.kotlin.idea.PluginStartupComponent", "duration": 59, "start": 8723, "end": 8783, "thread": "edt", "plugin": "org.jetbrains.kotlin" },
+    { "name": "org.jetbrains.kotlin.idea.versions.KotlinUpdatePluginComponent", "duration": 259, "start": 8783, "end": 9042, "thread": "edt", "plugin": "org.jetbrains.kotlin" },
+    { "name": "org.jetbrains.kotlin.idea.JvmPluginStartupComponent", "duration": 12, "start": 9042, "end": 9054, "thread": "edt", "plugin": "org.jetbrains.kotlin" },
+    { "name": "org.jetbrains.android.AndroidPlugin", "duration": 70, "start": 9054, "end": 9124, "thread": "edt", "plugin": "org.jetbrains.android" },
+    { "name": "com.android.tools.idea.updater.AndroidSdkUpdaterPlugin", "duration": 74, "start": 9124, "end": 9199, "thread": "edt", "plugin": "org.jetbrains.android" },
+    { "name": "Other", "duration": 106, "start": 9199, "end": 9208 }
+  ],
+  "appExtensions": [
+    { "name": "com.intellij.openapi.fileTypes.FileTypeFactory", "duration": 35, "start": 7891, "end": 7926, "thread": "edt" },
+    { "name": "org.jetbrains.plugins.groovy.extensions.GroovyScriptTypeDetector", "duration": 16, "start": 7967, "end": 7984, "thread": "edt" },
+    { "name": "com.intellij.psi.compiled.ClassFileDecompilers$Decompiler", "duration": 246, "start": 8971, "end": 9217, "thread": "IndexInfrastructure Pool" },
+    { "name": "com.intellij.openapi.editor.actionSystem.EditorActionHandlerBean", "duration": 58, "start": 10556, "end": 10614, "thread": "Preloader Pool" },
+    { "name": "com.intellij.debugger.streams.lib.LibrarySupportProvider", "duration": 73, "start": 11936, "end": 12010, "thread": "Preloader Pool" },
+    { "name": "com.intellij.codeInsight.editorActions.TypedHandlerDelegate", "duration": 128, "start": 12091, "end": 12220, "thread": "Preloader Pool" },
+    { "name": "com.intellij.codeInspection.LocalInspectionEP", "duration": 13, "start": 12317, "end": 12331, "thread": "Preloader Pool" },
+    { "name": "com.intellij.tasks.TaskRepositoryType", "duration": 13, "start": 13015, "end": 13029, "thread": "Preloader Pool" },
+    { "name": "com.intellij.ide.scratch.RootType", "duration": 14, "start": 15967, "end": 15981, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "com.intellij.xdebugger.breakpoints.XBreakpointType", "duration": 17, "start": 31094, "end": 31111, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "com.intellij.codeHighlighting.TextEditorHighlightingPassFactoryRegistrar", "duration": 20, "start": 31182, "end": 31203, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "com.intellij.psi.codeStyle.LanguageCodeStyleSettingsProvider", "duration": 13, "start": 31253, "end": 31266, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "com.intellij.ide.actions.runAnything.activity.RunAnythingProvider", "duration": 17, "start": 31502, "end": 31520, "thread": "edt" },
+    { "name": "com.intellij.openapi.wm.ToolWindowEP", "duration": 15, "start": 31971, "end": 31986, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "com.intellij.codeInspection.ex.InspectionElementsMerger", "duration": 55, "start": 32123, "end": 32179, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "com.intellij.codeInspection.naming.NamingConvention", "duration": 14, "start": 32133, "end": 32147, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "com.intellij.lang.LanguageExtensionPoint", "duration": 11, "start": 33152, "end": 33163, "thread": "pooled 8" },
+    { "name": "com.intellij.openapi.vcs.VcsRootChecker", "duration": 11, "start": 33252, "end": 33263, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "com.intellij.ide.IconProvider", "duration": 25, "start": 33630, "end": 33655, "thread": "1.Invoker.Background.Thread: com.intellij.ide.projectView.impl.ProjectViewPane$ProjectViewPaneTreeStructure@219bb0b5 @ AsyncProjectViewSupport.java : 54" },
+    { "name": "com.intellij.testIntegration.TestFramework", "duration": 16, "start": 33655, "end": 33672, "thread": "1.Invoker.Background.Thread: com.intellij.ide.projectView.impl.ProjectViewPane$ProjectViewPaneTreeStructure@219bb0b5 @ AsyncProjectViewSupport.java : 54" }
+  ],
+  "appOptionsTopHitProviders": [
+    { "name": "com.intellij.codeInsight.intention.impl.config.IntentionsOptionsTopHitProvider", "duration": 793, "start": 9254, "end": 10047, "thread": "Preloader Pool", "plugin": "com.intellij" },
+    { "name": "com.intellij.codeInsight.template.impl.LiveTemplatesOptionsTopHitProvider", "duration": 82, "start": 10047, "end": 10130, "thread": "Preloader Pool", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.EditorOptionsTopHitProvider", "duration": 199, "start": 10132, "end": 10331, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.EditorSmartKeysOptionsTopHitProvider", "duration": 34, "start": 10333, "end": 10367, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.EditorTabsOptionsTopHitProvider", "duration": 500, "start": 10368, "end": 10869, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.CodeFoldingOptionsTopHitProvider", "duration": 36, "start": 10871, "end": 10908, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "org.intellij.images.options.impl.ImagesOptionsTopHitProvider", "duration": 132, "start": 10909, "end": 11042, "thread": "edt", "plugin": "com.intellij" }
+  ],
+  "appServices": [
+    { "name": "com.intellij.configurationStore.ApplicationStoreImpl", "duration": 18, "start": 7648, "end": 7667, "thread": "edt" },
+    { "name": "com.intellij.openapi.progress.impl.ProgressManagerImpl", "duration": 20, "start": 7671, "end": 7692, "thread": "edt" },
+    { "name": "com.intellij.openapi.editor.impl.EditorActionManagerImpl", "duration": 165, "start": 8086, "end": 8251, "thread": "edt" },
+    { "name": "com.intellij.internal.statistic.collectors.fus.actions.persistence.ActionsCollectorImpl", "duration": 31, "start": 8099, "end": 8131, "thread": "edt" },
+    { "name": "com.intellij.openapi.keymap.impl.DefaultKeymap", "duration": 10, "start": 8101, "end": 8111, "thread": "edt" },
+    { "name": "com.android.tools.idea.gradle.project.sync.GradleSyncInvoker", "duration": 27, "start": 9095, "end": 9123, "thread": "edt" },
+    { "name": "com.android.tools.idea.gradle.project.sync.precheck.PreSyncChecks", "duration": 20, "start": 9103, "end": 9123, "thread": "edt" },
+    { "name": "com.intellij.openapi.updateSettings.impl.UpdateSettings", "duration": 62, "start": 9132, "end": 9195, "thread": "edt" },
+    { "name": "com.intellij.util.xml.impl.DomApplicationComponent", "duration": 17, "start": 9218, "end": 9235, "thread": "IndexInfrastructure Pool" },
+    { "name": "com.intellij.codeInsight.intention.impl.config.IntentionManagerSettings", "duration": 790, "start": 9255, "end": 10045, "thread": "Preloader Pool" },
+    { "name": "com.intellij.ide.ui.search.SearchableOptionsRegistrarImpl", "duration": 10, "start": 9270, "end": 9280, "thread": "Intentions Loader" },
+    { "name": "com.intellij.diagnostic.GcPauseWatcher", "duration": 12, "start": 9312, "end": 9324, "thread": "edt" },
+    { "name": "com.intellij.openapi.editor.colors.impl.EditorColorsManagerImpl", "duration": 67, "start": 9817, "end": 9885, "thread": "pooled 4" },
+    { "name": "com.intellij.openapi.editor.colors.ex.DefaultColorSchemesManager", "duration": 31, "start": 9829, "end": 9861, "thread": "pooled 4" },
+    { "name": "com.intellij.codeInsight.template.impl.TemplateSettings", "duration": 79, "start": 10049, "end": 10129, "thread": "Preloader Pool" },
+    { "name": "com.intellij.ide.scratch.ScratchFileServiceImpl", "duration": 23, "start": 15962, "end": 15985, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "com.intellij.openapi.externalSystem.service.project.manage.ProjectDataManagerImpl", "duration": 12, "start": 32302, "end": 32314, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "com.intellij.openapi.externalSystem.service.ExternalSystemFacadeManager", "duration": 19, "start": 32332, "end": 32352, "thread": "edt" }
+  ],
+  "preloadActivities": [
+    { "name": "com.intellij.ide.ui.OptionsTopHitProvider$Activity", "duration": 909, "start": 9222, "end": 10132, "thread": "Preloader Pool" },
+    { "name": "com.intellij.openapi.actionSystem.impl.ActionPreloader", "duration": 2087, "start": 10132, "end": 12220, "thread": "Preloader Pool" },
+    { "name": "com.intellij.ide.ui.search.SearchableOptionPreloader", "duration": 813, "start": 12220, "end": 13033, "thread": "Preloader Pool" },
+    { "name": "com.intellij.codeInsight.completion.CompletionPreloader", "duration": 179, "start": 13033, "end": 13213, "thread": "Preloader Pool" },
+    { "name": "Other", "duration": 5, "start": 13213, "end": 13218 }
+  ],
+  "prepareAppInitActivities": [
+    { "name": "init AWT Toolkit", "duration": 0, "start": 582, "end": 582, "thread": "edt" },
+    { "name": "init default LaF", "duration": 327, "start": 582, "end": 909, "thread": "edt" },
+    { "name": "splash initialization", "duration": 209, "start": 910, "end": 1119, "thread": "edt" },
+    { "name": "setup system libs", "duration": 3, "start": 945, "end": 949, "thread": "pooled 3" },
+    { "name": "fix process env", "duration": 2, "start": 949, "end": 951, "thread": "pooled 3" },
+    { "name": "load system libs", "duration": 47, "start": 951, "end": 998, "thread": "pooled 5" },
+    { "name": "configure html kit", "duration": 32, "start": 1119, "end": 1151, "thread": "edt" },
+    { "name": "init system font data", "duration": 1, "start": 1152, "end": 1153, "thread": "pooled 4" },
+    { "name": "update frame class", "duration": 10, "start": 1159, "end": 1169, "thread": "pooled 4" },
+    { "name": "update window icon", "duration": 435, "start": 1159, "end": 1594, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "plugin initialization", "duration": 393, "start": 6674, "end": 7068, "thread": "idea main" },
+    { "name": "plugin descriptors loading", "duration": 307, "start": 6692, "end": 6999, "thread": "idea main" },
+    { "name": "app extension registration", "duration": 26, "start": 7068, "end": 7094, "thread": "idea main" },
+    { "name": "app component registration", "duration": 465, "start": 7096, "end": 7561, "thread": "idea main" },
+    { "name": "init system properties", "duration": 1, "start": 7096, "end": 7098, "thread": "pooled 8" },
+    { "name": "add registry keys", "duration": 225, "start": 7098, "end": 7323, "thread": "pooled 8" },
+    { "name": "add message bus listeners", "duration": 0, "start": 7323, "end": 7323, "thread": "pooled 8" }
+  ],
+  "projectComponents": [
+    { "name": "com.intellij.openapi.wm.impl.ToolWindowManagerImpl", "duration": 10, "start": 30883, "end": 30893, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vcs.changes.ChangeListManagerImpl", "duration": 27, "start": 30915, "end": 30986, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vcs.changes.ChangesViewManager", "duration": 43, "start": 30919, "end": 30962, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vcs.changes.shelf.ShelvedChangesViewManager", "duration": 15, "start": 30997, "end": 31012, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69", "plugin": "com.intellij" },
+    { "name": "com.intellij.codeInsight.daemon.impl.DaemonListeners", "duration": 15, "start": 31023, "end": 31038, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69", "plugin": "com.intellij" },
+    { "name": "com.intellij.codeInsight.navigation.CtrlMouseHandler", "duration": 10, "start": 31040, "end": 31050, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69", "plugin": "com.intellij" },
+    { "name": "com.intellij.xdebugger.impl.XDebuggerManagerImpl", "duration": 60, "start": 31060, "end": 31121, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69", "plugin": "com.intellij" },
+    { "name": "org.jetbrains.kotlin.idea.highlighter.KotlinBeforeResolveHighlightingPass$Factory", "duration": 26, "start": 31181, "end": 31208, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69", "plugin": "org.jetbrains.kotlin" },
+    { "name": "org.jetbrains.kotlin.idea.configuration.ui.KotlinConfigurationCheckerComponent", "duration": 45, "start": 31222, "end": 31268, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69", "plugin": "org.jetbrains.kotlin" },
+    { "name": "com.android.tools.idea.gradle.project.AndroidGradleProjectComponent", "duration": 17, "start": 31275, "end": 31292, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69", "plugin": "org.jetbrains.android" },
+    { "name": "Other", "duration": 157, "start": 31297, "end": 31306 }
+  ],
+  "projectExtensions": [
+    { "name": "com.intellij.psi.search.scope.packageSet.CustomScopesProvider", "duration": 22, "start": 31972, "end": 31995, "thread": "pooled 8" },
+    { "name": "com.intellij.ide.projectView.impl.AbstractProjectViewPane", "duration": 25, "start": 33378, "end": 33403, "thread": "edt" },
+    { "name": "com.intellij.ide.projectView.TreeStructureProvider", "duration": 41, "start": 33548, "end": 33590, "thread": "1.Invoker.Background.Thread: com.intellij.ide.projectView.impl.ProjectViewPane$ProjectViewPaneTreeStructure@219bb0b5 @ AsyncProjectViewSupport.java : 54" },
+    { "name": "com.intellij.ide.projectView.ProjectViewNodeDecorator", "duration": 10, "start": 33699, "end": 33710, "thread": "1.Invoker.Background.Thread: com.intellij.ide.projectView.impl.ProjectViewPane$ProjectViewPaneTreeStructure@219bb0b5 @ AsyncProjectViewSupport.java : 54" },
+    { "name": "com.intellij.openapi.vcs.changes.VcsIgnoredFilesHolder$Provider", "duration": 37, "start": 33743, "end": 33781, "thread": "ChangeListManagerImpl Pool" },
+    { "name": "com.intellij.vcs.log.VcsLogProvider", "duration": 41, "start": 33866, "end": 33908, "thread": "Alarm Pool" }
+  ],
+  "projectOpenHandlers": [
+    { "name": "com.intellij.openapi.vcs.changes.ChangesViewManager", "duration": 113, "start": 31666, "end": 31779, "thread": "edt" },
+    { "name": "com.android.tools.idea.editors.theme.AndroidThemePreviewToolWindowManager", "duration": 40, "start": 31807, "end": 31848, "thread": "edt", "plugin": "org.jetbrains.android" },
+    { "name": "Other", "duration": 30, "start": 31848, "end": 31848 }
+  ],
+  "projectOptionsTopHitProviders": [
+    { "name": "com.intellij.ui.tabs.FileColorsOptionsTopHitProvider", "duration": 48, "start": 31969, "end": 32018, "thread": "pooled 8", "plugin": "com.intellij" },
+    { "name": "com.intellij.ide.ui.InspectionsTopHitProvider", "duration": 192, "start": 32019, "end": 32211, "thread": "pooled 8", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vcs.configurable.VcsOptionsTopHitProvider", "duration": 11, "start": 32218, "end": 32229, "thread": "pooled 8", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.EditorOptionsTopHitProvider", "duration": 27, "start": 33142, "end": 33170, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.EditorSmartKeysOptionsTopHitProvider", "duration": 19, "start": 33276, "end": 33296, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.EditorTabsOptionsTopHitProvider", "duration": 43, "start": 33551, "end": 33594, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.CodeFoldingOptionsTopHitProvider", "duration": 17, "start": 33706, "end": 33724, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.AutoImportOptionsTopHitProvider", "duration": 67, "start": 33741, "end": 33808, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "org.intellij.images.options.impl.ImagesOptionsTopHitProvider", "duration": 29, "start": 33831, "end": 33861, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.uiDesigner.GuiDesignerOptionsTopHitProvider", "duration": 34, "start": 33904, "end": 33939, "thread": "edt", "plugin": "com.intellij.uiDesigner" }
+  ],
+  "projectPostStartupActivities": [
+    { "name": "com.intellij.openapi.vcs.impl.ModuleVcsDetector$$special$$inlined$with$lambda$1", "duration": 77, "start": 31855, "end": 31932, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.wm.impl.ToolWindowManagerImpl$InitToolWindowsActivity", "duration": 20, "start": 31971, "end": 31991, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69", "plugin": "com.intellij" },
+    { "name": "com.intellij.profile.codeInspection.ProjectInspectionProfileManager$ProjectInspectionProfileStartUpActivity", "duration": 203, "start": 32007, "end": 32210, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.externalSystem.service.ExternalSystemStartupActivity", "duration": 71, "start": 32229, "end": 32300, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.externalSystem.service.project.manage.ReprocessContentRootDataActivity", "duration": 20, "start": 32301, "end": 32322, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69", "plugin": "com.intellij" },
+    { "name": "git4idea.conflicts.GitConflictsToolWindowManager$Starter", "duration": 11, "start": 32336, "end": 32348, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69", "plugin": "Git4Idea" },
+    { "name": "org.jetbrains.plugins.groovy.mvc.MvcProjectWithoutLibraryNotificator", "duration": 49, "start": 32359, "end": 32408, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69", "plugin": "org.intellij.groovy" },
+    { "name": "org.jetbrains.kotlin.idea.framework.CreateKotlinSdkActivity", "duration": 640, "start": 32426, "end": 33066, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69", "plugin": "org.jetbrains.kotlin" },
+    { "name": "org.jetbrains.plugins.groovy.mvc.MvcModuleStructureSynchronizer$$Lambda$1157/0x00000001013d2040", "duration": 11, "start": 33201, "end": 33213, "thread": "edt", "plugin": "org.intellij.groovy" }
+  ],
+  "projectServices": [
+    { "name": "com.intellij.codeInsight.daemon.impl.TextEditorHighlightingPassRegistrarImpl", "duration": 25, "start": 31182, "end": 31207, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "com.android.tools.idea.gradle.project.build.invoker.GradleBuildInvoker", "duration": 11, "start": 31279, "end": 31290, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "com.intellij.execution.impl.RunManagerImpl", "duration": 19, "start": 31322, "end": 31341, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "git4idea.config.GitVcsSettings", "duration": 12, "start": 31896, "end": 31908, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "com.intellij.ui.tabs.FileColorManagerImpl", "duration": 48, "start": 31970, "end": 32018, "thread": "pooled 8" },
+    { "name": "com.intellij.execution.services.ServiceViewManagerImpl", "duration": 10, "start": 32046, "end": 32057, "thread": "edt" },
+    { "name": "com.intellij.execution.dashboard.RunDashboardManagerImpl", "duration": 16, "start": 32058, "end": 32074, "thread": "0.Invoker.Background.Thread: com.intellij.execution.services.ServiceModel@3ac62329" },
+    { "name": "com.intellij.openapi.externalSystem.service.project.manage.ExternalProjectsManagerImpl", "duration": 16, "start": 32231, "end": 32247, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "com.intellij.openapi.roots.impl.libraries.ProjectLibraryTableImpl", "duration": 12, "start": 32335, "end": 32348, "thread": "pooled 8" },
+    { "name": "org.jetbrains.kotlin.idea.compiler.configuration.KotlinCompilerSettings", "duration": 352, "start": 32439, "end": 32792, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder", "duration": 190, "start": 32793, "end": 32983, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "org.jetbrains.kotlin.idea.compiler.configuration.Kotlin2JvmCompilerArgumentsHolder", "duration": 47, "start": 32988, "end": 33036, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "com.intellij.util.xml.impl.DomManagerImpl", "duration": 38, "start": 33310, "end": 33349, "thread": "pooled 11" },
+    { "name": "com.intellij.ide.projectView.impl.ProjectViewImpl", "duration": 27, "start": 33349, "end": 33376, "thread": "edt" }
+  ],
+  "totalDurationComputed": 12185,
+  "totalDurationActual": 33074
+}
+=== Stop: StartUp Measurement === 
+2019-10-29 08:44:26,130 [  34313]   INFO - .diagnostic.PerformanceWatcher - Unindexed files update took 2432ms; general responsiveness: ok; EDT responsiveness: 1/2 sluggish 
+2019-10-29 08:44:26,130 [  34313]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: initial refresh 
+2019-10-29 08:44:26,133 [  34316]   INFO - tellij.diagnostic.LoadingPhase - Reached INDEXING_FINISHED loading phase 
+2019-10-29 08:44:26,133 [  34316]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2019-10-29 08:44:26,138 [  34321]   INFO - g.FileBasedIndexProjectHandler - Has changed files: false; project=Project '/home/cp/Development/tools/cloud-simulator' cloud-simulator 
+2019-10-29 08:44:26,190 [  34373]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRepositoryFileCacheImpl$PruneTask@2920f02d 
+2019-10-29 08:44:26,205 [  34388]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRepositoryFileCacheImpl$ManageLruProjectFilesTask@ac44933 
+2019-10-29 08:44:26,228 [  34411]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2019-10-29 08:44:26,229 [  34412]   INFO - g.FileBasedIndexProjectHandler - Has changed files: false; project=Project '/home/cp/Development/tools/cloud-simulator' cloud-simulator 
+2019-10-29 08:44:26,246 [  34429]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRegistry$PopulateCachesTask@1712fab1 
+2019-10-29 08:44:26,439 [  34622]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2019-10-29 08:44:26,441 [  34624]   INFO - g.FileBasedIndexProjectHandler - Has changed files: false; project=Project '/home/cp/Development/tools/cloud-simulator' cloud-simulator 
+2019-10-29 08:44:29,143 [  37326]   INFO - ings.impl.UpdateCheckerService - channel: release 
+2019-10-29 08:44:29,146 [  37329]   WARN - .intellij.diagnostic.VMOptions - VM options file not configured 
+2019-10-29 08:44:29,147 [  37330]   INFO - gnostic.MemorySizeConfigurator - Physical memory 31787M, minimum memory size 256M, -Xmx adjusted from 512M to 2048M 
+2019-10-29 08:44:29,783 [  37966]   INFO - CompilerWorkspaceConfiguration - Available processors: 12 
+2019-10-29 08:44:43,178 [  51361]   WARN - com.intellij.util.xmlb.Binding - no accessors for class org.jetbrains.kotlin.idea.highlighter.KotlinDefaultHighlightingSettingsProvider 
+2019-10-29 08:45:19,351 [  87534]   INFO - rationStore.ComponentStoreImpl - Saving appDebuggerSettings took 14 ms 
+2019-10-29 08:45:19,573 [  87756]   INFO - mponents.impl.stores.StoreUtil - saveProjectsAndApp took 353 ms 
+2019-10-29 08:46:35,212 [ 163395]   INFO - il.indexing.FileBasedIndexImpl - START INDEX SHUTDOWN 
+2019-10-29 08:46:35,244 [ 163427]   INFO - il.indexing.FileBasedIndexImpl - END INDEX SHUTDOWN 
+2019-10-29 08:46:35,244 [ 163427]   INFO - stubs.SerializationManagerImpl - START StubSerializationManager SHUTDOWN 
+2019-10-29 08:46:35,244 [ 163427]   INFO - stubs.SerializationManagerImpl - END StubSerializationManager SHUTDOWN 
+2019-10-29 08:46:35,245 [ 163428]   INFO - newvfs.persistent.PersistentFS - VFS dispose started 
+2019-10-29 08:46:35,245 [ 163428]   INFO - newvfs.persistent.PersistentFS - VFS dispose completed 
+2019-10-29 08:46:35,245 [ 163428]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
+2019-10-29 08:46:35,247 [ 163430]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2019-10-29 08:46:38,372 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2019-10-29 08:46:38,429 [     57]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 29 ms 
+2019-10-29 08:46:38,445 [     73]   INFO -        #com.intellij.idea.Main - IDE: IntelliJ IDEA (build #IC-192.6817.14, 24 Sep 2019 06:39) 
+2019-10-29 08:46:38,445 [     73]   INFO -        #com.intellij.idea.Main - OS: Linux (4.15.0-66-generic, amd64) 
+2019-10-29 08:46:38,445 [     73]   INFO -        #com.intellij.idea.Main - JRE: 11.0.4+10-b304.69 (JetBrains s.r.o) 
+2019-10-29 08:46:38,445 [     73]   INFO -        #com.intellij.idea.Main - JVM: 11.0.4+10-b304.69 (OpenJDK 64-Bit Server VM) 
+2019-10-29 08:46:38,445 [     73]   INFO -        #com.intellij.idea.Main - JVM Args: -Didea.classpath.index.enabled=false -Didea.config.path=/home/cp/Development/tools/assertj-intellij/build/idea-sandbox/config -Didea.is.internal=true -Didea.platform.prefix=Idea -Didea.plugins.path=/home/cp/Development/tools/assertj-intellij/build/idea-sandbox/plugins -Didea.required.plugins.id=com.cprohinig.assertj-generator-idea -Didea.system.path=/home/cp/Development/tools/assertj-intellij/build/idea-sandbox/system -Dsun.awt.disablegrab=true -Xms256m -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -ea -agentpath:/opt/dynatrace/oneagent/agent/lib64/liboneagentloader.so=loglevelcon=none,tenant=1,tenanttoken=1,server=http://localhost:8020/communication;https://172.23.249.63:9999/communication 
+2019-10-29 08:46:38,445 [     73]   INFO -        #com.intellij.idea.Main - charsets: JNU=UTF-8 file=UTF-8 
+2019-10-29 08:46:38,770 [    398]   INFO - tellij.diagnostic.LoadingPhase - Reached SPLASH loading phase 
+2019-10-29 08:46:38,782 [    410]   INFO - plication.impl.ApplicationImpl - CPU cores: 12; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@408f22c9[Running, parallelism = 11, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@4b0a4c6 
+2019-10-29 08:46:38,838 [    466]   INFO - .intellij.idea.IdeaApplication - WM detected: Mutter (Muffin) 
+2019-10-29 08:46:38,937 [    565]   INFO - llij.ide.plugins.PluginManager - Cannot find optional descriptor duplicates-groovy.xml 
+2019-10-29 08:46:38,937 [    565]   INFO - llij.ide.plugins.PluginManager - Cannot find optional descriptor duplicates-detection-groovy.xml 
+2019-10-29 08:46:38,999 [    627]   INFO - llij.ide.plugins.PluginManager - Cannot find optional descriptor profiler-java.xml 
+2019-10-29 08:46:39,092 [    720]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: Android Support (10.3.4), Ant (192.6817.14), Bytecode Viewer (192.6817.14), ChangeReminder (192.6817.14), Configuration Script (192.6817.14), Copyright (192.6817.14), Coverage (192.6817.14), Eclipse Interoperability (192.6817.14), EditorConfig (192.6817.14), Git (192.6817.14), GitHub (192.6817.14), Gradle (192.6817.14), Gradle-Maven (192.6817.14), Groovy (192.6817.14), IDEA CORE (192.6817.14), IntelliLang (192.6817.14), JUnit (192.6817.14), Java (192.6817.14), Java Bytecode Decompiler (192.6817.14), Java IDE Customization (192.6817.14), Java Internationalization (192.6817.14), Java Stream Debugger (192.6817.14), JavaFX (192.6817.14), Kotlin (1.3.41-release-IJ2019.2-1), Machine Learning Code Completion (192.6817.14), Markdown (192.6817.14), Maven (192.6817.14), Mercurial (192.6817.14), Plugin DevKit (192.6817.14), Properties (192.6817.14), Settings Repository (192.6817.14), Shell Script (192.6817.14), Smali Support (192.6817.14), Subversion (192.6817.14), Task Management (192.6817.14), Terminal (192.6817.14), TestNG (192.6817.14), TextMate bundles (192.6817.14), UI Designer (192.6817.14), XPathView + XSLT (192.6817.14), XSLT Debugger (192.6817.14), YAML (192.6817.14) 
+2019-10-29 08:46:39,092 [    720]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: Plugin display name here (1.0-SNAPSHOT) 
+2019-10-29 08:46:39,433 [   1061]   INFO - tellij.diagnostic.LoadingPhase - Reached CONFIGURATION_STORE_INITIALIZED loading phase 
+2019-10-29 08:46:39,495 [   1123]   INFO - pi.util.registry.RegistryState - Registry values changed by user: 
+2019-10-29 08:46:39,495 [   1123]   INFO - pi.util.registry.RegistryState -   java.completion.argument.hints.internal = false 
+2019-10-29 08:46:39,508 [   1136]   INFO - pi.util.registry.RegistryState - Experimental features enabled for user: inline.browse.button, linux.native.menu, recent.and.edited.files.together, show.create.new.element.in.popup, new.large.text.file.viewer, property.value.inplace.editing 
+2019-10-29 08:46:39,537 [   1165]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=492; buffer=10; max=492 
+2019-10-29 08:46:39,581 [   1209]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: /home/cp/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2019.2.3/654e395e5806d1f0a4741d2f324e48012be56949/ideaIC-2019.2.3/bin/linux/fsnotifier64 
+2019-10-29 08:46:39,593 [   1221]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2019-10-29 08:46:40,070 [   1698]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2019-10-29 08:46:40,073 [   1701]   WARN - j.internal.DebugAttachDetector - Unable to start DebugAttachDetector, please add `--add-exports=java.base/jdk.internal.vm=ALL-UNNAMED` to VM options 
+2019-10-29 08:46:40,080 [   1708]   INFO - tellij.ide.SystemHealthMonitor - restored ignored PIPE handler 
+2019-10-29 08:46:40,100 [   1728]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63343 
+2019-10-29 08:46:40,337 [   1965]   INFO - il.indexing.FileBasedIndexImpl - File index extensions iterated:121 
+2019-10-29 08:46:40,602 [   2230]   INFO - tellij.diagnostic.LoadingPhase - Reached FRAME_SHOWN loading phase 
+2019-10-29 08:46:40,939 [   2567]   INFO - penapi.wm.impl.GlobalMenuLinux - Closed dbus-service 'com.canonical.AppMenu.Registrar' 
+2019-10-29 08:46:41,085 [   2713]   INFO - pl$FileIndexDataInitialization - Initialization done:870 
+2019-10-29 08:46:41,087 [   2715]   INFO - penapi.wm.impl.GlobalMenuLinux - created instance of GlobalMenuLinux for xid=0x7600026 
+2019-10-29 08:46:41,151 [   2779]   INFO - exImpl$StubIndexInitialization - Initialization done:65 
+2019-10-29 08:46:41,471 [   3099]   INFO - j.ide.ui.OptionsTopHitProvider - 987 ms spent to cache options in application 
+2019-10-29 08:46:42,037 [   3665]   INFO - pl.projectlevelman.NewMappings - VCS Root: [Git] - [<Project>] 
+2019-10-29 08:46:42,341 [   3969]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=12, fontScale=1.0; restored: fontSize=12, fontScale=1.0 
+2019-10-29 08:46:42,910 [   4538]   INFO - j.ide.script.IdeStartupScripts - 0 startup script(s) found 
+2019-10-29 08:46:43,026 [   4654]   INFO - rojectCodeStyleSettingsManager - Initialized from default code style settings. 
+2019-10-29 08:46:44,031 [   5659]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: com.intellij.util.indexing.UnindexedFilesUpdater@69405003 
+2019-10-29 08:46:44,198 [   5826]   INFO - ge.ExternalProjectsDataStorage - Load external projects data in 4 millis (read time: 1) 
+2019-10-29 08:46:44,517 [   6145]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 481ms; general responsiveness: ok; EDT responsiveness: ok 
+2019-10-29 08:46:44,644 [   6272]   INFO - j.ide.ui.OptionsTopHitProvider - 893 ms spent to cache options in project 
+2019-10-29 08:46:44,696 [   6324]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 176ms; general responsiveness: ok; EDT responsiveness: ok 
+2019-10-29 08:46:44,700 [   6328]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: initial refresh 
+2019-10-29 08:46:44,706 [   6334]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2019-10-29 08:46:44,715 [   6343]   INFO - g.FileBasedIndexProjectHandler - Has changed files: false; project=Project '/home/cp/Development/tools/cloud-simulator' cloud-simulator 
+2019-10-29 08:46:44,964 [   6592]   INFO - .diagnostic.PerformanceWatcher - Post-startup activities under progress took 1230ms; general responsiveness: ok; EDT responsiveness: ok 
+2019-10-29 08:46:45,092 [   6720]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRepositoryFileCacheImpl$PruneTask@3ccbcaab 
+2019-10-29 08:46:45,166 [   6794]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRepositoryFileCacheImpl$ManageLruProjectFilesTask@c4cb2f7 
+2019-10-29 08:46:45,215 [   6843]   INFO - tartup.impl.StartupManagerImpl - /home/cp/Development/tools/cloud-simulator/.idea case-sensitivity: expected=true actual=true 
+2019-10-29 08:46:45,243 [   6871]   INFO -  #git4idea.commands.GitHandler - [.] git version 
+2019-10-29 08:46:45,246 [   6874]   INFO - tellij.diagnostic.LoadingPhase - Reached PROJECT_OPENED loading phase 
+2019-10-29 08:46:45,252 [   6880]   INFO -  #git4idea.commands.GitHandler - git version 2.17.1 
+2019-10-29 08:46:45,265 [   6893]   INFO - ea.config.GitExecutableManager - Git version for /usr/bin/git : 2.17.1 
+2019-10-29 08:46:45,284 [   6912]   INFO - pl.projectlevelman.NewMappings - Mapped Roots: 1 
+2019-10-29 08:46:45,324 [   6952]   INFO - tellij.diagnostic.LoadingPhase - Reached INDEXING_FINISHED loading phase 
+2019-10-29 08:46:45,324 [   6952]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2019-10-29 08:46:45,325 [   6953]   INFO - g.FileBasedIndexProjectHandler - Has changed files: false; project=Project '/home/cp/Development/tools/cloud-simulator' cloud-simulator 
+2019-10-29 08:46:45,630 [   7258]   INFO - tor.impl.FileEditorManagerImpl - Project opening took 4129 ms 
+2019-10-29 08:46:45,998 [   7626]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRegistry$PopulateCachesTask@48b08839 
+2019-10-29 08:46:46,265 [   7893]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2019-10-29 08:46:46,266 [   7894]   INFO - g.FileBasedIndexProjectHandler - Has changed files: false; project=Project '/home/cp/Development/tools/cloud-simulator' cloud-simulator 
+2019-10-29 08:46:46,587 [   8215]   INFO - lij.diagnostic.StartUpMeasurer - === Start: StartUp Measurement ===
+{
+  "version": "7",
+  "stats": { "plugin": 43, "component": { "app": 68, "project": 135, "module": 5 }, "service": { "app": 480, "project": 507, "module": 20 }, "loadedClasses": { "Subversion": 66, "XPathView": 58, "XSLT-Debugger": 2, "com.android.tools.idea.smali": 5, "com.intellij.java": 1269, "ByteCodeViewer": 2, "Git4Idea": 314, "JUnit": 3, "com.cprohinig.assertj-generator-idea": 1, "com.intellij.configurationScript": 8, "com.intellij.copyright": 8, "com.intellij.java.ide": 1, "com.intellij.properties": 51, "AntSupport": 16, "com.intellij.java-i18n": 9, "TestNG-J": 4, "com.intellij.stats.completion": 32, "com.intellij.tasks": 100, "com.intellij.uiDesigner": 87, "com.jetbrains.changeReminder": 35, "hg4idea": 95, "org.editorconfig.editorconfigjetbrains": 56, "org.intellij.intelliLang": 5, "org.intellij.groovy": 498, "org.intellij.plugins.markdown": 49, "org.jetbrains.debugger.streams": 129, "org.jetbrains.idea.eclipse": 6, "org.jetbrains.idea.maven": 211, "org.jetbrains.java.decompiler": 7, "org.jetbrains.plugins.github": 25, "org.jetbrains.plugins.gradle": 57, "DevKit": 44, "org.jetbrains.kotlin": 2652, "org.jetbrains.android": 1262, "org.jetbrains.plugins.gradle.maven": 8, "org.jetbrains.plugins.javaFX": 23, "org.jetbrains.plugins.terminal": 17, "com.jetbrains.sh": 37, "org.jetbrains.plugins.textmate": 119, "org.jetbrains.plugins.yaml": 30, "org.jetbrains.settingsRepository": 37 } },
+  "icons": { "svg": { "count": 107, "loading": 713, "decoding": 697 }, "img": { "count": 14, "loading": 64, "decoding": 57 } },
+  "items": [
+    { "name": "bootstrap", "duration": 320, "start": 0, "end": 320, "thread": "main" },
+    { "name": "startup begin", "duration": 2, "start": 0, "end": 2, "thread": "main" },
+    { "name": "properties loading", "duration": 48, "start": 2, "end": 51, "thread": "main" },
+    { "name": "classloader init", "duration": 86, "start": 51, "end": 137, "thread": "main" },
+    { "name": "MainRunner search", "duration": 182, "start": 137, "end": 320, "thread": "main" },
+    { "name": "app initialization preparation", "duration": 1042, "start": 321, "end": 1363, "thread": "main" },
+    { "name": "load main class", "duration": 10, "start": 326, "end": 337, "thread": "idea main" },
+    { "name": "configure logging", "duration": 17, "start": 598, "end": 615, "thread": "idea main" },
+    { "name": "check system dirs", "duration": 24, "start": 630, "end": 655, "thread": "idea main" },
+    { "name": "lock system dirs", "duration": 263, "start": 655, "end": 919, "thread": "idea main" },
+    { "name": "configure file logger", "duration": 47, "start": 919, "end": 966, "thread": "idea main" },
+    { "name": "start logging", "duration": 17, "start": 966, "end": 984, "thread": "idea main" },
+    { "name": "wait tasks", "duration": 197, "start": 994, "end": 1191, "thread": "idea main" },
+    { "name": "app initialization", "duration": 141, "start": 1363, "end": 1504, "thread": "idea main" },
+    { "name": "patch system", "duration": 69, "start": 1366, "end": 1435, "thread": "edt" },
+    { "name": "create app", "duration": 55, "start": 1440, "end": 1496, "thread": "edt" },
+    { "name": "instantiate AppDelayQueue", "duration": 14, "start": 1480, "end": 1494, "thread": "edt" },
+    { "name": "place on event queue", "duration": 3, "start": 1501, "end": 1504, "thread": "edt" },
+    { "name": "wait plugin initialization", "duration": 464, "start": 1504, "end": 1969, "thread": "edt" },
+    { "name": "app component registered callback", "duration": 54, "start": 1975, "end": 2030, "thread": "edt" },
+    { "name": "app component creation", "duration": 1021, "start": 2043, "end": 3064, "thread": "edt" },
+    { "name": "PersistentFS#FSRecords.connect", "duration": 47, "start": 2116, "end": 2164, "thread": "edt" },
+    { "name": "app initialized callback", "duration": 109, "start": 3066, "end": 3175, "thread": "edt" },
+    { "name": "frame initialization", "duration": 20, "start": 3178, "end": 3198, "thread": "edt" },
+    { "name": "set window manager", "duration": 0, "start": 3190, "end": 3190, "thread": "edt" },
+    { "name": "call appFrameCreated", "duration": 2, "start": 3190, "end": 3192, "thread": "edt" },
+    { "name": "show frame", "duration": 500, "start": 3207, "end": 3707, "thread": "edt" },
+    { "name": "init frame", "duration": 129, "start": 3769, "end": 3899, "thread": "edt" },
+    { "name": "project conversion", "duration": 104, "start": 3986, "end": 4091, "thread": "pooled 7" },
+    { "name": "project instantiation", "duration": 5, "start": 4091, "end": 4096, "thread": "pooled 7" },
+    { "name": "project before loaded callbacks", "duration": 3, "start": 4097, "end": 4101, "thread": "pooled 7" },
+    { "name": "project component registration", "duration": 351, "start": 4101, "end": 4452, "thread": "pooled 7" },
+    { "name": "project component creation", "duration": 852, "start": 4499, "end": 5352, "thread": "pooled 7" },
+    { "name": "module loading", "description": "module count: 1", "duration": 79, "start": 5366, "end": 5446, "thread": "pooled 7" },
+    { "name": "project opened callbacks", "duration": 719, "start": 5477, "end": 6196, "thread": "edt" },
+    { "name": "project pre-startup", "duration": 14, "start": 6197, "end": 6212, "thread": "pooled 7" },
+    { "name": "project startup", "duration": 2, "start": 6212, "end": 6214, "thread": "pooled 7" },
+    { "name": "project post-startup dumb-aware activities", "duration": 1230, "start": 6330, "end": 7560, "thread": "pooled 7" },
+    { "name": "project post-startup edt activities", "duration": 1005, "start": 6335, "end": 7340, "thread": "pooled 7" },
+    { "name": "project post-startup edt activities", "duration": 1333, "start": 7554, "end": 8888, "thread": "pooled 7" },
+    { "name": "project dumb post-startup", "duration": 17, "start": 7814, "end": 7832, "thread": "edt" },
+    { "name": "system dock menu", "duration": 0, "start": 7845, "end": 7845, "thread": "edt" },
+    { "name": "project dumb post-startup", "duration": 0, "start": 8889, "end": 8889, "thread": "edt" }
+  ],
+  "GCs": [
+    { "name": "1", "duration": 10, "start": 6095, "end": 6105, "thread": "pool-1-thread-1" }
+  ],
+  "appComponents": [
+    { "name": "com.intellij.openapi.util.registry.RegistryState", "duration": 61, "start": 2043, "end": 2104, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vfs.newvfs.persistent.PersistentFSImpl", "duration": 59, "start": 2104, "end": 2164, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vfs.PlatformVirtualFileManager", "duration": 27, "start": 2164, "end": 2191, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.project.impl.ProjectManagerImpl", "duration": 25, "start": 2191, "end": 2216, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.fileTypes.impl.FileTypeManagerImpl", "duration": 158, "start": 2216, "end": 2375, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.actionSystem.impl.ActionManagerImpl", "duration": 133, "start": 2380, "end": 2536, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.util.net.HttpConfigurable", "duration": 21, "start": 2511, "end": 2533, "thread": "pooled 4", "plugin": "com.intellij" },
+    { "name": "com.intellij.history.integration.LocalHistoryImpl", "duration": 12, "start": 2544, "end": 2556, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.ide.ui.laf.LafManagerImpl", "duration": 80, "start": 2567, "end": 2648, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.wm.impl.WindowManagerImpl", "duration": 14, "start": 2686, "end": 2704, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.ide.IdeTooltipManager", "duration": 25, "start": 2709, "end": 2734, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.configurationStore.SaveAndSyncHandlerImpl", "duration": 12, "start": 2734, "end": 2747, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.util.indexing.FileBasedIndexImpl", "duration": 58, "start": 2753, "end": 2811, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.psi.stubs.SerializationManagerImpl", "duration": 14, "start": 2821, "end": 2835, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.compiler.server.BuildManager", "duration": 10, "start": 2845, "end": 2856, "thread": "edt", "plugin": "com.intellij.java" },
+    { "name": "com.intellij.stats.sender.SenderComponent", "duration": 11, "start": 2866, "end": 2878, "thread": "edt", "plugin": "com.intellij.stats.completion" },
+    { "name": "com.intellij.stats.completion.CompletionTrackerInitializer", "duration": 10, "start": 2878, "end": 2889, "thread": "edt", "plugin": "com.intellij.stats.completion" },
+    { "name": "org.jetbrains.kotlin.idea.PluginStartupComponent", "duration": 84, "start": 2889, "end": 2973, "thread": "edt", "plugin": "org.jetbrains.kotlin" },
+    { "name": "org.jetbrains.kotlin.idea.JvmPluginStartupComponent", "duration": 19, "start": 2974, "end": 2993, "thread": "edt", "plugin": "org.jetbrains.kotlin" },
+    { "name": "org.jetbrains.android.AndroidPlugin", "duration": 43, "start": 2993, "end": 3037, "thread": "edt", "plugin": "org.jetbrains.android" },
+    { "name": "com.android.tools.idea.updater.AndroidSdkUpdaterPlugin", "duration": 18, "start": 3037, "end": 3056, "thread": "edt", "plugin": "org.jetbrains.android" },
+    { "name": "Other", "duration": 115, "start": 3056, "end": 3064 }
+  ],
+  "appExtensions": [
+    { "name": "com.intellij.openapi.fileTypes.FileTypeFactory", "duration": 48, "start": 2246, "end": 2295, "thread": "edt" },
+    { "name": "com.intellij.psi.compiled.ClassFileDecompilers$Decompiler", "duration": 322, "start": 3259, "end": 3582, "thread": "IndexInfrastructure Pool" },
+    { "name": "com.intellij.codeInsight.template.impl.DefaultLiveTemplatesProvider", "duration": 19, "start": 3945, "end": 3964, "thread": "Preloader Pool" },
+    { "name": "com.intellij.codeInsight.template.TemplateContextType", "duration": 23, "start": 3974, "end": 3998, "thread": "Preloader Pool" },
+    { "name": "com.intellij.conversion.ConverterProvider", "duration": 59, "start": 4001, "end": 4061, "thread": "pooled 7" },
+    { "name": "com.intellij.xdebugger.breakpoints.XBreakpointType", "duration": 17, "start": 5020, "end": 5038, "thread": "pooled 7" },
+    { "name": "com.intellij.codeHighlighting.TextEditorHighlightingPassFactoryRegistrar", "duration": 27, "start": 5188, "end": 5216, "thread": "pooled 7" },
+    { "name": "com.intellij.psi.codeStyle.LanguageCodeStyleSettingsProvider", "duration": 15, "start": 5271, "end": 5286, "thread": "pooled 7" },
+    { "name": "com.intellij.debugger.streams.lib.LibrarySupportProvider", "duration": 143, "start": 6022, "end": 6165, "thread": "Preloader Pool" },
+    { "name": "com.intellij.openapi.wm.ToolWindowEP", "duration": 15, "start": 6353, "end": 6368, "thread": "pooled 7" },
+    { "name": "com.intellij.codeInsight.editorActions.TypedHandlerDelegate", "duration": 159, "start": 6389, "end": 6549, "thread": "Preloader Pool" },
+    { "name": "com.intellij.codeInspection.LocalInspectionEP", "duration": 217, "start": 6403, "end": 6620, "thread": "pooled 11" },
+    { "name": "com.intellij.lang.LanguageExtensionPoint", "duration": 33, "start": 6563, "end": 6596, "thread": "Preloader Pool" },
+    { "name": "com.intellij.codeInspection.ex.InspectionElementsMerger", "duration": 36, "start": 6687, "end": 6723, "thread": "pooled 11" },
+    { "name": "org.jetbrains.kotlin.idea.platform.IdePlatformKindTooling", "duration": 10, "start": 7068, "end": 7079, "thread": "Preloader Pool" },
+    { "name": "com.intellij.tasks.TaskRepositoryType", "duration": 29, "start": 7281, "end": 7310, "thread": "Preloader Pool" },
+    { "name": "com.intellij.codeInsight.completion.CompletionContributorEP", "duration": 24, "start": 7317, "end": 7341, "thread": "Preloader Pool" }
+  ],
+  "appOptionsTopHitProviders": [
+    { "name": "com.intellij.codeInsight.intention.impl.config.IntentionsOptionsTopHitProvider", "duration": 829, "start": 3109, "end": 3939, "thread": "Preloader Pool", "plugin": "com.intellij" },
+    { "name": "com.intellij.codeInsight.template.impl.LiveTemplatesOptionsTopHitProvider", "duration": 121, "start": 3941, "end": 4062, "thread": "Preloader Pool", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.EditorOptionsTopHitProvider", "duration": 115, "start": 7571, "end": 7686, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.EditorSmartKeysOptionsTopHitProvider", "duration": 43, "start": 7847, "end": 7891, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.EditorTabsOptionsTopHitProvider", "duration": 272, "start": 7952, "end": 8225, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.CodeFoldingOptionsTopHitProvider", "duration": 37, "start": 8635, "end": 8672, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "org.intellij.images.options.impl.ImagesOptionsTopHitProvider", "duration": 67, "start": 8958, "end": 9025, "thread": "edt", "plugin": "com.intellij" }
+  ],
+  "appServices": [
+    { "name": "com.intellij.configurationStore.ApplicationStoreImpl", "duration": 10, "start": 2016, "end": 2026, "thread": "edt" },
+    { "name": "com.intellij.openapi.progress.impl.ProgressManagerImpl", "duration": 10, "start": 2030, "end": 2041, "thread": "edt" },
+    { "name": "com.intellij.ide.macro.IdePathMacros", "duration": 23, "start": 2063, "end": 2086, "thread": "edt" },
+    { "name": "com.intellij.ide.RecentProjectsManagerBase", "duration": 19, "start": 2195, "end": 2214, "thread": "edt" },
+    { "name": "com.intellij.openapi.editor.impl.EditorActionManagerImpl", "duration": 158, "start": 2380, "end": 2538, "thread": "edt" },
+    { "name": "com.intellij.internal.statistic.collectors.fus.actions.persistence.ActionsCollectorImpl", "duration": 35, "start": 2387, "end": 2422, "thread": "edt" },
+    { "name": "com.intellij.ide.ui.UISettings", "duration": 15, "start": 2433, "end": 2448, "thread": "edt" },
+    { "name": "com.intellij.ide.ui.NotRoamableUiSettings", "duration": 12, "start": 2433, "end": 2445, "thread": "edt" },
+    { "name": "com.intellij.xdebugger.impl.settings.XDebuggerSettingManagerImpl", "duration": 11, "start": 2981, "end": 2993, "thread": "edt" },
+    { "name": "com.android.tools.idea.gradle.project.sync.GradleSyncInvoker", "duration": 12, "start": 3023, "end": 3036, "thread": "edt" },
+    { "name": "com.intellij.codeInsight.intention.impl.config.IntentionManagerSettings", "duration": 822, "start": 3112, "end": 3935, "thread": "Preloader Pool" },
+    { "name": "com.intellij.diagnostic.GcPauseWatcher", "duration": 11, "start": 3178, "end": 3190, "thread": "edt" },
+    { "name": "com.intellij.util.xml.impl.DomApplicationComponent", "duration": 13, "start": 3584, "end": 3597, "thread": "IndexInfrastructure Pool" },
+    { "name": "com.intellij.codeInsight.template.impl.TemplateSettings", "duration": 117, "start": 3944, "end": 4061, "thread": "Preloader Pool" },
+    { "name": "com.intellij.ide.todo.TodoConfiguration", "duration": 53, "start": 4916, "end": 4970, "thread": "pooled 7" },
+    { "name": "com.intellij.openapi.editor.colors.impl.EditorColorsManagerImpl", "duration": 49, "start": 4918, "end": 4968, "thread": "pooled 7" },
+    { "name": "com.intellij.openapi.editor.colors.ex.DefaultColorSchemesManager", "duration": 18, "start": 4923, "end": 4941, "thread": "pooled 7" },
+    { "name": "com.intellij.openapi.projectRoots.impl.JavaAwareProjectJdkTableImpl", "duration": 38, "start": 5664, "end": 5702, "thread": "edt" },
+    { "name": "com.intellij.openapi.externalSystem.service.ExternalSystemFacadeManager", "duration": 13, "start": 6811, "end": 6825, "thread": "edt" }
+  ],
+  "preloadActivities": [
+    { "name": "com.intellij.ide.ui.OptionsTopHitProvider$Activity", "duration": 987, "start": 3079, "end": 4067, "thread": "Preloader Pool" },
+    { "name": "com.intellij.openapi.actionSystem.impl.ActionPreloader", "duration": 2481, "start": 4067, "end": 6549, "thread": "Preloader Pool" },
+    { "name": "com.intellij.ide.ui.search.SearchableOptionPreloader", "duration": 765, "start": 6549, "end": 7314, "thread": "Preloader Pool" },
+    { "name": "com.intellij.codeInsight.completion.CompletionPreloader", "duration": 308, "start": 7315, "end": 7624, "thread": "Preloader Pool" },
+    { "name": "Other", "duration": 7, "start": 7624, "end": 7632 }
+  ],
+  "prepareAppInitActivities": [
+    { "name": "init AWT Toolkit", "duration": 0, "start": 621, "end": 621, "thread": "edt" },
+    { "name": "init default LaF", "duration": 291, "start": 621, "end": 913, "thread": "edt" },
+    { "name": "splash initialization", "duration": 224, "start": 914, "end": 1139, "thread": "edt" },
+    { "name": "setup system libs", "duration": 2, "start": 990, "end": 993, "thread": "pooled 3" },
+    { "name": "fix process env", "duration": 1, "start": 993, "end": 995, "thread": "pooled 3" },
+    { "name": "load system libs", "duration": 31, "start": 995, "end": 1026, "thread": "pooled 5" },
+    { "name": "configure html kit", "duration": 36, "start": 1139, "end": 1175, "thread": "edt" },
+    { "name": "init system font data", "duration": 1, "start": 1175, "end": 1176, "thread": "pooled 4" },
+    { "name": "update frame class", "duration": 11, "start": 1180, "end": 1191, "thread": "pooled 4" },
+    { "name": "update window icon", "duration": 432, "start": 1180, "end": 1612, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "plugin initialization", "duration": 310, "start": 1363, "end": 1674, "thread": "idea main" },
+    { "name": "plugin descriptors loading", "duration": 253, "start": 1382, "end": 1636, "thread": "idea main" },
+    { "name": "app extension registration", "duration": 13, "start": 1674, "end": 1688, "thread": "idea main" },
+    { "name": "app component registration", "duration": 280, "start": 1689, "end": 1969, "thread": "idea main" },
+    { "name": "init system properties", "duration": 0, "start": 1689, "end": 1689, "thread": "pooled 4" },
+    { "name": "add registry keys", "duration": 163, "start": 1689, "end": 1852, "thread": "pooled 4" },
+    { "name": "add message bus listeners", "duration": 0, "start": 1852, "end": 1852, "thread": "pooled 4" }
+  ],
+  "projectComponents": [
+    { "name": "com.intellij.profile.codeInspection.ProjectInspectionProfileManager", "duration": 30, "start": 4499, "end": 4529, "thread": "pooled 7", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vfs.encoding.EncodingProjectManagerImpl", "duration": 10, "start": 4540, "end": 4550, "thread": "pooled 7", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.wm.impl.ToolWindowManagerImpl", "duration": 14, "start": 4551, "end": 4565, "thread": "pooled 7", "plugin": "com.intellij" },
+    { "name": "com.intellij.psi.impl.PsiManagerImpl", "duration": 16, "start": 4571, "end": 4596, "thread": "pooled 7", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vcs.impl.ProjectLevelVcsManagerImpl", "duration": 28, "start": 4602, "end": 4631, "thread": "pooled 7", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vcs.changes.ChangeListManagerImpl", "duration": 23, "start": 4640, "end": 4773, "thread": "pooled 7", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vcs.changes.ChangesViewManager", "duration": 108, "start": 4643, "end": 4752, "thread": "pooled 7", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vcs.changes.shelf.ShelvedChangesViewManager", "duration": 47, "start": 4784, "end": 4832, "thread": "pooled 7", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.module.impl.ModuleManagerComponent", "duration": 38, "start": 4848, "end": 4886, "thread": "pooled 7", "plugin": "com.intellij" },
+    { "name": "com.intellij.codeInsight.daemon.impl.DaemonCodeAnalyzerImpl", "duration": 17, "start": 4894, "end": 4911, "thread": "pooled 7", "plugin": "com.intellij" },
+    { "name": "com.intellij.codeInsight.daemon.impl.DaemonListeners", "duration": 71, "start": 4911, "end": 4983, "thread": "pooled 7", "plugin": "com.intellij" },
+    { "name": "com.intellij.xdebugger.impl.XDebuggerManagerImpl", "duration": 50, "start": 5003, "end": 5053, "thread": "pooled 7", "plugin": "com.intellij" },
+    { "name": "com.intellij.compiler.CompilerConfigurationImpl", "duration": 10, "start": 5075, "end": 5086, "thread": "pooled 7", "plugin": "com.intellij.java" },
+    { "name": "com.intellij.execution.testDiscovery.TestDiscoveryIndex", "duration": 10, "start": 5104, "end": 5114, "thread": "pooled 7", "plugin": "com.intellij.java" },
+    { "name": "com.intellij.execution.scratch.JavaScratchCompilationSupport", "duration": 11, "start": 5114, "end": 5125, "thread": "pooled 7", "plugin": "com.intellij.java" },
+    { "name": "com.intellij.compiler.backwardRefs.CompilerReferenceServiceImpl", "duration": 11, "start": 5125, "end": 5137, "thread": "pooled 7", "plugin": "com.intellij.java" },
+    { "name": "org.jetbrains.kotlin.idea.highlighter.KotlinBeforeResolveHighlightingPass$Factory", "duration": 36, "start": 5187, "end": 5223, "thread": "pooled 7", "plugin": "org.jetbrains.kotlin" },
+    { "name": "org.jetbrains.kotlin.idea.completion.LookupCancelWatcher", "duration": 11, "start": 5223, "end": 5235, "thread": "pooled 7", "plugin": "org.jetbrains.kotlin" },
+    { "name": "org.jetbrains.kotlin.idea.configuration.ui.KotlinConfigurationCheckerComponent", "duration": 49, "start": 5239, "end": 5289, "thread": "pooled 7", "plugin": "org.jetbrains.kotlin" },
+    { "name": "com.android.tools.idea.gradle.project.AndroidGradleProjectComponent", "duration": 13, "start": 5300, "end": 5313, "thread": "pooled 7", "plugin": "org.jetbrains.android" },
+    { "name": "com.android.tools.idea.res.PsiProjectListener", "duration": 19, "start": 5313, "end": 5333, "thread": "pooled 7", "plugin": "org.jetbrains.android" },
+    { "name": "org.jetbrains.plugins.terminal.TerminalView", "duration": 12, "start": 5339, "end": 5352, "thread": "pooled 7", "plugin": "org.jetbrains.plugins.terminal" },
+    { "name": "Other", "duration": 207, "start": 5339, "end": 5352 }
+  ],
+  "projectExtensions": [
+    { "name": "com.intellij.psi.search.scope.packageSet.CustomScopesProvider", "duration": 20, "start": 6355, "end": 6375, "thread": "pooled 11" },
+    { "name": "com.intellij.vcs.log.VcsLogProvider", "duration": 65, "start": 7328, "end": 7393, "thread": "pooled 4" },
+    { "name": "com.intellij.openapi.vcs.changes.VcsIgnoredFilesHolder$Provider", "duration": 10, "start": 8287, "end": 8297, "thread": "ChangeListManagerImpl Pool" }
+  ],
+  "projectOpenHandlers": [
+    { "name": "com.intellij.openapi.vcs.changes.ChangesViewManager", "duration": 240, "start": 5768, "end": 6009, "thread": "edt" },
+    { "name": "com.intellij.openapi.roots.impl.ProjectRootManagerComponent", "duration": 27, "start": 6013, "end": 6041, "thread": "edt" },
+    { "name": "com.intellij.compiler.backwardRefs.CompilerReferenceServiceImpl", "duration": 15, "start": 6067, "end": 6082, "thread": "edt", "plugin": "com.intellij.java" },
+    { "name": "com.android.tools.idea.editors.theme.AndroidThemePreviewToolWindowManager", "duration": 100, "start": 6095, "end": 6195, "thread": "edt", "plugin": "org.jetbrains.android" },
+    { "name": "Other", "duration": 49, "start": 6196, "end": 6196 }
+  ],
+  "projectOptionsTopHitProviders": [
+    { "name": "com.intellij.ui.tabs.FileColorsOptionsTopHitProvider", "duration": 33, "start": 6353, "end": 6386, "thread": "pooled 11", "plugin": "com.intellij" },
+    { "name": "com.intellij.ide.ui.InspectionsTopHitProvider", "duration": 741, "start": 6386, "end": 7128, "thread": "pooled 11", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vcs.configurable.VcsOptionsTopHitProvider", "duration": 17, "start": 7130, "end": 7148, "thread": "pooled 11", "plugin": "com.intellij" },
+    { "name": "git4idea.config.GitOptionsTopHitProvider", "duration": 78, "start": 7160, "end": 7238, "thread": "pooled 11", "plugin": "Git4Idea" },
+    { "name": "com.intellij.application.options.editor.EditorOptionsTopHitProvider", "duration": 42, "start": 7768, "end": 7810, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.EditorTabsOptionsTopHitProvider", "duration": 16, "start": 8226, "end": 8242, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.CodeFoldingOptionsTopHitProvider", "duration": 12, "start": 8672, "end": 8684, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.AutoImportOptionsTopHitProvider", "duration": 46, "start": 8901, "end": 8947, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "org.intellij.images.options.impl.ImagesOptionsTopHitProvider", "duration": 11, "start": 9026, "end": 9037, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.uiDesigner.GuiDesignerOptionsTopHitProvider", "duration": 27, "start": 9104, "end": 9131, "thread": "edt", "plugin": "com.intellij.uiDesigner" }
+  ],
+  "projectPostStartupActivities": [
+    { "name": "com.intellij.openapi.wm.impl.ToolWindowManagerImpl$InitToolWindowsActivity", "duration": 20, "start": 6353, "end": 6373, "thread": "pooled 7", "plugin": "com.intellij" },
+    { "name": "com.intellij.profile.codeInspection.ProjectInspectionProfileManager$ProjectInspectionProfileStartUpActivity", "duration": 361, "start": 6383, "end": 6745, "thread": "pooled 7", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.externalSystem.service.ExternalSystemStartupActivity", "duration": 54, "start": 6753, "end": 6807, "thread": "pooled 7", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.externalSystem.service.project.manage.ReprocessContentRootDataActivity", "duration": 12, "start": 6807, "end": 6820, "thread": "pooled 7", "plugin": "com.intellij" },
+    { "name": "org.jetbrains.plugins.groovy.mvc.MvcProjectWithoutLibraryNotificator", "duration": 48, "start": 6841, "end": 6889, "thread": "pooled 7", "plugin": "org.intellij.groovy" },
+    { "name": "org.jetbrains.kotlin.idea.framework.CreateKotlinSdkActivity", "duration": 646, "start": 6907, "end": 7553, "thread": "pooled 7", "plugin": "org.jetbrains.kotlin" },
+    { "name": "com.android.tools.idea.gradle.project.sync.GradleFiles$UpdateHashesStartupActivity", "duration": 17, "start": 8865, "end": 8883, "thread": "edt", "plugin": "org.jetbrains.android" }
+  ],
+  "projectServices": [
+    { "name": "com.intellij.configurationStore.ProjectIdManager", "duration": 17, "start": 4481, "end": 4498, "thread": "pooled 7" },
+    { "name": "com.intellij.openapi.roots.impl.ProjectFileIndexFacade", "duration": 10, "start": 4575, "end": 4585, "thread": "pooled 7" },
+    { "name": "com.intellij.compiler.CompilerManagerImpl", "duration": 10, "start": 5114, "end": 5125, "thread": "pooled 7" },
+    { "name": "com.intellij.codeInsight.daemon.impl.TextEditorHighlightingPassRegistrarImpl", "duration": 34, "start": 5188, "end": 5222, "thread": "pooled 7" },
+    { "name": "com.android.tools.idea.res.ResourceFolderRegistry", "duration": 18, "start": 5314, "end": 5333, "thread": "pooled 7" },
+    { "name": "com.intellij.execution.impl.RunManagerImpl", "duration": 16, "start": 5448, "end": 5465, "thread": "pooled 7" },
+    { "name": "com.android.tools.idea.gradle.project.sync.GradleSyncState", "duration": 13, "start": 6223, "end": 6237, "thread": "edt" },
+    { "name": "com.intellij.ui.tabs.FileColorManagerImpl", "duration": 33, "start": 6353, "end": 6386, "thread": "pooled 11" },
+    { "name": "com.intellij.execution.dashboard.RunDashboardManagerImpl", "duration": 15, "start": 6446, "end": 6461, "thread": "0.Invoker.Background.Thread: com.intellij.execution.services.ServiceModel@1291e3d7" },
+    { "name": "com.intellij.openapi.externalSystem.service.project.manage.ExternalProjectsManagerImpl", "duration": 15, "start": 6755, "end": 6770, "thread": "pooled 7" },
+    { "name": "org.jetbrains.kotlin.idea.compiler.configuration.KotlinCompilerSettings", "duration": 363, "start": 6918, "end": 7282, "thread": "pooled 7" },
+    { "name": "org.jetbrains.kotlin.idea.core.script.ScriptDependenciesManager", "duration": 11, "start": 7132, "end": 7143, "thread": "pooled 4" },
+    { "name": "git4idea.config.GitVcsSettings", "duration": 20, "start": 7161, "end": 7182, "thread": "pooled 11" },
+    { "name": "git4idea.repo.GitRepositoryManager", "duration": 55, "start": 7183, "end": 7238, "thread": "pooled 11" },
+    { "name": "org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder", "duration": 214, "start": 7283, "end": 7497, "thread": "pooled 7" },
+    { "name": "org.zmlx.hg4idea.repo.HgRepositoryManager", "duration": 41, "start": 7350, "end": 7391, "thread": "pooled 4" },
+    { "name": "org.jetbrains.kotlin.idea.compiler.configuration.Kotlin2JvmCompilerArgumentsHolder", "duration": 34, "start": 7502, "end": 7537, "thread": "pooled 7" },
+    { "name": "com.jetbrains.changeReminder.predict.PredictionService", "duration": 13, "start": 8476, "end": 8489, "thread": "Alarm Pool" }
+  ],
+  "totalDurationComputed": 8503,
+  "totalDurationActual": 7558
+}
+=== Stop: StartUp Measurement === 
+2019-10-29 08:46:47,307 [   8935]   WARN - ConfigurableExtensionPointUtil - ignore deprecated groupId: language for id: preferences.language.Kotlin.scripting 
+2019-10-29 08:46:47,695 [   9323]   INFO - CompilerWorkspaceConfiguration - Available processors: 12 
+2019-10-29 08:46:49,130 [  10758]   WARN - com.intellij.util.xmlb.Binding - no accessors for class org.jetbrains.kotlin.idea.highlighter.KotlinDefaultHighlightingSettingsProvider 
+2019-10-29 08:46:50,259 [  11887]   INFO - ings.impl.UpdateCheckerService - channel: release 
+2019-10-29 08:46:56,783 [  18411]   INFO - mponents.impl.stores.StoreUtil - saveProjectsAndApp took 201 ms 
+2019-10-29 08:47:27,223 [  48851]   WARN - ConfigurableExtensionPointUtil - ignore deprecated groupId: language for id: preferences.language.Kotlin.scripting 
+2019-10-29 08:49:13,346 [ 154974]   INFO - .intellij.idea.IdeaApplication - ApplicationImpl.externalInstanceListener invocation 
+2019-10-29 08:49:13,348 [ 154976]   INFO - ellij.ide.CommandLineProcessor - External command line: 
+2019-10-29 08:49:13,348 [ 154976]   INFO - ellij.ide.CommandLineProcessor - Dir: /home/cp/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2019.2.3/654e395e5806d1f0a4741d2f324e48012be56949/ideaIC-2019.2.3/bin/. 
+2019-10-29 08:49:13,348 [ 154976]   INFO - ellij.ide.CommandLineProcessor - ----- 
+2019-10-29 08:49:23,328 [ 164956]   INFO - il.indexing.FileBasedIndexImpl - START INDEX SHUTDOWN 
+2019-10-29 08:49:23,369 [ 164997]   INFO - il.indexing.FileBasedIndexImpl - END INDEX SHUTDOWN 
+2019-10-29 08:49:23,369 [ 164997]   INFO - stubs.SerializationManagerImpl - START StubSerializationManager SHUTDOWN 
+2019-10-29 08:49:23,370 [ 164998]   INFO - stubs.SerializationManagerImpl - END StubSerializationManager SHUTDOWN 
+2019-10-29 08:49:23,373 [ 165001]   INFO - newvfs.persistent.PersistentFS - VFS dispose started 
+2019-10-29 08:49:23,374 [ 165002]   INFO - newvfs.persistent.PersistentFS - VFS dispose completed 
+2019-10-29 08:49:23,374 [ 165002]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
+2019-10-29 08:49:23,376 [ 165004]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2019-10-29 08:49:34,266 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2019-10-29 08:49:34,324 [     58]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 32 ms 
+2019-10-29 08:49:34,337 [     71]   INFO -        #com.intellij.idea.Main - IDE: IntelliJ IDEA (build #IC-192.6817.14, 24 Sep 2019 06:39) 
+2019-10-29 08:49:34,337 [     71]   INFO -        #com.intellij.idea.Main - OS: Linux (4.15.0-66-generic, amd64) 
+2019-10-29 08:49:34,338 [     72]   INFO -        #com.intellij.idea.Main - JRE: 11.0.4+10-b304.69 (JetBrains s.r.o) 
+2019-10-29 08:49:34,338 [     72]   INFO -        #com.intellij.idea.Main - JVM: 11.0.4+10-b304.69 (OpenJDK 64-Bit Server VM) 
+2019-10-29 08:49:34,338 [     72]   INFO -        #com.intellij.idea.Main - JVM Args: -Didea.classpath.index.enabled=false -Didea.config.path=/home/cp/Development/tools/assertj-intellij/build/idea-sandbox/config -Didea.is.internal=true -Didea.platform.prefix=Idea -Didea.plugins.path=/home/cp/Development/tools/assertj-intellij/build/idea-sandbox/plugins -Didea.required.plugins.id=com.cprohinig.assertj-generator-idea -Didea.system.path=/home/cp/Development/tools/assertj-intellij/build/idea-sandbox/system -Dsun.awt.disablegrab=true -agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=33139 -Xms256m -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -ea -agentpath:/opt/dynatrace/oneagent/agent/lib64/liboneagentloader.so=isjdwppresent=true,loglevelcon=none,tenant=1,tenanttoken=1,server=http://localhost:8020/communication;https://172.23.249.63:9999/communication 
+2019-10-29 08:49:34,338 [     72]   INFO -        #com.intellij.idea.Main - charsets: JNU=UTF-8 file=UTF-8 
+2019-10-29 08:49:34,683 [    417]   INFO - tellij.diagnostic.LoadingPhase - Reached SPLASH loading phase 
+2019-10-29 08:49:34,701 [    435]   INFO - plication.impl.ApplicationImpl - CPU cores: 12; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@17496245[Running, parallelism = 11, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@39c12834 
+2019-10-29 08:49:34,788 [    522]   INFO - .intellij.idea.IdeaApplication - WM detected: Mutter (Muffin) 
+2019-10-29 08:49:34,910 [    644]   INFO - llij.ide.plugins.PluginManager - Cannot find optional descriptor duplicates-groovy.xml 
+2019-10-29 08:49:34,911 [    645]   INFO - llij.ide.plugins.PluginManager - Cannot find optional descriptor duplicates-detection-groovy.xml 
+2019-10-29 08:49:34,951 [    685]   INFO - llij.ide.plugins.PluginManager - Cannot find optional descriptor profiler-java.xml 
+2019-10-29 08:49:35,080 [    814]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: Android Support (10.3.4), Ant (192.6817.14), Bytecode Viewer (192.6817.14), ChangeReminder (192.6817.14), Configuration Script (192.6817.14), Copyright (192.6817.14), Coverage (192.6817.14), Eclipse Interoperability (192.6817.14), EditorConfig (192.6817.14), Git (192.6817.14), GitHub (192.6817.14), Gradle (192.6817.14), Gradle-Maven (192.6817.14), Groovy (192.6817.14), IDEA CORE (192.6817.14), IntelliLang (192.6817.14), JUnit (192.6817.14), Java (192.6817.14), Java Bytecode Decompiler (192.6817.14), Java IDE Customization (192.6817.14), Java Internationalization (192.6817.14), Java Stream Debugger (192.6817.14), JavaFX (192.6817.14), Kotlin (1.3.41-release-IJ2019.2-1), Machine Learning Code Completion (192.6817.14), Markdown (192.6817.14), Maven (192.6817.14), Mercurial (192.6817.14), Plugin DevKit (192.6817.14), Properties (192.6817.14), Settings Repository (192.6817.14), Shell Script (192.6817.14), Smali Support (192.6817.14), Subversion (192.6817.14), Task Management (192.6817.14), Terminal (192.6817.14), TestNG (192.6817.14), TextMate bundles (192.6817.14), UI Designer (192.6817.14), XPathView + XSLT (192.6817.14), XSLT Debugger (192.6817.14), YAML (192.6817.14) 
+2019-10-29 08:49:35,081 [    815]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: Plugin display name here (1.0-SNAPSHOT) 
+2019-10-29 08:49:35,423 [   1157]   INFO - tellij.diagnostic.LoadingPhase - Reached CONFIGURATION_STORE_INITIALIZED loading phase 
+2019-10-29 08:49:35,513 [   1247]   INFO - pi.util.registry.RegistryState - Registry values changed by user: 
+2019-10-29 08:49:35,513 [   1247]   INFO - pi.util.registry.RegistryState -   java.completion.argument.hints.internal = false 
+2019-10-29 08:49:35,525 [   1259]   INFO - pi.util.registry.RegistryState - Experimental features enabled for user: inline.browse.button, linux.native.menu, recent.and.edited.files.together, show.create.new.element.in.popup, new.large.text.file.viewer, property.value.inplace.editing 
+2019-10-29 08:49:35,557 [   1291]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=492; buffer=10; max=492 
+2019-10-29 08:49:35,608 [   1342]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: /home/cp/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2019.2.3/654e395e5806d1f0a4741d2f324e48012be56949/ideaIC-2019.2.3/bin/linux/fsnotifier64 
+2019-10-29 08:49:35,620 [   1354]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2019-10-29 08:49:36,108 [   1842]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2019-10-29 08:49:36,118 [   1852]   WARN - j.internal.DebugAttachDetector - Unable to start DebugAttachDetector, please add `--add-exports=java.base/jdk.internal.vm=ALL-UNNAMED` to VM options 
+2019-10-29 08:49:36,124 [   1858]   INFO - tellij.ide.SystemHealthMonitor - restored ignored PIPE handler 
+2019-10-29 08:49:36,181 [   1915]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63343 
+2019-10-29 08:49:36,414 [   2148]   INFO - il.indexing.FileBasedIndexImpl - File index extensions iterated:124 
+2019-10-29 08:49:36,743 [   2477]   INFO - tellij.diagnostic.LoadingPhase - Reached FRAME_SHOWN loading phase 
+2019-10-29 08:49:37,102 [   2836]   INFO - penapi.wm.impl.GlobalMenuLinux - Closed dbus-service 'com.canonical.AppMenu.Registrar' 
+2019-10-29 08:49:37,188 [   2922]   INFO - pl$FileIndexDataInitialization - Initialization done:899 
+2019-10-29 08:49:37,250 [   2984]   INFO - exImpl$StubIndexInitialization - Initialization done:61 
+2019-10-29 08:49:37,248 [   2982]   INFO - penapi.wm.impl.GlobalMenuLinux - created instance of GlobalMenuLinux for xid=0x7600026 
+2019-10-29 08:49:37,670 [   3404]   INFO - j.ide.ui.OptionsTopHitProvider - 1046 ms spent to cache options in application 
+2019-10-29 08:49:38,308 [   4042]   INFO - pl.projectlevelman.NewMappings - VCS Root: [Git] - [<Project>] 
+2019-10-29 08:49:38,651 [   4385]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=12, fontScale=1.0; restored: fontSize=12, fontScale=1.0 
+2019-10-29 08:49:39,242 [   4976]   INFO - j.ide.script.IdeStartupScripts - 0 startup script(s) found 
+2019-10-29 08:49:39,385 [   5119]   INFO - rojectCodeStyleSettingsManager - Initialized from default code style settings. 
+2019-10-29 08:49:40,332 [   6066]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: com.intellij.util.indexing.UnindexedFilesUpdater@374f3027 
+2019-10-29 08:49:40,509 [   6243]   INFO - ge.ExternalProjectsDataStorage - Load external projects data in 6 millis (read time: 3) 
+2019-10-29 08:49:40,916 [   6650]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 582ms; general responsiveness: ok; EDT responsiveness: ok 
+2019-10-29 08:49:41,096 [   6830]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 178ms; general responsiveness: ok; EDT responsiveness: ok 
+2019-10-29 08:49:41,100 [   6834]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: initial refresh 
+2019-10-29 08:49:41,108 [   6842]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2019-10-29 08:49:41,112 [   6846]   INFO - j.ide.ui.OptionsTopHitProvider - 1059 ms spent to cache options in project 
+2019-10-29 08:49:41,187 [   6921]   INFO - g.FileBasedIndexProjectHandler - Has changed files: false; project=Project '/home/cp/Development/tools/cloud-simulator' cloud-simulator 
+2019-10-29 08:49:41,432 [   7166]   INFO - .diagnostic.PerformanceWatcher - Post-startup activities under progress took 1395ms; general responsiveness: ok; EDT responsiveness: 2/2 sluggish 
+2019-10-29 08:49:41,715 [   7449]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRepositoryFileCacheImpl$PruneTask@143e46ba 
+2019-10-29 08:49:41,788 [   7522]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRepositoryFileCacheImpl$ManageLruProjectFilesTask@4158b1fd 
+2019-10-29 08:49:41,822 [   7556]   INFO - tartup.impl.StartupManagerImpl - /home/cp/Development/tools/cloud-simulator/.idea case-sensitivity: expected=true actual=true 
+2019-10-29 08:49:41,855 [   7589]   INFO - tellij.diagnostic.LoadingPhase - Reached PROJECT_OPENED loading phase 
+2019-10-29 08:49:41,856 [   7590]   INFO -  #git4idea.commands.GitHandler - [.] git version 
+2019-10-29 08:49:41,870 [   7604]   INFO -  #git4idea.commands.GitHandler - git version 2.17.1 
+2019-10-29 08:49:41,881 [   7615]   INFO - ea.config.GitExecutableManager - Git version for /usr/bin/git : 2.17.1 
+2019-10-29 08:49:41,894 [   7628]   INFO - pl.projectlevelman.NewMappings - Mapped Roots: 1 
+2019-10-29 08:49:41,960 [   7694]   INFO - tellij.diagnostic.LoadingPhase - Reached INDEXING_FINISHED loading phase 
+2019-10-29 08:49:41,960 [   7694]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2019-10-29 08:49:41,961 [   7695]   INFO - g.FileBasedIndexProjectHandler - Has changed files: false; project=Project '/home/cp/Development/tools/cloud-simulator' cloud-simulator 
+2019-10-29 08:49:42,322 [   8056]   INFO - tor.impl.FileEditorManagerImpl - Project opening took 4639 ms 
+2019-10-29 08:49:42,425 [   8159]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRegistry$PopulateCachesTask@115da45c 
+2019-10-29 08:49:42,722 [   8456]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2019-10-29 08:49:42,723 [   8457]   INFO - g.FileBasedIndexProjectHandler - Has changed files: false; project=Project '/home/cp/Development/tools/cloud-simulator' cloud-simulator 
+2019-10-29 08:49:43,048 [   8782]   INFO - CompilerWorkspaceConfiguration - Available processors: 12 
+2019-10-29 08:49:43,159 [   8893]   INFO - lij.diagnostic.StartUpMeasurer - === Start: StartUp Measurement ===
+{
+  "version": "7",
+  "stats": { "plugin": 43, "component": { "app": 68, "project": 135, "module": 5 }, "service": { "app": 480, "project": 507, "module": 20 }, "loadedClasses": { "Subversion": 66, "XPathView": 57, "XSLT-Debugger": 2, "com.android.tools.idea.smali": 5, "com.intellij.java": 1263, "ByteCodeViewer": 2, "Git4Idea": 314, "JUnit": 3, "com.cprohinig.assertj-generator-idea": 1, "com.intellij.configurationScript": 8, "com.intellij.copyright": 8, "com.intellij.java.ide": 1, "com.intellij.properties": 51, "AntSupport": 16, "com.intellij.java-i18n": 9, "TestNG-J": 4, "com.intellij.stats.completion": 32, "com.intellij.tasks": 100, "com.intellij.uiDesigner": 87, "com.jetbrains.changeReminder": 35, "hg4idea": 95, "org.editorconfig.editorconfigjetbrains": 53, "org.intellij.intelliLang": 5, "org.intellij.groovy": 497, "org.intellij.plugins.markdown": 49, "org.jetbrains.debugger.streams": 129, "org.jetbrains.idea.eclipse": 6, "org.jetbrains.idea.maven": 208, "org.jetbrains.java.decompiler": 7, "org.jetbrains.plugins.github": 25, "org.jetbrains.plugins.gradle": 57, "DevKit": 44, "org.jetbrains.kotlin": 2649, "org.jetbrains.android": 1255, "org.jetbrains.plugins.gradle.maven": 8, "org.jetbrains.plugins.javaFX": 23, "org.jetbrains.plugins.terminal": 17, "com.jetbrains.sh": 37, "org.jetbrains.plugins.textmate": 119, "org.jetbrains.plugins.yaml": 28, "org.jetbrains.settingsRepository": 37 } },
+  "icons": { "svg": { "count": 103, "loading": 904, "decoding": 891 }, "img": { "count": 14, "loading": 57, "decoding": 49 } },
+  "items": [
+    { "name": "bootstrap", "duration": 304, "start": 0, "end": 304, "thread": "main" },
+    { "name": "startup begin", "duration": 2, "start": 0, "end": 2, "thread": "main" },
+    { "name": "properties loading", "duration": 36, "start": 2, "end": 38, "thread": "main" },
+    { "name": "classloader init", "duration": 79, "start": 38, "end": 117, "thread": "main" },
+    { "name": "MainRunner search", "duration": 186, "start": 117, "end": 304, "thread": "main" },
+    { "name": "app initialization preparation", "duration": 1141, "start": 304, "end": 1446, "thread": "main" },
+    { "name": "load main class", "duration": 7, "start": 310, "end": 317, "thread": "idea main" },
+    { "name": "configure logging", "duration": 17, "start": 582, "end": 600, "thread": "idea main" },
+    { "name": "check system dirs", "duration": 31, "start": 614, "end": 645, "thread": "idea main" },
+    { "name": "lock system dirs", "duration": 323, "start": 645, "end": 968, "thread": "idea main" },
+    { "name": "configure file logger", "duration": 62, "start": 968, "end": 1031, "thread": "idea main" },
+    { "name": "start logging", "duration": 23, "start": 1031, "end": 1054, "thread": "idea main" },
+    { "name": "wait tasks", "duration": 201, "start": 1059, "end": 1260, "thread": "idea main" },
+    { "name": "app initialization", "duration": 180, "start": 1446, "end": 1626, "thread": "idea main" },
+    { "name": "patch system", "duration": 108, "start": 1450, "end": 1559, "thread": "edt" },
+    { "name": "create app", "duration": 41, "start": 1563, "end": 1604, "thread": "edt" },
+    { "name": "instantiate AppDelayQueue", "duration": 4, "start": 1597, "end": 1602, "thread": "edt" },
+    { "name": "place on event queue", "duration": 3, "start": 1622, "end": 1626, "thread": "edt" },
+    { "name": "wait plugin initialization", "duration": 485, "start": 1626, "end": 2111, "thread": "edt" },
+    { "name": "app component registered callback", "duration": 71, "start": 2119, "end": 2190, "thread": "edt" },
+    { "name": "app component creation", "duration": 1164, "start": 2203, "end": 3367, "thread": "edt" },
+    { "name": "PersistentFS#FSRecords.connect", "duration": 55, "start": 2304, "end": 2359, "thread": "edt" },
+    { "name": "app initialized callback", "duration": 111, "start": 3371, "end": 3483, "thread": "edt" },
+    { "name": "frame initialization", "duration": 21, "start": 3489, "end": 3510, "thread": "edt" },
+    { "name": "set window manager", "duration": 0, "start": 3500, "end": 3500, "thread": "edt" },
+    { "name": "call appFrameCreated", "duration": 1, "start": 3500, "end": 3502, "thread": "edt" },
+    { "name": "show frame", "duration": 527, "start": 3517, "end": 4044, "thread": "edt" },
+    { "name": "init frame", "duration": 109, "start": 4120, "end": 4229, "thread": "edt" },
+    { "name": "project conversion", "duration": 102, "start": 4342, "end": 4445, "thread": "pooled 13" },
+    { "name": "project instantiation", "duration": 4, "start": 4445, "end": 4449, "thread": "pooled 13" },
+    { "name": "project before loaded callbacks", "duration": 2, "start": 4450, "end": 4452, "thread": "pooled 13" },
+    { "name": "project component registration", "duration": 443, "start": 4453, "end": 4896, "thread": "pooled 13" },
+    { "name": "project component creation", "duration": 902, "start": 4947, "end": 5850, "thread": "pooled 13" },
+    { "name": "module loading", "description": "module count: 1", "duration": 76, "start": 5861, "end": 5937, "thread": "pooled 13" },
+    { "name": "project opened callbacks", "duration": 704, "start": 5968, "end": 6673, "thread": "edt" },
+    { "name": "project pre-startup", "duration": 14, "start": 6674, "end": 6688, "thread": "pooled 13" },
+    { "name": "project startup", "duration": 3, "start": 6688, "end": 6692, "thread": "pooled 13" },
+    { "name": "project post-startup dumb-aware activities", "duration": 1395, "start": 6804, "end": 8199, "thread": "pooled 13" },
+    { "name": "project post-startup edt activities", "duration": 1191, "start": 6808, "end": 7999, "thread": "pooled 13" },
+    { "name": "project post-startup edt activities", "duration": 1313, "start": 8193, "end": 9506, "thread": "pooled 13" },
+    { "name": "project dumb post-startup", "duration": 26, "start": 8590, "end": 8617, "thread": "edt" },
+    { "name": "system dock menu", "duration": 0, "start": 8624, "end": 8624, "thread": "edt" },
+    { "name": "project dumb post-startup", "duration": 0, "start": 9509, "end": 9509, "thread": "edt" }
+  ],
+  "GCs": [
+    { "name": "1", "duration": 13, "start": 3788, "end": 3801, "thread": "pool-1-thread-1" },
+    { "name": "2", "duration": 10, "start": 4644, "end": 4654, "thread": "pool-1-thread-1" },
+    { "name": "3", "duration": 12, "start": 7509, "end": 7521, "thread": "pool-1-thread-1" }
+  ],
+  "appComponents": [
+    { "name": "com.intellij.openapi.util.registry.RegistryState", "duration": 89, "start": 2203, "end": 2293, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vfs.newvfs.persistent.PersistentFSImpl", "duration": 66, "start": 2293, "end": 2359, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vfs.PlatformVirtualFileManager", "duration": 30, "start": 2360, "end": 2390, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.project.impl.ProjectManagerImpl", "duration": 21, "start": 2390, "end": 2412, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.fileTypes.impl.FileTypeManagerImpl", "duration": 153, "start": 2412, "end": 2565, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.actionSystem.impl.ActionManagerImpl", "duration": 133, "start": 2570, "end": 2723, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.util.net.HttpConfigurable", "duration": 19, "start": 2697, "end": 2717, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69", "plugin": "com.intellij" },
+    { "name": "com.intellij.history.integration.LocalHistoryImpl", "duration": 10, "start": 2731, "end": 2742, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.ide.ui.laf.LafManagerImpl", "duration": 119, "start": 2752, "end": 2872, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.diagnostic.DebugLogManager", "duration": 10, "start": 2885, "end": 2896, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.diagnostic.LowMemoryNotifier", "duration": 36, "start": 2898, "end": 2935, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.wm.impl.WindowManagerImpl", "duration": 14, "start": 2938, "end": 2956, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.ide.IdeTooltipManager", "duration": 20, "start": 2963, "end": 2984, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.util.indexing.FileBasedIndexImpl", "duration": 62, "start": 2994, "end": 3056, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.psi.stubs.SerializationManagerImpl", "duration": 18, "start": 3064, "end": 3083, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.execution.ExecutorRegistryImpl", "duration": 14, "start": 3083, "end": 3098, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.compiler.server.BuildManager", "duration": 15, "start": 3099, "end": 3114, "thread": "edt", "plugin": "com.intellij.java" },
+    { "name": "com.intellij.openapi.module.WebModuleTypeRegistrar", "duration": 11, "start": 3114, "end": 3125, "thread": "edt", "plugin": "com.intellij.java" },
+    { "name": "com.intellij.stats.sender.SenderComponent", "duration": 18, "start": 3125, "end": 3144, "thread": "edt", "plugin": "com.intellij.stats.completion" },
+    { "name": "org.jetbrains.kotlin.idea.PluginStartupComponent", "duration": 90, "start": 3153, "end": 3244, "thread": "edt", "plugin": "org.jetbrains.kotlin" },
+    { "name": "org.jetbrains.kotlin.idea.JvmPluginStartupComponent", "duration": 24, "start": 3245, "end": 3269, "thread": "edt", "plugin": "org.jetbrains.kotlin" },
+    { "name": "org.jetbrains.android.AndroidPlugin", "duration": 60, "start": 3270, "end": 3330, "thread": "edt", "plugin": "org.jetbrains.android" },
+    { "name": "com.android.tools.idea.updater.AndroidSdkUpdaterPlugin", "duration": 23, "start": 3330, "end": 3354, "thread": "edt", "plugin": "org.jetbrains.android" },
+    { "name": "org.jetbrains.plugins.textmate.TextMateApplicationComponent", "duration": 12, "start": 3354, "end": 3367, "thread": "edt", "plugin": "org.jetbrains.plugins.textmate" },
+    { "name": "Other", "duration": 88, "start": 3354, "end": 3367 }
+  ],
+  "appExtensions": [
+    { "name": "com.intellij.openapi.fileTypes.FileTypeFactory", "duration": 56, "start": 2438, "end": 2494, "thread": "edt" },
+    { "name": "com.intellij.psi.compiled.ClassFileDecompilers$Decompiler", "duration": 304, "start": 3561, "end": 3865, "thread": "IndexInfrastructure Pool" },
+    { "name": "com.intellij.codeInsight.template.impl.DefaultLiveTemplatesProvider", "duration": 28, "start": 4265, "end": 4294, "thread": "Preloader Pool" },
+    { "name": "com.intellij.codeInsight.template.TemplateContextType", "duration": 32, "start": 4313, "end": 4345, "thread": "Preloader Pool" },
+    { "name": "com.intellij.conversion.ConverterProvider", "duration": 74, "start": 4368, "end": 4443, "thread": "pooled 13" },
+    { "name": "com.intellij.openapi.editor.actionSystem.EditorActionHandlerBean", "duration": 23, "start": 4880, "end": 4903, "thread": "Preloader Pool" },
+    { "name": "com.intellij.xdebugger.breakpoints.XBreakpointType", "duration": 18, "start": 5507, "end": 5525, "thread": "pooled 13" },
+    { "name": "com.intellij.codeHighlighting.TextEditorHighlightingPassFactoryRegistrar", "duration": 26, "start": 5687, "end": 5714, "thread": "pooled 13" },
+    { "name": "com.intellij.psi.codeStyle.CodeStyleSettingsProvider", "duration": 10, "start": 5759, "end": 5769, "thread": "pooled 13" },
+    { "name": "com.intellij.psi.codeStyle.LanguageCodeStyleSettingsProvider", "duration": 14, "start": 5777, "end": 5791, "thread": "pooled 13" },
+    { "name": "com.intellij.ide.actions.runAnything.activity.RunAnythingProvider", "duration": 10, "start": 6074, "end": 6084, "thread": "edt" },
+    { "name": "com.intellij.openapi.wm.ToolWindowEP", "duration": 15, "start": 6825, "end": 6841, "thread": "pooled 13" },
+    { "name": "com.intellij.codeInspection.LocalInspectionEP", "duration": 216, "start": 6883, "end": 7099, "thread": "pooled 13" },
+    { "name": "com.intellij.debugger.streams.lib.LibrarySupportProvider", "duration": 96, "start": 6898, "end": 6994, "thread": "Preloader Pool" },
+    { "name": "com.intellij.codeInspection.ex.InspectionElementsMerger", "duration": 41, "start": 7144, "end": 7186, "thread": "pooled 13" },
+    { "name": "com.intellij.codeInsight.editorActions.TypedHandlerDelegate", "duration": 194, "start": 7255, "end": 7450, "thread": "Preloader Pool" },
+    { "name": "org.jetbrains.kotlin.idea.platform.IdePlatformKindTooling", "duration": 14, "start": 7994, "end": 8008, "thread": "Preloader Pool" },
+    { "name": "com.intellij.tasks.TaskRepositoryType", "duration": 35, "start": 8332, "end": 8368, "thread": "Preloader Pool" },
+    { "name": "com.intellij.codeInsight.completion.CompletionContributorEP", "duration": 98, "start": 8375, "end": 8474, "thread": "Preloader Pool" },
+    { "name": "com.intellij.ide.IconProvider", "duration": 11, "start": 8555, "end": 8567, "thread": "OurIconsCalculating Pool" }
+  ],
+  "appOptionsTopHitProviders": [
+    { "name": "com.intellij.codeInsight.intention.impl.config.IntentionsOptionsTopHitProvider", "duration": 838, "start": 3418, "end": 4256, "thread": "Preloader Pool", "plugin": "com.intellij" },
+    { "name": "com.intellij.codeInsight.template.impl.LiveTemplatesOptionsTopHitProvider", "duration": 170, "start": 4260, "end": 4430, "thread": "Preloader Pool", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.EditorOptionsTopHitProvider", "duration": 150, "start": 8330, "end": 8481, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.EditorSmartKeysOptionsTopHitProvider", "duration": 52, "start": 8626, "end": 8679, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.EditorTabsOptionsTopHitProvider", "duration": 316, "start": 8763, "end": 9079, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.CodeFoldingOptionsTopHitProvider", "duration": 44, "start": 9234, "end": 9279, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "org.intellij.images.options.impl.ImagesOptionsTopHitProvider", "duration": 78, "start": 9726, "end": 9805, "thread": "edt", "plugin": "com.intellij" }
+  ],
+  "appServices": [
+    { "name": "com.intellij.configurationStore.ApplicationStoreImpl", "duration": 12, "start": 2171, "end": 2183, "thread": "edt" },
+    { "name": "com.intellij.ide.macro.IdePathMacros", "duration": 42, "start": 2231, "end": 2274, "thread": "edt" },
+    { "name": "com.intellij.ide.RecentProjectsManagerBase", "duration": 15, "start": 2395, "end": 2410, "thread": "edt" },
+    { "name": "com.intellij.openapi.editor.impl.EditorActionManagerImpl", "duration": 156, "start": 2570, "end": 2726, "thread": "edt" },
+    { "name": "com.intellij.internal.statistic.collectors.fus.actions.persistence.ActionsCollectorImpl", "duration": 30, "start": 2578, "end": 2609, "thread": "edt" },
+    { "name": "com.intellij.ide.ui.UISettings", "duration": 12, "start": 2617, "end": 2630, "thread": "edt" },
+    { "name": "com.intellij.ide.ui.NotRoamableUiSettings", "duration": 10, "start": 2617, "end": 2627, "thread": "edt" },
+    { "name": "com.intellij.stats.sender.StatisticSenderImpl", "duration": 10, "start": 3131, "end": 3141, "thread": "edt" },
+    { "name": "com.intellij.xdebugger.impl.settings.XDebuggerSettingManagerImpl", "duration": 13, "start": 3256, "end": 3269, "thread": "edt" },
+    { "name": "com.android.tools.idea.gradle.project.sync.GradleSyncInvoker", "duration": 13, "start": 3316, "end": 3329, "thread": "edt" },
+    { "name": "com.intellij.openapi.updateSettings.impl.UpdateSettings", "duration": 10, "start": 3339, "end": 3350, "thread": "edt" },
+    { "name": "org.jetbrains.plugins.textmate.TextMateServiceImpl", "duration": 10, "start": 3355, "end": 3366, "thread": "edt" },
+    { "name": "com.intellij.codeInsight.intention.impl.config.IntentionManagerSettings", "duration": 833, "start": 3420, "end": 4253, "thread": "Preloader Pool" },
+    { "name": "com.intellij.diagnostic.GcPauseWatcher", "duration": 10, "start": 3490, "end": 3500, "thread": "edt" },
+    { "name": "com.intellij.codeInsight.template.impl.TemplateSettings", "duration": 166, "start": 4263, "end": 4430, "thread": "Preloader Pool" },
+    { "name": "com.intellij.ide.todo.TodoConfiguration", "duration": 61, "start": 5391, "end": 5452, "thread": "pooled 13" },
+    { "name": "com.intellij.openapi.editor.colors.impl.EditorColorsManagerImpl", "duration": 58, "start": 5393, "end": 5451, "thread": "pooled 13" },
+    { "name": "com.intellij.openapi.editor.colors.ex.DefaultColorSchemesManager", "duration": 23, "start": 5399, "end": 5422, "thread": "pooled 13" },
+    { "name": "com.intellij.ide.scratch.ScratchFileServiceImpl", "duration": 17, "start": 5989, "end": 6007, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "com.intellij.openapi.projectRoots.impl.JavaAwareProjectJdkTableImpl", "duration": 43, "start": 6209, "end": 6253, "thread": "edt" },
+    { "name": "com.intellij.openapi.externalSystem.service.ExternalSystemFacadeManager", "duration": 12, "start": 7295, "end": 7308, "thread": "edt" }
+  ],
+  "preloadActivities": [
+    { "name": "com.intellij.ide.ui.OptionsTopHitProvider$Activity", "duration": 1046, "start": 3391, "end": 4437, "thread": "Preloader Pool" },
+    { "name": "com.intellij.openapi.actionSystem.impl.ActionPreloader", "duration": 3012, "start": 4437, "end": 7450, "thread": "Preloader Pool" },
+    { "name": "com.intellij.ide.ui.search.SearchableOptionPreloader", "duration": 922, "start": 7451, "end": 8374, "thread": "Preloader Pool" },
+    { "name": "com.intellij.codeInsight.completion.CompletionPreloader", "duration": 424, "start": 8374, "end": 8799, "thread": "Preloader Pool" },
+    { "name": "com.intellij.ide.actions.GotoClassPresentationUpdater", "duration": 10, "start": 8799, "end": 8810, "thread": "Preloader Pool" }
+  ],
+  "prepareAppInitActivities": [
+    { "name": "init AWT Toolkit", "duration": 0, "start": 604, "end": 604, "thread": "edt" },
+    { "name": "init default LaF", "duration": 354, "start": 604, "end": 959, "thread": "edt" },
+    { "name": "splash initialization", "duration": 238, "start": 961, "end": 1199, "thread": "edt" },
+    { "name": "setup system libs", "duration": 2, "start": 1056, "end": 1058, "thread": "pooled 3" },
+    { "name": "fix process env", "duration": 2, "start": 1058, "end": 1060, "thread": "pooled 3" },
+    { "name": "load system libs", "duration": 32, "start": 1059, "end": 1092, "thread": "pooled 5" },
+    { "name": "configure html kit", "duration": 39, "start": 1199, "end": 1239, "thread": "edt" },
+    { "name": "init system font data", "duration": 1, "start": 1239, "end": 1240, "thread": "pooled 4" },
+    { "name": "update frame class", "duration": 11, "start": 1249, "end": 1260, "thread": "pooled 4" },
+    { "name": "update window icon", "duration": 562, "start": 1249, "end": 1811, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "plugin initialization", "duration": 383, "start": 1446, "end": 1830, "thread": "idea main" },
+    { "name": "plugin descriptors loading", "duration": 296, "start": 1478, "end": 1774, "thread": "idea main" },
+    { "name": "app extension registration", "duration": 17, "start": 1830, "end": 1847, "thread": "idea main" },
+    { "name": "app component registration", "duration": 263, "start": 1848, "end": 2111, "thread": "idea main" },
+    { "name": "init system properties", "duration": 0, "start": 1848, "end": 1849, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "add registry keys", "duration": 152, "start": 1849, "end": 2002, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "add message bus listeners", "duration": 0, "start": 2002, "end": 2002, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" }
+  ],
+  "projectComponents": [
+    { "name": "com.intellij.profile.codeInspection.ProjectInspectionProfileManager", "duration": 27, "start": 4947, "end": 4975, "thread": "pooled 13", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.wm.impl.ToolWindowManagerImpl", "duration": 15, "start": 4992, "end": 5008, "thread": "pooled 13", "plugin": "com.intellij" },
+    { "name": "com.intellij.psi.impl.PsiManagerImpl", "duration": 18, "start": 5014, "end": 5041, "thread": "pooled 13", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vcs.impl.ProjectLevelVcsManagerImpl", "duration": 25, "start": 5047, "end": 5072, "thread": "pooled 13", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vcs.changes.ChangeListManagerImpl", "duration": 27, "start": 5081, "end": 5231, "thread": "pooled 13", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vcs.changes.ChangesViewManager", "duration": 121, "start": 5086, "end": 5208, "thread": "pooled 13", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vcs.changes.shelf.ShelvedChangesViewManager", "duration": 48, "start": 5241, "end": 5289, "thread": "pooled 13", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.module.impl.ModuleManagerComponent", "duration": 37, "start": 5309, "end": 5347, "thread": "pooled 13", "plugin": "com.intellij" },
+    { "name": "com.intellij.codeInsight.daemon.impl.DaemonCodeAnalyzerImpl", "duration": 28, "start": 5358, "end": 5388, "thread": "pooled 13", "plugin": "com.intellij" },
+    { "name": "com.intellij.codeInsight.daemon.impl.DaemonListeners", "duration": 79, "start": 5388, "end": 5467, "thread": "pooled 13", "plugin": "com.intellij" },
+    { "name": "com.intellij.codeInsight.navigation.CtrlMouseHandler", "duration": 11, "start": 5469, "end": 5481, "thread": "pooled 13", "plugin": "com.intellij" },
+    { "name": "com.intellij.xdebugger.impl.XDebuggerManagerImpl", "duration": 51, "start": 5489, "end": 5541, "thread": "pooled 13", "plugin": "com.intellij" },
+    { "name": "com.intellij.packaging.impl.artifacts.ArtifactManagerImpl", "duration": 13, "start": 5555, "end": 5568, "thread": "pooled 13", "plugin": "com.intellij.java" },
+    { "name": "com.intellij.compiler.CompilerConfigurationImpl", "duration": 11, "start": 5568, "end": 5580, "thread": "pooled 13", "plugin": "com.intellij.java" },
+    { "name": "com.intellij.execution.testDiscovery.TestDiscoveryIndex", "duration": 12, "start": 5598, "end": 5611, "thread": "pooled 13", "plugin": "com.intellij.java" },
+    { "name": "com.intellij.execution.scratch.JavaScratchCompilationSupport", "duration": 18, "start": 5611, "end": 5629, "thread": "pooled 13", "plugin": "com.intellij.java" },
+    { "name": "org.jetbrains.idea.maven.project.MavenProjectsManager", "duration": 15, "start": 5649, "end": 5665, "thread": "pooled 13", "plugin": "org.jetbrains.idea.maven" },
+    { "name": "org.jetbrains.kotlin.idea.highlighter.KotlinBeforeResolveHighlightingPass$Factory", "duration": 36, "start": 5685, "end": 5722, "thread": "pooled 13", "plugin": "org.jetbrains.kotlin" },
+    { "name": "org.jetbrains.kotlin.idea.configuration.ui.KotlinConfigurationCheckerComponent", "duration": 57, "start": 5736, "end": 5793, "thread": "pooled 13", "plugin": "org.jetbrains.kotlin" },
+    { "name": "com.android.tools.idea.gradle.project.AndroidGradleProjectComponent", "duration": 13, "start": 5799, "end": 5812, "thread": "pooled 13", "plugin": "org.jetbrains.android" },
+    { "name": "com.android.tools.idea.res.PsiProjectListener", "duration": 21, "start": 5812, "end": 5833, "thread": "pooled 13", "plugin": "org.jetbrains.android" },
+    { "name": "org.jetbrains.plugins.terminal.TerminalView", "duration": 11, "start": 5838, "end": 5850, "thread": "pooled 13", "plugin": "org.jetbrains.plugins.terminal" },
+    { "name": "Other", "duration": 198, "start": 5838, "end": 5850 }
+  ],
+  "projectExtensions": [
+    { "name": "com.intellij.psi.search.scope.packageSet.CustomScopesProvider", "duration": 19, "start": 6828, "end": 6848, "thread": "pooled 7" },
+    { "name": "com.intellij.vcs.log.VcsLogProvider", "duration": 55, "start": 7982, "end": 8038, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "com.intellij.openapi.vcs.changes.VcsIgnoredFilesHolder$Provider", "duration": 10, "start": 9094, "end": 9104, "thread": "ChangeListManagerImpl Pool" }
+  ],
+  "projectOpenHandlers": [
+    { "name": "com.intellij.openapi.vcs.changes.ChangesViewManager", "duration": 190, "start": 6304, "end": 6495, "thread": "edt" },
+    { "name": "com.intellij.openapi.roots.impl.ProjectRootManagerComponent", "duration": 16, "start": 6497, "end": 6513, "thread": "edt" },
+    { "name": "com.android.tools.idea.editors.theme.AndroidThemePreviewToolWindowManager", "duration": 123, "start": 6548, "end": 6672, "thread": "edt", "plugin": "org.jetbrains.android" },
+    { "name": "Other", "duration": 42, "start": 6673, "end": 6673 }
+  ],
+  "projectOptionsTopHitProviders": [
+    { "name": "com.intellij.ui.tabs.FileColorsOptionsTopHitProvider", "duration": 34, "start": 6826, "end": 6860, "thread": "pooled 7", "plugin": "com.intellij" },
+    { "name": "com.intellij.ide.ui.InspectionsTopHitProvider", "duration": 906, "start": 6861, "end": 7768, "thread": "pooled 7", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.vcs.configurable.VcsOptionsTopHitProvider", "duration": 18, "start": 7769, "end": 7788, "thread": "pooled 7", "plugin": "com.intellij" },
+    { "name": "git4idea.config.GitOptionsTopHitProvider", "duration": 80, "start": 7795, "end": 7876, "thread": "pooled 7", "plugin": "Git4Idea" },
+    { "name": "com.intellij.application.options.editor.EditorOptionsTopHitProvider", "duration": 31, "start": 8556, "end": 8587, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.EditorSmartKeysOptionsTopHitProvider", "duration": 14, "start": 8708, "end": 8723, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.EditorTabsOptionsTopHitProvider", "duration": 26, "start": 9089, "end": 9115, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.CodeFoldingOptionsTopHitProvider", "duration": 11, "start": 9279, "end": 9291, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.application.options.editor.AutoImportOptionsTopHitProvider", "duration": 41, "start": 9523, "end": 9564, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "org.intellij.images.options.impl.ImagesOptionsTopHitProvider", "duration": 15, "start": 9811, "end": 9827, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.uiDesigner.GuiDesignerOptionsTopHitProvider", "duration": 17, "start": 9856, "end": 9873, "thread": "edt", "plugin": "com.intellij.uiDesigner" }
+  ],
+  "projectPostStartupActivities": [
+    { "name": "com.intellij.openapi.wm.impl.ToolWindowManagerImpl$InitToolWindowsActivity", "duration": 21, "start": 6825, "end": 6846, "thread": "pooled 13", "plugin": "com.intellij" },
+    { "name": "com.intellij.profile.codeInspection.ProjectInspectionProfileManager$ProjectInspectionProfileStartUpActivity", "duration": 363, "start": 6855, "end": 7218, "thread": "pooled 13", "plugin": "com.intellij" },
+    { "name": "com.intellij.openapi.externalSystem.service.ExternalSystemStartupActivity", "duration": 59, "start": 7229, "end": 7289, "thread": "pooled 13", "plugin": "com.intellij" },
+    { "name": "org.jetbrains.plugins.groovy.mvc.MvcProjectWithoutLibraryNotificator", "duration": 42, "start": 7324, "end": 7367, "thread": "pooled 13", "plugin": "org.intellij.groovy" },
+    { "name": "org.jetbrains.kotlin.idea.framework.CreateKotlinSdkActivity", "duration": 815, "start": 7377, "end": 8192, "thread": "pooled 13", "plugin": "org.jetbrains.kotlin" },
+    { "name": "com.intellij.vcs.log.impl.VcsProjectLog$InitLogStartupActivity", "duration": 10, "start": 7968, "end": 7978, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.intellij.build.BuildContentManagerImpl$$Lambda$880/0x0000000100f29c40", "duration": 13, "start": 8597, "end": 8611, "thread": "edt", "plugin": "com.intellij" },
+    { "name": "com.android.tools.idea.gradle.project.sync.GradleFiles$UpdateHashesStartupActivity", "duration": 10, "start": 9490, "end": 9501, "thread": "edt", "plugin": "org.jetbrains.android" }
+  ],
+  "projectServices": [
+    { "name": "com.intellij.configurationStore.ProjectIdManager", "duration": 16, "start": 4931, "end": 4947, "thread": "pooled 13" },
+    { "name": "com.intellij.openapi.roots.impl.ProjectFileIndexFacade", "duration": 12, "start": 5021, "end": 5033, "thread": "pooled 13" },
+    { "name": "com.intellij.compiler.CompilerManagerImpl", "duration": 17, "start": 5611, "end": 5629, "thread": "pooled 13" },
+    { "name": "com.intellij.codeInsight.daemon.impl.TextEditorHighlightingPassRegistrarImpl", "duration": 34, "start": 5687, "end": 5721, "thread": "pooled 13" },
+    { "name": "com.android.tools.idea.res.ResourceFolderRegistry", "duration": 20, "start": 5813, "end": 5833, "thread": "pooled 13" },
+    { "name": "com.intellij.execution.impl.RunManagerImpl", "duration": 18, "start": 5939, "end": 5957, "thread": "pooled 13" },
+    { "name": "com.intellij.ui.tabs.FileColorManagerImpl", "duration": 33, "start": 6826, "end": 6860, "thread": "pooled 7" },
+    { "name": "com.intellij.execution.services.ServiceViewManagerImpl", "duration": 11, "start": 6914, "end": 6925, "thread": "edt" },
+    { "name": "com.intellij.execution.dashboard.RunDashboardManagerImpl", "duration": 16, "start": 6927, "end": 6943, "thread": "0.Invoker.Background.Thread: com.intellij.execution.services.ServiceModel@78615469" },
+    { "name": "com.intellij.openapi.externalSystem.service.project.manage.ExternalProjectsManagerImpl", "duration": 16, "start": 7231, "end": 7247, "thread": "pooled 13" },
+    { "name": "org.jetbrains.kotlin.idea.compiler.configuration.KotlinCompilerSettings", "duration": 482, "start": 7390, "end": 7873, "thread": "pooled 13" },
+    { "name": "org.jetbrains.kotlin.idea.core.script.ScriptDependenciesManager", "duration": 11, "start": 7703, "end": 7714, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "git4idea.config.GitVcsSettings", "duration": 17, "start": 7797, "end": 7815, "thread": "pooled 7" },
+    { "name": "git4idea.repo.GitRepositoryManager", "duration": 59, "start": 7817, "end": 7876, "thread": "pooled 7" },
+    { "name": "org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder", "duration": 252, "start": 7875, "end": 8127, "thread": "pooled 13" },
+    { "name": "org.zmlx.hg4idea.repo.HgRepositoryManager", "duration": 32, "start": 8004, "end": 8037, "thread": "pooled 2 2019.2.3#IC-192.6817.14 IDEA, eap:false, os:Linux 4.15.0-66-generic, java-version:JetBrains s.r.o 11.0.4+10-b304.69" },
+    { "name": "org.jetbrains.kotlin.idea.compiler.configuration.Kotlin2JvmCompilerArgumentsHolder", "duration": 36, "start": 8133, "end": 8169, "thread": "pooled 13" }
+  ],
+  "totalDurationComputed": 9080,
+  "totalDurationActual": 8198
+}
+=== Stop: StartUp Measurement === 
+2019-10-29 08:49:46,867 [  12601]   INFO - ings.impl.UpdateCheckerService - channel: release 
+2019-10-29 08:49:48,332 [  14066]   WARN - ConfigurableExtensionPointUtil - ignore deprecated groupId: language for id: preferences.language.Kotlin.scripting 
+2019-10-29 08:49:48,766 [  14500]   WARN - ConfigurableExtensionPointUtil - ignore deprecated groupId: language for id: preferences.language.Kotlin.scripting 
+2019-10-29 08:49:51,237 [  16971]   WARN - com.intellij.util.xmlb.Binding - no accessors for class org.jetbrains.kotlin.idea.highlighter.KotlinDefaultHighlightingSettingsProvider 
+2019-10-29 08:59:38,097 [ 603831]   INFO - j.compiler.server.BuildManager - Clearing project build data because the project does not exist or was not opened for more than 30 days: /home/cp/Development/tools/assertj-intellij/build/idea-sandbox/system/compile-server/cloud-simulator_d54ada19 
+2019-10-29 08:59:38,831 [ 604565]   INFO - mponents.impl.stores.StoreUtil - saveProjectsAndApp took 255 ms 
+2019-10-29 09:04:24,192 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2019-10-29 09:04:24,228 [     36]   INFO - tellij.diagnostic.LoadingPhase - Reached SPLASH loading phase 
+2019-10-29 09:04:24,249 [     57]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 42 ms 
+2019-10-29 09:04:24,265 [     73]   INFO - plication.impl.ApplicationImpl - CPU cores: 12; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@21bfd0a4[Running, parallelism = 12, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@241561f3 
+2019-10-29 09:04:24,278 [     86]   INFO -        #com.intellij.idea.Main - IDE: IntelliJ IDEA (build #IC-192.6817.14, 24 Sep 2019 06:39) 
+2019-10-29 09:04:24,278 [     86]   INFO -        #com.intellij.idea.Main - OS: Linux (4.15.0-66-generic, amd64) 
+2019-10-29 09:04:24,278 [     86]   INFO -        #com.intellij.idea.Main - JRE: 11.0.4+10-b304.69 (JetBrains s.r.o) 
+2019-10-29 09:04:24,278 [     86]   INFO -        #com.intellij.idea.Main - JVM: 11.0.4+10-b304.69 (OpenJDK 64-Bit Server VM) 
+2019-10-29 09:04:24,278 [     86]   INFO -        #com.intellij.idea.Main - JVM Args: -Didea.classpath.index.enabled=false -Didea.config.path=/home/cp/Development/tools/assertj-intellij/build/idea-sandbox/config -Didea.is.internal=true -Didea.platform.prefix=Idea -Didea.plugins.path=/home/cp/Development/tools/assertj-intellij/build/idea-sandbox/plugins -Didea.required.plugins.id=com.cprohinig.assertj-generator-idea -Didea.system.path=/home/cp/Development/tools/assertj-intellij/build/idea-sandbox/system -Dsun.awt.disablegrab=true -Xms256m -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -ea -agentpath:/opt/dynatrace/oneagent/agent/lib64/liboneagentloader.so=loglevelcon=none,tenant=1,tenanttoken=1,server=http://localhost:8020/communication;https://172.23.249.63:9999/communication 
+2019-10-29 09:04:24,279 [     87]   INFO -        #com.intellij.idea.Main - charsets: JNU=UTF-8 file=UTF-8 
+2019-10-29 09:04:24,342 [    150]   INFO - com.intellij.util.ui.JBUIScale - System scale factor: 1.0 (IDE-managed HiDPI) 
+2019-10-29 09:04:24,398 [    206]   INFO - llij.ide.plugins.PluginManager - Cannot find optional descriptor duplicates-groovy.xml 
+2019-10-29 09:04:24,399 [    207]   INFO - llij.ide.plugins.PluginManager - Cannot find optional descriptor duplicates-detection-groovy.xml 
+2019-10-29 09:04:24,437 [    245]   INFO - llij.ide.plugins.PluginManager - Cannot find optional descriptor profiler-java.xml 
+2019-10-29 09:04:24,553 [    361]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: Android Support (10.3.4), Ant (192.6817.14), Bytecode Viewer (192.6817.14), ChangeReminder (192.6817.14), Configuration Script (192.6817.14), Copyright (192.6817.14), Coverage (192.6817.14), Eclipse Interoperability (192.6817.14), EditorConfig (192.6817.14), Git (192.6817.14), GitHub (192.6817.14), Gradle (192.6817.14), Gradle-Maven (192.6817.14), Groovy (192.6817.14), IDEA CORE (192.6817.14), IntelliLang (192.6817.14), JUnit (192.6817.14), Java (192.6817.14), Java Bytecode Decompiler (192.6817.14), Java IDE Customization (192.6817.14), Java Internationalization (192.6817.14), Java Stream Debugger (192.6817.14), JavaFX (192.6817.14), Kotlin (1.3.41-release-IJ2019.2-1), Machine Learning Code Completion (192.6817.14), Markdown (192.6817.14), Maven (192.6817.14), Mercurial (192.6817.14), Plugin DevKit (192.6817.14), Properties (192.6817.14), Settings Repository (192.6817.14), Shell Script (192.6817.14), Smali Support (192.6817.14), Subversion (192.6817.14), Task Management (192.6817.14), Terminal (192.6817.14), TestNG (192.6817.14), TextMate bundles (192.6817.14), UI Designer (192.6817.14), XPathView + XSLT (192.6817.14), XSLT Debugger (192.6817.14), YAML (192.6817.14) 
+2019-10-29 09:04:24,553 [    361]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: Plugin display name here (1.0-SNAPSHOT) 
+2019-10-29 09:04:24,902 [    710]   INFO - tellij.diagnostic.LoadingPhase - Reached CONFIGURATION_STORE_INITIALIZED loading phase 
+2019-10-29 09:04:24,947 [    755]   INFO - pi.util.registry.RegistryState - Registry values changed by user: 
+2019-10-29 09:04:24,948 [    756]   INFO - pi.util.registry.RegistryState -   java.completion.argument.hints.internal = false 
+2019-10-29 09:04:24,961 [    769]   INFO - pi.util.registry.RegistryState - Experimental features enabled for user: inline.browse.button, linux.native.menu, recent.and.edited.files.together, show.create.new.element.in.popup, new.large.text.file.viewer, property.value.inplace.editing 
+2019-10-29 09:04:25,000 [    808]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=492; buffer=10; max=492 
+2019-10-29 09:04:25,040 [    848]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is disabled 
+2019-10-29 09:04:25,560 [   1368]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2019-10-29 09:04:25,588 [   1396]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63343 
+2019-10-29 09:04:25,762 [   1570]   INFO - il.indexing.FileBasedIndexImpl - File index extensions iterated:96 
+2019-10-29 09:04:26,350 [   2158]   INFO - pl$FileIndexDataInitialization - Initialization done:684 
+2019-10-29 09:04:26,395 [   2203]   INFO - exImpl$StubIndexInitialization - Initialization done:45 
+2019-10-29 09:04:26,429 [   2237]   WARN - ConfigurableExtensionPointUtil - ignore deprecated groupId: language for id: preferences.language.Kotlin.scripting 
+2019-10-29 09:04:26,706 [   2514]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=12, fontScale=1.0; restored: fontSize=12, fontScale=1.0 
+2019-10-29 09:04:27,259 [   3067]   INFO - CompilerWorkspaceConfiguration - Available processors: 12 
+2019-10-29 09:04:28,696 [   4504]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=12, fontScale=1.0; restored: fontSize=12, fontScale=1.0 
+2019-10-29 09:04:31,584 [   7392]   INFO - j.ide.plugins.RepositoryHelper - using cached plugin list (updated at 10/29/19, 9:04 AM) 
+2019-10-29 09:04:31,610 [   7418]   INFO - j.ide.plugins.RepositoryHelper - using cached plugin list (updated at 10/29/19, 9:04 AM) 
+2019-10-29 09:04:32,668 [   8476]  ERROR - j.openapi.roots.impl.RootIndex - Directory index may not be queried for default project 
+java.lang.Throwable: Directory index may not be queried for default project
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:145)
+	at com.intellij.openapi.roots.impl.RootIndex.<init>(RootIndex.java:59)
+	at com.intellij.openapi.roots.impl.DirectoryIndexImpl.getRootIndex(DirectoryIndexImpl.java:119)
+	at com.intellij.openapi.roots.impl.DirectoryIndexImpl.getOrderEntries(DirectoryIndexImpl.java:164)
+	at com.intellij.openapi.roots.impl.ProjectFileIndexImpl.getOrderEntriesForFile(ProjectFileIndexImpl.java:108)
+	at org.jetbrains.kotlin.idea.caches.project.GetModuleInfoKt.getModuleInfoByVirtualFile(getModuleInfo.kt:308)
+	at org.jetbrains.kotlin.idea.core.script.dependencies.ScriptDependenciesResolveScopeProvider.getResolveScope(ScriptDependenciesResolveScopeProvider.kt:29)
+	at com.intellij.psi.impl.file.impl.ResolveScopeManagerImpl.lambda$new$0(ResolveScopeManagerImpl.java:45)
+	at com.intellij.util.containers.ConcurrentFactoryMap$4.create(ConcurrentFactoryMap.java:216)
+	at com.intellij.util.containers.ConcurrentFactoryMap.get(ConcurrentFactoryMap.java:46)
+	at com.intellij.psi.impl.file.impl.ResolveScopeManagerImpl.getResolveScopeFromProviders(ResolveScopeManagerImpl.java:63)
+	at com.intellij.psi.impl.file.impl.ResolveScopeManagerImpl.getResolveScope(ResolveScopeManagerImpl.java:119)
+	at com.intellij.psi.impl.ResolveScopeManager.getElementResolveScope(ResolveScopeManager.java:51)
+	at com.intellij.psi.impl.source.PsiFileImpl.getResolveScope(PsiFileImpl.java:858)
+	at com.intellij.psi.impl.source.PsiCodeFragmentImpl.getResolveScope(PsiCodeFragmentImpl.java:307)
+	at com.intellij.debugger.engine.evaluation.CodeFragmentFactoryContextWrapper.prepareResolveScope(CodeFragmentFactoryContextWrapper.java:69)
+	at com.intellij.debugger.engine.evaluation.CodeFragmentFactoryContextWrapper.createPresentationCodeFragment(CodeFragmentFactoryContextWrapper.java:49)
+	at org.jetbrains.java.debugger.JavaDebuggerEditorsProvider.createExpressionCodeFragment(JavaDebuggerEditorsProvider.java:77)
+	at com.intellij.xdebugger.evaluation.XDebuggerEditorsProviderBase.createDocument(XDebuggerEditorsProviderBase.java:67)
+	at com.intellij.xdebugger.evaluation.XDebuggerEditorsProviderBase.createDocument(XDebuggerEditorsProviderBase.java:59)
+	at com.intellij.xdebugger.impl.ui.XDebuggerEditorBase.createDocument(XDebuggerEditorBase.java:347)
+	at com.intellij.xdebugger.impl.ui.XDebuggerExpressionEditor.<init>(XDebuggerExpressionEditor.java:48)
+	at com.intellij.debugger.settings.CompoundRendererConfigurable.<init>(CompoundRendererConfigurable.java:105)
+	at com.intellij.debugger.settings.UserRenderersConfigurable.<init>(UserRenderersConfigurable.java:31)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.util.ReflectionUtil.newInstance(ReflectionUtil.java:389)
+	at com.intellij.util.ReflectionUtil.newInstance(ReflectionUtil.java:376)
+	at com.intellij.openapi.options.SimpleConfigurable.createUi(SimpleConfigurable.java:36)
+	at com.intellij.openapi.options.ConfigurableBase.createComponent(ConfigurableBase.java:57)
+	at com.intellij.ide.ui.search.SearchUtil.processConfigurables(SearchUtil.java:76)
+	at com.intellij.ide.ui.search.SearchUtil.processProjectConfigurables(SearchUtil.java:48)
+	at com.intellij.ide.ui.search.TraverseUIStarter.startup(TraverseUIStarter.java:106)
+	at com.intellij.ide.ui.search.TraverseUIStarter.main(TraverseUIStarter.java:87)
+	at com.intellij.idea.IdeaApplication.lambda$null$3(IdeaApplication.java:154)
+	at com.intellij.openapi.application.TransactionGuardImpl.performUserActivity(TransactionGuardImpl.java:192)
+	at com.intellij.idea.IdeaApplication.lambda$executeInitAppInEdt$5(IdeaApplication.java:154)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:776)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:727)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:746)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:384)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2019-10-29 09:04:32,670 [   8478]  ERROR - j.openapi.roots.impl.RootIndex - IntelliJ IDEA 2019.2.3  Build #IC-192.6817.14 
+2019-10-29 09:04:32,670 [   8478]  ERROR - j.openapi.roots.impl.RootIndex - JDK: 11.0.4; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o 
+2019-10-29 09:04:32,670 [   8478]  ERROR - j.openapi.roots.impl.RootIndex - OS: Linux 
+2019-10-29 09:04:32,675 [   8483]  ERROR - j.openapi.roots.impl.RootIndex - Plugin to blame: Kotlin version: 1.3.41-release-IJ2019.2-1 
+2019-10-29 09:04:32,675 [   8483]  ERROR - j.openapi.roots.impl.RootIndex - Last Action:  
+2019-10-29 09:04:32,675 [   8483]  ERROR - j.openapi.roots.impl.RootIndex - Assertion failed: Directory index can only be queried after project initialization 
+java.lang.Throwable: Assertion failed: Directory index can only be queried after project initialization
+	at com.intellij.openapi.diagnostic.Logger.assertTrue(Logger.java:180)
+	at com.intellij.openapi.roots.impl.RootIndex.<init>(RootIndex.java:63)
+	at com.intellij.openapi.roots.impl.DirectoryIndexImpl.getRootIndex(DirectoryIndexImpl.java:119)
+	at com.intellij.openapi.roots.impl.DirectoryIndexImpl.getOrderEntries(DirectoryIndexImpl.java:164)
+	at com.intellij.openapi.roots.impl.ProjectFileIndexImpl.getOrderEntriesForFile(ProjectFileIndexImpl.java:108)
+	at org.jetbrains.kotlin.idea.caches.project.GetModuleInfoKt.getModuleInfoByVirtualFile(getModuleInfo.kt:308)
+	at org.jetbrains.kotlin.idea.core.script.dependencies.ScriptDependenciesResolveScopeProvider.getResolveScope(ScriptDependenciesResolveScopeProvider.kt:29)
+	at com.intellij.psi.impl.file.impl.ResolveScopeManagerImpl.lambda$new$0(ResolveScopeManagerImpl.java:45)
+	at com.intellij.util.containers.ConcurrentFactoryMap$4.create(ConcurrentFactoryMap.java:216)
+	at com.intellij.util.containers.ConcurrentFactoryMap.get(ConcurrentFactoryMap.java:46)
+	at com.intellij.psi.impl.file.impl.ResolveScopeManagerImpl.getResolveScopeFromProviders(ResolveScopeManagerImpl.java:63)
+	at com.intellij.psi.impl.file.impl.ResolveScopeManagerImpl.getResolveScope(ResolveScopeManagerImpl.java:119)
+	at com.intellij.psi.impl.ResolveScopeManager.getElementResolveScope(ResolveScopeManager.java:51)
+	at com.intellij.psi.impl.source.PsiFileImpl.getResolveScope(PsiFileImpl.java:858)
+	at com.intellij.psi.impl.source.PsiCodeFragmentImpl.getResolveScope(PsiCodeFragmentImpl.java:307)
+	at com.intellij.debugger.engine.evaluation.CodeFragmentFactoryContextWrapper.prepareResolveScope(CodeFragmentFactoryContextWrapper.java:69)
+	at com.intellij.debugger.engine.evaluation.CodeFragmentFactoryContextWrapper.createPresentationCodeFragment(CodeFragmentFactoryContextWrapper.java:49)
+	at org.jetbrains.java.debugger.JavaDebuggerEditorsProvider.createExpressionCodeFragment(JavaDebuggerEditorsProvider.java:77)
+	at com.intellij.xdebugger.evaluation.XDebuggerEditorsProviderBase.createDocument(XDebuggerEditorsProviderBase.java:67)
+	at com.intellij.xdebugger.evaluation.XDebuggerEditorsProviderBase.createDocument(XDebuggerEditorsProviderBase.java:59)
+	at com.intellij.xdebugger.impl.ui.XDebuggerEditorBase.createDocument(XDebuggerEditorBase.java:347)
+	at com.intellij.xdebugger.impl.ui.XDebuggerExpressionEditor.<init>(XDebuggerExpressionEditor.java:48)
+	at com.intellij.debugger.settings.CompoundRendererConfigurable.<init>(CompoundRendererConfigurable.java:105)
+	at com.intellij.debugger.settings.UserRenderersConfigurable.<init>(UserRenderersConfigurable.java:31)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.util.ReflectionUtil.newInstance(ReflectionUtil.java:389)
+	at com.intellij.util.ReflectionUtil.newInstance(ReflectionUtil.java:376)
+	at com.intellij.openapi.options.SimpleConfigurable.createUi(SimpleConfigurable.java:36)
+	at com.intellij.openapi.options.ConfigurableBase.createComponent(ConfigurableBase.java:57)
+	at com.intellij.ide.ui.search.SearchUtil.processConfigurables(SearchUtil.java:76)
+	at com.intellij.ide.ui.search.SearchUtil.processProjectConfigurables(SearchUtil.java:48)
+	at com.intellij.ide.ui.search.TraverseUIStarter.startup(TraverseUIStarter.java:106)
+	at com.intellij.ide.ui.search.TraverseUIStarter.main(TraverseUIStarter.java:87)
+	at com.intellij.idea.IdeaApplication.lambda$null$3(IdeaApplication.java:154)
+	at com.intellij.openapi.application.TransactionGuardImpl.performUserActivity(TransactionGuardImpl.java:192)
+	at com.intellij.idea.IdeaApplication.lambda$executeInitAppInEdt$5(IdeaApplication.java:154)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:776)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:727)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:746)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:384)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2019-10-29 09:04:32,676 [   8484]  ERROR - j.openapi.roots.impl.RootIndex - IntelliJ IDEA 2019.2.3  Build #IC-192.6817.14 
+2019-10-29 09:04:32,676 [   8484]  ERROR - j.openapi.roots.impl.RootIndex - JDK: 11.0.4; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o 
+2019-10-29 09:04:32,676 [   8484]  ERROR - j.openapi.roots.impl.RootIndex - OS: Linux 
+2019-10-29 09:04:32,676 [   8484]  ERROR - j.openapi.roots.impl.RootIndex - Plugin to blame: Kotlin version: 1.3.41-release-IJ2019.2-1 
+2019-10-29 09:04:32,676 [   8484]  ERROR - j.openapi.roots.impl.RootIndex - Last Action:  
+2019-10-29 09:04:32,895 [   8703]   INFO - leScriptDefinitionsContributor - [kts] error loading gradle script templates: Project 'Default (Template) Project' isn't linked with Gradle 
+2019-10-29 09:04:32,919 [   8727]   INFO - leScriptDefinitionsContributor - [kts] error loading gradle script templates: Project 'Default (Template) Project' isn't linked with Gradle 
+2019-10-29 09:04:32,919 [   8727]   INFO - leScriptDefinitionsContributor - [kts] error loading gradle script templates: Project 'Default (Template) Project' isn't linked with Gradle 
+2019-10-29 09:04:32,932 [   8740]  ERROR - intellij.openapi.progress.Task - project.baseDir must not be null 
+java.lang.IllegalStateException: project.baseDir must not be null
+	at org.jetbrains.kotlin.idea.script.ScriptTemplatesFromDependenciesProvider.loadScriptDefinitions(scriptsTemplatesFromDependencies.kt:58)
+	at org.jetbrains.kotlin.idea.script.AsyncScriptDefinitionsContributor$DefinitionsCollectorBackgroundTask.run(AsyncScriptDefinitionsContributor.kt:81)
+	at com.intellij.openapi.progress.impl.CoreProgressManager$TaskRunnable.run(CoreProgressManager.java:894)
+	at com.intellij.openapi.progress.impl.CoreProgressManager$5.run(CoreProgressManager.java:447)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:169)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:591)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:537)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:59)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:156)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runProcessWithProgressSynchronously(ApplicationImpl.java:531)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcessWithProgressSynchronously(CoreProgressManager.java:459)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.runProcessWithProgressSynchronously(ProgressManagerImpl.java:82)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.run(CoreProgressManager.java:302)
+	at com.intellij.openapi.progress.Task.queue(Task.java:115)
+	at org.jetbrains.kotlin.idea.script.AsyncScriptDefinitionsContributor.asyncRunUpdateScriptTemplates(AsyncScriptDefinitionsContributor.kt:47)
+	at org.jetbrains.kotlin.idea.script.AsyncScriptDefinitionsContributor.getDefinitions(AsyncScriptDefinitionsContributor.kt:32)
+	at org.jetbrains.kotlin.idea.core.script.ScriptDefinitionsManager.safeGetDefinitions(ScriptDefinitionsManager.kt:201)
+	at org.jetbrains.kotlin.idea.core.script.ScriptDefinitionsManager.reloadScriptDefinitions(ScriptDefinitionsManager.kt:130)
+	at org.jetbrains.kotlin.idea.core.script.ScriptDefinitionsManager.getAllDefinitions(ScriptDefinitionsManager.kt:145)
+	at org.jetbrains.kotlin.idea.script.configuration.KotlinScriptingSettingsConfigurable.createComponent(KotlinScriptingSettingsConfigurable.java:42)
+	at com.intellij.openapi.options.ex.ConfigurableWrapper.createComponent(ConfigurableWrapper.java:155)
+	at com.intellij.ide.ui.search.SearchUtil.processConfigurables(SearchUtil.java:76)
+	at com.intellij.ide.ui.search.SearchUtil.processProjectConfigurables(SearchUtil.java:48)
+	at com.intellij.ide.ui.search.TraverseUIStarter.startup(TraverseUIStarter.java:106)
+	at com.intellij.ide.ui.search.TraverseUIStarter.main(TraverseUIStarter.java:87)
+	at com.intellij.idea.IdeaApplication.lambda$null$3(IdeaApplication.java:154)
+	at com.intellij.openapi.application.TransactionGuardImpl.performUserActivity(TransactionGuardImpl.java:192)
+	at com.intellij.idea.IdeaApplication.lambda$executeInitAppInEdt$5(IdeaApplication.java:154)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:776)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:727)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:746)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:384)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2019-10-29 09:04:32,933 [   8741]  ERROR - intellij.openapi.progress.Task - IntelliJ IDEA 2019.2.3  Build #IC-192.6817.14 
+2019-10-29 09:04:32,933 [   8741]  ERROR - intellij.openapi.progress.Task - JDK: 11.0.4; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o 
+2019-10-29 09:04:32,933 [   8741]  ERROR - intellij.openapi.progress.Task - OS: Linux 
+2019-10-29 09:04:32,933 [   8741]  ERROR - intellij.openapi.progress.Task - Plugin to blame: Kotlin version: 1.3.41-release-IJ2019.2-1 
+2019-10-29 09:04:32,933 [   8741]  ERROR - intellij.openapi.progress.Task - Last Action:  
+2019-10-29 09:04:35,205 [  11013]   INFO - stubs.SerializationManagerImpl - START StubSerializationManager SHUTDOWN 
+2019-10-29 09:04:35,211 [  11019]   INFO - stubs.SerializationManagerImpl - END StubSerializationManager SHUTDOWN 
+2019-10-29 09:04:35,212 [  11020]   INFO - il.indexing.FileBasedIndexImpl - START INDEX SHUTDOWN 
+2019-10-29 09:04:35,236 [  11044]   INFO - il.indexing.FileBasedIndexImpl - END INDEX SHUTDOWN 
+2019-10-29 09:04:35,237 [  11045]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2019-10-29 09:04:35,237 [  11045]   INFO - Types.impl.FileTypeManagerImpl - FileTypeManager: 0 auto-detected files
+Elapsed time on auto-detect: 0 ms 
+2019-10-29 09:04:35,251 [  11059]   INFO - newvfs.persistent.PersistentFS - VFS dispose started 
+2019-10-29 09:04:35,253 [  11061]   INFO - newvfs.persistent.PersistentFS - VFS dispose completed 
+2019-10-29 09:04:35,254 [  11062]   INFO - plication.impl.ApplicationImpl - Write action Statistics:
+Event number:     0
+Total time spent: 0ms
+Average duration: 0ms
+Median  duration: 0ms
+Max     duration: 0ms (it was 'null') 
+2019-10-29 09:04:35,254 [  11062]   INFO - plication.impl.ApplicationImpl - AnAction.update() Statistics:
+Event number:     0
+Total time spent: 0ms
+Average duration: 0ms
+Median  duration: 0ms
+Max     duration: 0ms (it was 'null') 
+2019-10-29 09:04:35,255 [  11063]   INFO - plication.impl.ApplicationImpl - Global instance threads created counter = 12; ProcessIOExecutorService threads: 0 
+2019-10-29 09:04:35,256 [  11064]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
+2019-10-29 09:04:35,256 [  11064]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
