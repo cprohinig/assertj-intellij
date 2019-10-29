@@ -7,18 +7,16 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.intellij.psi.util.PropertyUtil.isSimpleGetter;
-
 public class AssertionDetailsGeneratorImpl implements AssertionDetailsGenerator {
     @Override
     public String generatePackageStatement(PsiJavaFile javaFile) {
-        return javaFile.getPackageName() + ";\n\n";
+        return javaFile.getPackageName() + ";import " + javaFile.getClasses()[0].getQualifiedName() + ";";
     }
 
     @Override
     public String generateClassDeclaration(PsiJavaFile javaFile) {
         String className = javaFile.getClasses()[0].getName() + "Assert";
-        return String.format("public class %s extends AbstractObjectAssert<%s, %s> {\n", className, className, javaFile.getClasses()[0].getName());
+        return String.format("public class %s extends AbstractObjectAssert<%s, %s> {", className, className, javaFile.getClasses()[0].getName());
     }
 
     @Override
@@ -29,17 +27,20 @@ public class AssertionDetailsGeneratorImpl implements AssertionDetailsGenerator 
 
         String className = javaFile.getClasses()[0].getName() + "Assert";
 
-        String out = String.format("\t%s(%s actual) {\n\t\tsuper(actual, %s.class);\n\t}\n\n", className, javaFile.getClasses()[0].getName(), className);
+        // constructor
+        String out = String.format("%s(%s actual) {super(actual, %s.class);}", className, javaFile.getClasses()[0].getName(), className);
+
+        // assertions
         for (PsiMethod getter : getters) {
             String assertionMethodName = getter.getName().replace("get", "has");
-            String signature = String.format("\tpublic %s %s(%s expected) {\n", className, assertionMethodName, getter.getReturnType().getPresentableText());
+            String signature = String.format("public %s %s(%s expected) {", className, assertionMethodName, getter.getReturnType().getPresentableText());
             String fieldName = getter.getName().substring(3);
             fieldName = fieldName.substring(0, 1).toLowerCase() + fieldName.substring(1);
-            String body = String.format("\t\treturn isNotNull().isEqualTo(actual::%s, expected, \"%s\");\n\t}\n\n", getter.getName(), fieldName);
+            String body = String.format("return isNotNull().isEqualTo(actual::%s, expected, \"%s\");}", getter.getName(), fieldName);
             out += signature + body;
         }
 
-        return out + "\n";
+        return out;
     }
 
     public boolean isGetter(PsiMethod method) {
@@ -48,6 +49,6 @@ public class AssertionDetailsGeneratorImpl implements AssertionDetailsGenerator 
 
     @Override
     public String generateFooter(PsiJavaFile javFile) {
-        return "}\n";
+        return "}";
     }
 }
