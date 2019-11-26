@@ -19,7 +19,11 @@ public class AssertionDetailsGeneratorImplTest extends LightPlatformCodeInsightT
         String packageStatement = target.generatePackageStatement(currentFile);
 
         // then
-        Assert.assertEquals(packageStatement, "package com.p.helloworld;import com.p.helloworld.SimpleClass;import com.compuware.apm.webui.rest.common.api.assertions.AbstractObjectAssert;");
+        String expected = "package com.p.helloworld;" +
+                          "import com.p.helloworld.SimpleClass;" +
+                          "import org.assertj.core.api.AbstractObjectAssert;" +
+                          "import org.assertj.core.api.Assertions;";
+        Assert.assertEquals(packageStatement, expected);
     }
 
     public void testSimpleClassDeclaration() throws Exception {
@@ -31,7 +35,9 @@ public class AssertionDetailsGeneratorImplTest extends LightPlatformCodeInsightT
         String classDeclaration = target.generateClassDeclaration(currentFile);
 
         // then
-        Assert.assertEquals(classDeclaration, "public class SimpleClassAssert extends AbstractObjectAssert<SimpleClassAssert, SimpleClass> {");
+        String expected = "public class SimpleClassAssert extends AbstractObjectAssert<SimpleClassAssert, SimpleClass> {" +
+                "private static final String ERROR_MESSAGE = \"Expected %s to be <%s> but was <%s> (%s)\";";
+        Assert.assertEquals(classDeclaration, expected);
     }
 
     public void testSimpleClassAssertions() throws Exception {
@@ -43,7 +49,18 @@ public class AssertionDetailsGeneratorImplTest extends LightPlatformCodeInsightT
         String assertions = target.generateAssertions(currentFile);
 
         // then
-        Assert.assertEquals(assertions, "SimpleClassAssert(SimpleClass actual) {super(actual, SimpleClassAssert.class);}public SimpleClassAssert hasSomething(String expected) {return isNotNull().isEqualTo(actual::getSomething, expected, \"something\");}");
+        String expected = "SimpleClassAssert(SimpleClass actual) {" +
+                               "super(actual, SimpleClassAssert.class);" +
+                            "}" +
+                          "public SimpleClassAssert hasSomething(String expected) {" +
+                            "String actualSomething = actual.getSomething();" +
+                            "Assertions.assertThat(actualSomething)\n" +
+                            ".overridingErrorMessage(ERROR_MESSAGE, \"something\", expected, actualSomething, descriptionText())\n" +
+                            ".isEqualTo(expected);" +
+                            "return this;" +
+                          "}";
+
+        Assert.assertEquals(assertions, expected);
     }
 
     public void testSimpleClassFooter() throws Exception {

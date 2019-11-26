@@ -16,42 +16,75 @@ public class AssertionDetailsGeneratorImpl implements AssertionDetailsGenerator 
 
     private String generateImports(PsiJavaFile javaFile) {
         String assertedClassImportStatement = "import " + javaFile.getClasses()[0].getQualifiedName() + ";";
-        String abstractObjectAssertImportStatement = "import com.compuware.apm.webui.rest.common.api.assertions.AbstractObjectAssert;";
-        return assertedClassImportStatement + abstractObjectAssertImportStatement;
+        String abstractObjectAssertImport = "import org.assertj.core.api.AbstractObjectAssert;";
+        String assertionsImport = "import org.assertj.core.api.Assertions;";
+        return assertedClassImportStatement + abstractObjectAssertImport + assertionsImport;
     }
 
     @Override
     public String generateClassDeclaration(PsiJavaFile javaFile) {
-        String className = javaFile.getClasses()[0].getName() + "Assert";
-        return String.format("public class %s extends AbstractObjectAssert<%s, %s> {", className, className, javaFile.getClasses()[0].getName());
+        String targetClassName = javaFile.getClasses()[0].getName();
+        String assertClassName = targetClassName + "Assert";
+        return getClassDeclaration(targetClassName, assertClassName);
     }
 
     @Override
     public String generateAssertions(PsiJavaFile javaFile) {
         List<PsiMethod> getters = Arrays.stream(javaFile.getClasses()[0].getAllMethods())
-                .filter(m -> isGetter(m))
+                .filter(this::isGetter)
                 .collect(Collectors.toList());
 
-        String className = javaFile.getClasses()[0].getName() + "Assert";
+        String targetClassName = javaFile.getClasses()[0].getName();
+        String assertClassName = targetClassName + "Assert";
 
         // constructor
-        String out = String.format("%s(%s actual) {super(actual, %s.class);}", className, javaFile.getClasses()[0].getName(), className);
+        StringBuilder out = new StringBuilder(getConstructorStatement(targetClassName, assertClassName));
 
         // assertions
         for (PsiMethod getter : getters) {
-            String assertionMethodName = getter.getName().replace("get", "has");
-            String signature = String.format("public %s %s(%s expected) {", className, assertionMethodName, getter.getReturnType().getPresentableText());
-            String fieldName = getter.getName().substring(3);
-            fieldName = fieldName.substring(0, 1).toLowerCase() + fieldName.substring(1);
-            String body = String.format("return isNotNull().isEqualTo(actual::%s, expected, \"%s\");}", getter.getName(), fieldName);
-            out += signature + body;
+            out.append(getAssertionMethodSignature(getter, assertClassName));
+            out.append(getActualDeclaration(getter));
+            out.append(getAssertionStatement(getter));
+            out.append("return this;");
+            out.append("}");
         }
 
-        return out;
+        return out.toString();
     }
 
     private boolean isGetter(PsiMethod method) {
         return method.getName().startsWith("get") && !method.getName().equals("getClass");
+    }
+
+    private String getClassDeclaration(String targetClassName, String assertClassName) {
+        return String.format("public class %s extends AbstractObjectAssert<%s, %s> {", assertClassName, assertClassName, targetClassName) +
+                "private static final String ERROR_MESSAGE = \"Expected %s to be <%s> but was <%s> (%s)\";";
+    }
+
+    private String getConstructorStatement(String targetClassName, String assertClassName) {
+        return String.format("%s(%s actual) {super(actual, %s.class);}", assertClassName, targetClassName, assertClassName);
+    }
+    private String getAssertionMethodSignature(PsiMethod getter, String className) {
+        String assertionMethodName = getter.getName().replace("get", "has");
+        return String.format("public %s %s(%s expected) {", className, assertionMethodName, getter.getReturnType().getPresentableText());
+    }
+
+    private String getActualDeclaration(PsiMethod getter) {
+        return String.format("%s %s = actual.%s();", getter.getReturnType().getPresentableText(), getActualVariableName(getter), getter.getName());
+    }
+
+    private String getAssertionStatement(PsiMethod getter) {
+        return String.format("Assertions.assertThat(%s)\n" +
+                        ".overridingErrorMessage(ERROR_MESSAGE, \"%s\", expected, %s, descriptionText())\n" +
+                        ".isEqualTo(expected);",
+                getActualVariableName(getter),
+                getter.getName().substring(3).toLowerCase(),
+                getActualVariableName(getter)
+        );
+    }
+
+    private String getActualVariableName(PsiMethod getter) {
+        return String.format("actual%s", getter.getName().substring(3));
     }
 
     @Override
