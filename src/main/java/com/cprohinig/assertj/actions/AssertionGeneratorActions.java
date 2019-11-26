@@ -21,6 +21,7 @@ public class AssertionGeneratorActions extends AnAction {
         final FileHandler fileHandler = new FileHandlerImpl(project, editor);
 
         final PsiJavaFile javaFile = fileHandler.getActiveJavaFile();
+        fileHandler.findKnownFile(KnownFiles.CUSTOM_ASSERTIONS);
 
         if (javaFile != null) {
             final AssertionDetailsGenerator assertionDetailsGenerator = new AssertionDetailsGeneratorImpl();

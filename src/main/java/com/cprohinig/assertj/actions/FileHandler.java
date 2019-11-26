@@ -13,4 +13,6 @@ public interface FileHandler {
     PsiDirectory convertToTestDirectory(PsiDirectory directory);
 
     PsiJavaFile getActiveJavaFile();
+
+    PsiJavaFile findKnownFile(KnownFiles file);
 }
