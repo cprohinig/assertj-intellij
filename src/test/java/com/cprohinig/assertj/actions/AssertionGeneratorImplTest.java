@@ -18,7 +18,7 @@ public class AssertionGeneratorImplTest extends LightPlatformCodeInsightTestCase
         String content = target.generateContent(currentFile);
 
         // then
-        assertContentAreEquals(content, "SimpleClassAssertions.java");
+        assertContentAreEquals(content, "SimpleClassAssert.java");
     }
 
     private void assertContentAreEquals(String actualContent, String expectedContentFile) throws Exception {
