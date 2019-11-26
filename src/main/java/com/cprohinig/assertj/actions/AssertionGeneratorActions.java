@@ -14,19 +14,23 @@ import org.jetbrains.annotations.NotNull;
 
 public class AssertionGeneratorActions extends AnAction {
 
-    @Override
-    public void actionPerformed(@NotNull AnActionEvent e) {
-        final Editor editor = e.getData(CommonDataKeys.EDITOR);
-        final Project project = e.getProject();
+  @Override
+  public void actionPerformed(@NotNull AnActionEvent e) {
+    final Editor editor = e.getData(CommonDataKeys.EDITOR);
+    final Project project = e.getProject();
         final FileHandler fileHandler = new FileHandlerImpl(project, editor);
 
-        final PsiJavaFile javaFile = fileHandler.getActiveJavaFile();
+    final PsiJavaFile javaFile = fileHandler.getActiveJavaFile();
+    if (javaFile == null) {
+      return;
+    }
 
-        if (javaFile != null) {
-            final AssertionDetailsGenerator assertionDetailsGenerator = new AssertionDetailsGeneratorImpl();
-            final AssertionGenerator assertionGenerator = new AssertionGeneratorImpl(assertionDetailsGenerator);
-            final String assertionContents = assertionGenerator.generateContent(javaFile);
-            final PsiFileFactory factory = PsiFileFactory.getInstance(project);
+    final AssertionGeneratorDialog dialog = new AssertionGeneratorDialog(project, javaFile);
+    if (dialog.showAndGet()) {
+      final AssertionDetailsGenerator assertionDetailsGenerator = new AssertionDetailsGeneratorImpl();
+      final AssertionGenerator assertionGenerator = new AssertionGeneratorImpl(assertionDetailsGenerator);
+      final String assertionContents = assertionGenerator.generateContent(javaFile, dialog.getSelections());
+      final PsiFileFactory factory = PsiFileFactory.getInstance(project);
 
             final PsiFile file = factory.createFileFromText(assertionGenerator.generateFilename(javaFile), JavaFileType.INSTANCE, assertionContents);
             final PsiDirectory parent = javaFile.getParent();
@@ -43,7 +47,7 @@ public class AssertionGeneratorActions extends AnAction {
         final FileHandler fileHandler = new FileHandlerImpl(e.getProject(), e.getData(CommonDataKeys.EDITOR));
         final PsiJavaFile javaFile = fileHandler.getActiveJavaFile();
 
-        e.getPresentation().setVisible(fileHandler.fileAllowsGeneration(javaFile));
-    }
+    e.getPresentation().setVisible(fileHandler.fileAllowsGeneration(javaFile));
+  }
 
 }

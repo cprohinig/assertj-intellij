@@ -1,6 +1,9 @@
 package com.cprohinig.assertj.actions;
 
 import com.intellij.psi.PsiJavaFile;
+import com.intellij.psi.PsiMethod;
+
+import java.util.List;
 
 public interface AssertionDetailsGenerator {
 
@@ -8,7 +11,7 @@ public interface AssertionDetailsGenerator {
 
     String generateClassDeclaration(PsiJavaFile javaFile);
 
-    String generateAssertions(PsiJavaFile javaFile);
+    String generateAssertions(PsiJavaFile javaFile, List<PsiMethod> selections);
 
     String generateFooter(PsiJavaFile javFile);
 }

@@ -9,10 +9,10 @@ import java.util.stream.Collectors;
 
 public class AssertionDetailsGeneratorImpl implements AssertionDetailsGenerator {
 
-    @Override
-    public String generatePackageStatement(PsiJavaFile javaFile) {
-        return "package " + javaFile.getPackageName() + ";" + generateImports(javaFile);
-    }
+  @Override
+  public String generatePackageStatement(PsiJavaFile javaFile) {
+    return "package " + javaFile.getPackageName() + ";" + generateImports(javaFile);
+  }
 
     private String generateImports(PsiJavaFile javaFile) {
         String assertedClassImportStatement = "import " + javaFile.getClasses()[0].getQualifiedName() + ";";
@@ -29,11 +29,8 @@ public class AssertionDetailsGeneratorImpl implements AssertionDetailsGenerator 
     }
 
     @Override
-    public String generateAssertions(PsiJavaFile javaFile) {
-        List<PsiMethod> getters = Arrays.stream(javaFile.getClasses()[0].getAllMethods())
-                .filter(this::isGetter)
-                .collect(Collectors.toList());
-
+  public String generateAssertions(PsiJavaFile javaFile, List<PsiMethod> selections) {
+    String className = javaFile.getClasses()[0].getName() + "Assert";
         String targetClassName = javaFile.getClasses()[0].getName();
         String assertClassName = targetClassName + "Assert";
 
@@ -41,7 +38,7 @@ public class AssertionDetailsGeneratorImpl implements AssertionDetailsGenerator 
         StringBuilder out = new StringBuilder(getConstructorStatement(targetClassName, assertClassName));
 
         // assertions
-        for (PsiMethod getter : getters) {
+        for (PsiMethod getter : selections) {
             out.append(getAssertionMethodSignature(getter, assertClassName));
             out.append(getActualDeclaration(getter));
             out.append(getAssertionStatement(getter));
@@ -52,11 +49,22 @@ public class AssertionDetailsGeneratorImpl implements AssertionDetailsGenerator 
         return out.toString();
     }
 
-    private boolean isGetter(PsiMethod method) {
-        return method.getName().startsWith("get") && !method.getName().equals("getClass");
-    }
+  private static boolean isGetter(PsiMethod method) {
+    return (method.getName().startsWith("get")
+        || method.getName().startsWith("is"))
+        && !method.getName().equals("getClass")
+        && method.getParameterList().isEmpty();
+  }
 
-    private String getClassDeclaration(String targetClassName, String assertClassName) {
+  public static List<PsiMethod> extractGetters(PsiJavaFile javaFile) {
+    return Arrays.stream(javaFile.getClasses())
+        .peek(System.out::println)
+        .flatMap(clazz -> Arrays.stream(clazz.getAllMethods()))
+        .filter(AssertionDetailsGeneratorImpl::isGetter)
+        .collect(Collectors.toList());
+  }
+
+  private String getClassDeclaration(String targetClassName, String assertClassName) {
         return String.format("public class %s extends AbstractObjectAssert<%s, %s> {", assertClassName, assertClassName, targetClassName) +
                 "private static final String ERROR_MESSAGE = \"Expected %s to be <%s> but was <%s> (%s)\";";
     }

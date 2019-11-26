@@ -1,6 +1,10 @@
 package com.cprohinig.assertj.actions;
 
 import com.intellij.psi.PsiJavaFile;
+import com.intellij.psi.PsiMethod;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class AssertionGeneratorImpl implements AssertionGenerator {
     private AssertionDetailsGenerator assertionDetailsGenerator;
@@ -15,10 +19,10 @@ public class AssertionGeneratorImpl implements AssertionGenerator {
     }
 
     @Override
-    public String generateContent(PsiJavaFile javaFile) {
+    public String generateContent(PsiJavaFile javaFile, List<PsiMethod> selections) {
         return assertionDetailsGenerator.generatePackageStatement(javaFile) +
                 assertionDetailsGenerator.generateClassDeclaration(javaFile) +
-                assertionDetailsGenerator.generateAssertions(javaFile) +
+                assertionDetailsGenerator.generateAssertions(javaFile, selections) +
                 assertionDetailsGenerator.generateFooter(javaFile);
     }
 
