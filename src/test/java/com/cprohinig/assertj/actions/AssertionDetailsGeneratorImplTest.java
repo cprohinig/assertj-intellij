@@ -1,14 +1,9 @@
 package com.cprohinig.assertj.actions;
 
+import com.cprohinig.assertj.testutils.TestUtils;
 import com.intellij.psi.PsiJavaFile;
 import com.intellij.testFramework.LightPlatformCodeInsightTestCase;
 import org.junit.Assert;
-
-import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.stream.Collectors;
 
 
 public class AssertionDetailsGeneratorImplTest extends LightPlatformCodeInsightTestCase {
@@ -64,10 +59,7 @@ public class AssertionDetailsGeneratorImplTest extends LightPlatformCodeInsightT
     }
 
     private void setupJavaFile(String fileName) throws Exception {
-        ClassLoader contextClassLoader = Thread.currentThread().getContextClassLoader();
-        URL resource = contextClassLoader.getResource("testData/" + fileName);
-        Path path = Paths.get(resource.getPath());
-        String fileContent = Files.lines(path).collect(Collectors.joining());
+        String fileContent = TestUtils.getFileContent(fileName);
         configureFromFileText(fileName, fileContent);
     }
 }
