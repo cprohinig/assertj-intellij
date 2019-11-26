@@ -43,6 +43,7 @@ public class AssertClassContentWrapperImpl implements AssertClassContentWrapper 
 
     private String getImportsStatements() {
         return importClassesQualifiedNames.stream()
+                .filter(classReference -> !classReference.isEmpty())
                 .map(classReference -> "import " + classReference + ";")
                 .collect(Collectors.joining());
     }

@@ -1,22 +1,44 @@
 package com.cprohinig.assertj.actions;
 
+import com.intellij.psi.PsiClass;
 import com.intellij.psi.PsiJavaFile;
 import com.intellij.psi.PsiMethod;
+import com.intellij.psi.PsiPrimitiveType;
+import com.intellij.psi.util.PsiTypesUtil;
 
+import javax.annotation.Nonnull;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class AssertionDetailsGeneratorImpl implements AssertionDetailsGenerator {
 
+    private static boolean isNotPrimitiveType(PsiMethod m) {
+        return !(m.getReturnType() instanceof PsiPrimitiveType);
+    }
+
+    @Nonnull
+    private static String getQualifiedName(PsiMethod m) {
+        PsiClass parameterClass = PsiTypesUtil.getPsiClass(m.getReturnType());
+        if (parameterClass != null && parameterClass.getQualifiedName() != null) {
+            return parameterClass.getQualifiedName();
+        } else {
+            return "";
+        }
+    }
+
     @Override
     public AssertClassContentWrapper generateAssertClass(PsiJavaFile javaFile, List<PsiMethod> selections) {
         String originalClassName = javaFile.getClasses()[0].getName();
-        List<String> importClassesReferences = Arrays.asList(
-                javaFile.getClasses()[0].getQualifiedName(),
-                "org.assertj.core.api.AbstractObjectAssert",
-                "org.assertj.core.api.Assertions"
-        );
+
+        List<String> importClassesReferences = selections.stream()
+                .filter(AssertionDetailsGeneratorImpl::isNotPrimitiveType)
+                .map(AssertionDetailsGeneratorImpl::getQualifiedName)
+                .collect(Collectors.toList());
+
+        importClassesReferences.add(javaFile.getClasses()[0].getQualifiedName());
+        importClassesReferences.add("org.assertj.core.api.AbstractObjectAssert");
+        importClassesReferences.add("org.assertj.core.api.Assertions");
 
         return new AssertClassContentWrapperImpl(javaFile.getPackageName(), importClassesReferences, originalClassName, selections);
     }
