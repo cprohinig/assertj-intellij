@@ -17,7 +17,6 @@ import java.util.stream.Collectors;
 public class AssertionGeneratorForm {
   private final PsiJavaFile input;
   private JPanel panel;
-  private JScrollPane checkBoxWrapper;
   private JTree getters;
 
   AssertionGeneratorForm(PsiJavaFile input) {
@@ -33,12 +32,12 @@ public class AssertionGeneratorForm {
         .peek(System.out::println)
         .collect(Collectors.groupingBy(PsiJvmMember::getContainingClass))
         .forEach((key, value) -> {
-          DefaultMutableTreeNode node = new DefaultMutableTreeNode(key.getQualifiedName());
+          DefaultMutableTreeNode subRoot = new DefaultMutableTreeNode(key.getQualifiedName());
           value
               .stream()
               .map(method -> new DefaultMutableTreeNode(new MethodWrapper(method), false))
-              .forEach(node::add);
-          root.add(node);
+              .forEach(subRoot::add);
+          root.add(subRoot);
         });
 
     getters = new Tree(new DefaultTreeModel(root));
