@@ -29,6 +29,10 @@
           </component>
         </children>
       </scrollpane>
+      <component id="25445" class="javax.swing.JComboBox" binding="fileRegistrationComboBox" custom-create="true">
+        <constraints border-constraint="South"/>
+        <properties/>
+      </component>
     </children>
   </grid>
 </form>

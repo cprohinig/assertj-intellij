@@ -1,5 +1,6 @@
 package com.cprohinig.assertj.actions;
 
+import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;
 import com.intellij.ide.highlighter.JavaFileType;
 import com.intellij.lang.jvm.JvmClassKind;
@@ -11,16 +12,23 @@ import com.intellij.psi.codeStyle.CodeStyleManager;
 import com.intellij.psi.codeStyle.JavaCodeStyleManager;
 import com.intellij.psi.impl.PsiManagerImpl;
 import com.intellij.psi.impl.file.PsiDirectoryImpl;
+import com.intellij.psi.search.GlobalSearchScope;
 import com.intellij.psi.search.scope.packageSet.PatternPackageSet;
+import com.intellij.psi.search.searches.ClassInheritorsSearch;
+import com.intellij.util.Query;
 
 import java.io.File;
-import java.util.Set;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class FileHandlerImpl implements FileHandler {
     private static final String SCOPE_TEST = PatternPackageSet.SCOPE_TEST;
     private static final String SCOPE_MAIN = "main";
     private static final Set<JvmClassKind> classKinds = ImmutableSet.of(JvmClassKind.CLASS, JvmClassKind.INTERFACE);
+    private static final Map<KnownFiles, String> fullClassNames = ImmutableMap.of(
+            KnownFiles.ABSTRACT_ASSERT, "org.assertj.core.api.Assertions",
+            KnownFiles.CUSTOM_ASSERTIONS, "org.assertj.core.api.Assertions"
+    );
+
 
     private final Project project;
     private final Editor editor;
@@ -93,4 +101,26 @@ public class FileHandlerImpl implements FileHandler {
         return javaFile;
     }
 
+    @Override
+    public List<PsiJavaFile> findKnownFile(KnownFiles file) {
+        JavaPsiFacade facade = JavaPsiFacade.getInstance(project);
+        PsiClass baseClass = facade.findClass(fullClassNames.get(file), GlobalSearchScope.everythingScope(project));
+
+        if (baseClass == null) {
+            return Collections.emptyList();
+        }
+
+        Query<PsiClass> extendingClasses = ClassInheritorsSearch.search(baseClass);
+
+        List<PsiJavaFile> extendingJavaFiles = new ArrayList<>();
+        for (PsiClass psiClass : extendingClasses) {
+            String packageName = ((PsiJavaFile) psiClass.getContainingFile()).getPackageName();
+
+            if (psiClass.getContainingFile() instanceof PsiJavaFile) {
+                extendingJavaFiles.add((PsiJavaFile) psiClass.getContainingFile());
+            }
+        }
+
+        return extendingJavaFiles;
+    }
 }
