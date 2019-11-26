@@ -18,6 +18,7 @@ public class AssertionGeneratorForm {
   private final PsiJavaFile input;
   private JPanel panel;
   private JTree getters;
+  private JScrollPane checkBoxWrapper;
 
   AssertionGeneratorForm(PsiJavaFile input) {
     this.input = input;
